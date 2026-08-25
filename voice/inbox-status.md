@@ -1,4 +1,4 @@
 # voice inbox
-updates: 1 (offset 0)
-owner chat_id: 756256883
+updates: 1 (offset 397081804)
+/rec -> 2026-08-25-chatgpt-3-fishki
 сохранено сегментов: 0
