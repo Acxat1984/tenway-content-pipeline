@@ -1,0 +1,12 @@
+{
+ "voice_used": "silent",
+ "voice_title": "без озвучки",
+ "segments": [
+  {
+   "i": 0,
+   "file": "seg00.mp3",
+   "dur": 14.04,
+   "text": ""
+  }
+ ]
+}
