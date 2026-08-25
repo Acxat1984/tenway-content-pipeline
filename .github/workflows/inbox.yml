@@ -1,0 +1,44 @@
+name: voice-inbox
+
+on:
+  workflow_dispatch: {}
+  schedule:
+    # Каждые 15 минут: наговорил в бота — через четверть часа сегменты в репо,
+    # а их коммит уже сам запускает build-videos.
+    - cron: "*/15 * * * *"
+
+concurrency:
+  group: inbox
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  inbox:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Python deps
+        run: pip install -q requests
+
+      - name: Collect voice messages
+        env:
+          TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
+          TG_CHAT_ID: ${{ secrets.TG_CHAT_ID }}
+        run: python worker/inbox.py
+
+      - name: Commit recordings
+        run: |
+          git config user.name "pipeline-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add -A voice/
+          git diff --cached --quiet || git commit -m "voice inbox"
+          git pull --rebase origin main || true
+          git push

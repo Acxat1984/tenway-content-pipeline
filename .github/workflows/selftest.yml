@@ -4,7 +4,7 @@ on:
   workflow_dispatch: {}
   push:
     branches: [main]
-    paths: ["worker/voiceover.py", "worker/lexicon.py", ".github/workflows/selftest.yml"]
+    paths: ["worker/voiceover.py", "worker/lexicon.py", "worker/inbox.py", ".github/workflows/selftest.yml"]
 
 permissions:
   contents: read
@@ -86,4 +86,33 @@ jobs:
           said, unknown = lexicon.transcribe("ChatGPT, Claude и API против Notion")
           assert "чат джи-пи-т+и" in said and not unknown, (said, unknown)
           print("OK: словарь и разметка ударений чистые")
+          PY
+
+      - name: Voice inbox commands
+        run: |
+          python - <<'PY'
+          import sys, types
+          # No network in a selftest: the bot must never be called from here.
+          fake = types.ModuleType("requests")
+          class R:
+              status_code = 200
+              def json(self): return {"ok": True, "result": []}
+          fake.post = lambda *a, **k: R()
+          fake.get = lambda *a, **k: R()
+          sys.modules["requests"] = fake
+          sys.path.insert(0, "worker")
+          import inbox
+
+          job = inbox.pick_job()
+          assert job, "нет approved-джобы с voice: self"
+
+          st = {"offset": 0, "job": None, "next": 0, "chat_id": None}
+          assert inbox.handle_text("/rec", st, "T", "1", [])
+          assert st["job"] == job["id"] and st["next"] == 0
+          assert inbox.handle_text("/seg 3", st, "T", "1", [])
+          assert st["next"] == 3
+          assert inbox.handle_text(f"/seg {len(job['segments'])}", st, "T", "1", [])
+          assert st["next"] == 3, "выход за границы сегментов не должен двигать счётчик"
+          assert not inbox.handle_text("привет", st, "T", "1", [])
+          print("OK: команды приёмника разбираются верно")
           PY

@@ -3,7 +3,9 @@ name: build-videos
 on:
   push:
     branches: [main]
-    paths: ["jobs/**", "worker/**", "!worker/audition.py", "!worker/stress.py", "!worker/compare.py", "!worker/providers.py", "!worker/tune.py", ".github/workflows/build.yml"]
+    # voice/**/seg* — только записи: служебные .inbox.json и журналы приёмника
+    # меняются каждые 15 минут и сборку запускать не должны.
+    paths: ["jobs/**", "voice/**/seg*", "worker/**", "!worker/audition.py", "!worker/stress.py", "!worker/compare.py", "!worker/providers.py", "!worker/tune.py", "!worker/inbox.py", ".github/workflows/build.yml"]
   workflow_dispatch: {}
 
 concurrency:

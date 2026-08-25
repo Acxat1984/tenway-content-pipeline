@@ -1,5 +1,5 @@
 """Deliver rendered video + post text to Telegram."""
-import os
+import json, os
 from pathlib import Path
 
 import requests
@@ -13,9 +13,23 @@ def _call(method, token, **kw):
     return r.status_code, r.json() if r.headers.get("content-type", "").startswith("application/json") else r.text
 
 
+def _chat_id_from_inbox():
+    """The inbox records the owner's chat; it also consumes the updates that
+    getUpdates would otherwise have shown us, so read it before falling back."""
+    state = Path(__file__).parent.parent / "voice" / ".inbox.json"
+    try:
+        return str(json.loads(state.read_text(encoding="utf-8")).get("chat_id") or "").strip()
+    except (OSError, ValueError):
+        return ""
+
+
 def find_chat_id(token, status):
     cid = os.environ.get("TG_CHAT_ID", "").strip()
     if cid:
+        return cid
+    cid = _chat_id_from_inbox()
+    if cid:
+        status.append(f"chat_id из voice/.inbox.json: {cid}")
         return cid
     code, data = _call("getUpdates", token)
     if code == 200 and data.get("result"):
