@@ -62,9 +62,10 @@ def discover(outdir: Path, status):
     return res
 
 
-def synth(text: str, ref_id: str, path: Path, status) -> bool:
+def synth(text: str, ref_id: str, path: Path, status, normalize: bool = True) -> bool:
+    # normalize=False keeps stress notation intact; Fish's text normaliser strips it.
     body = {"text": text, "reference_id": ref_id, "format": "mp3", "mp3_bitrate": 128,
-            "normalize": True, "latency": "normal"}
+            "normalize": normalize, "latency": "normal"}
     for extra_hdr in ({"model": "s1"}, {"model": "speech-1.6"}, {}):
         try:
             r = requests.post(f"{API}/v1/tts", headers={**HDR, **extra_hdr, "Content-Type": "application/json"},

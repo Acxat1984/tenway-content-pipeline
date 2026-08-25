@@ -1,0 +1,67 @@
+name: stress-probe
+
+on:
+  workflow_dispatch:
+    inputs:
+      voice:
+        description: "reference_id голоса (пусто — Мужской Профессиональный213)"
+        required: false
+        default: ""
+      text:
+        description: "Своя фраза с разметкой +удар (пусто — фразы из сценария)"
+        required: false
+        default: ""
+
+concurrency:
+  group: build
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: System deps
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+
+      - name: Python deps
+        run: pip install -q -r worker/requirements.txt
+
+      - name: Probe stress notations
+        env:
+          FISH_API_KEY: ${{ secrets.FISH_API_KEY }}
+          TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
+          TG_CHAT_ID: ${{ secrets.TG_CHAT_ID }}
+          STRESS_VOICE: ${{ inputs.voice }}
+          STRESS_TEXT: ${{ inputs.text }}
+        run: python worker/stress.py
+
+      - name: Upload samples
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: stress
+          path: |
+            out/_stress/*.mp3
+            out/_stress/status.md
+          if-no-files-found: ignore
+          retention-days: 14
+
+      - name: Commit journal back
+        if: always()
+        run: |
+          git config user.name "pipeline-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add -A out/_stress/
+          git diff --cached --quiet || git commit -m "stress probe [skip ci]"
+          git pull --rebase origin main || true
+          git push
