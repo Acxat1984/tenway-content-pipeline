@@ -75,6 +75,18 @@ class Silero(Provider):
             log(f"silero error: {e}")
             return False
 
+    def synth_ssml(self, ssml, voice, path, log):
+        """SSML pass — not every silero build exposes it, so failure is expected."""
+        try:
+            model = self._load(log)
+            wav = path.with_suffix(".wav")
+            model.save_wav(ssml_text=ssml, speaker=voice, sample_rate=48000,
+                           audio_path=str(wav), put_accent=True, put_yo=True)
+            return to_mp3(wav, path)
+        except Exception as e:
+            log(f"silero ssml error: {e}")
+            return False
+
 
 class ElevenLabs(Provider):
     name = "elevenlabs"
