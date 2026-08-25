@@ -1,9 +1,12 @@
 """Collect voice messages from the Telegram bot into voice/<job-id>/.
 
-There is no server here — the worker only exists while a workflow runs — so the
-bot does not listen, it collects. Each run drains getUpdates, saves the voice
-messages it finds as segment files, and records the update offset so the next
-run starts where this one stopped.
+There is no server here — the worker only exists while a workflow runs — so a
+run starts by draining whatever accumulated, saving the voice messages it finds
+as segment files and recording the offset for next time.
+
+Waiting a quarter hour between segments would make recording unusable, so once
+a run sees the owner is at the phone it stays on the line and answers in real
+time, dropping off after a couple of minutes of silence.
 
 Recording session, from the phone:
 
@@ -16,7 +19,7 @@ Recording session, from the phone:
 Only the owner's chat is accepted: anyone can message a bot, and an unfiltered
 inbox would let a stranger's audio into the video.
 """
-import json, os, re, sys
+import json, os, re, sys, time
 from pathlib import Path
 
 import requests
@@ -36,7 +39,9 @@ def log(msg, status):
 
 
 def call(token, method, **kw):
-    r = requests.post(API.format(token=token, method=method), data=kw, timeout=60)
+    # Long polling holds the request open, so the read timeout must outlast it.
+    wait = int(kw.get("timeout", 0) or 0)
+    r = requests.post(API.format(token=token, method=method), data=kw, timeout=wait + 30)
     try:
         return r.status_code, r.json()
     except ValueError:
@@ -152,25 +157,17 @@ def handle_text(text, st, token, cid, status):
     return False
 
 
-def main():
-    status = ["# voice inbox"]
-    token = os.environ.get("TG_BOT_TOKEN", "").strip()
-    if not token:
-        log("FAIL: no TG_BOT_TOKEN", status)
-        return finish(status, False)
-
-    st = load_state()
-    owner = os.environ.get("TG_CHAT_ID", "").strip() or st.get("chat_id")
-
-    code, data = call(token, "getUpdates", offset=st["offset"], timeout=0, allowed_updates='["message"]')
+def drain(token, st, owner, status, wait=0):
+    """Process one batch. Returns (saved, active, owner) — active means the
+    owner is at the phone right now, which is what keeps the session open."""
+    code, data = call(token, "getUpdates", offset=st["offset"], timeout=wait,
+                      allowed_updates='["message"]')
     if code != 200 or not data.get("ok"):
         log(f"getUpdates -> {code}: {str(data)[:200]}", status)
-        return finish(status, False)
-    updates = data.get("result", [])
-    log(f"updates: {len(updates)} (offset {st['offset']})", status)
+        return 0, False, owner
 
-    saved = 0
-    for upd in updates:
+    saved, active = 0, False
+    for upd in data.get("result", []):
         st["offset"] = upd["update_id"] + 1
         msg = upd.get("message")
         if not msg:
@@ -185,6 +182,7 @@ def main():
             log(f"игнорирую сообщение из чужого чата {cid}", status)
             continue
         st["chat_id"] = cid
+        active = True
 
         if "text" in msg and handle_text(msg["text"], st, token, cid, status):
             continue
@@ -199,8 +197,7 @@ def main():
             continue
 
         # A caption like "3" or "seg3" overrides the running counter.
-        cap = msg.get("caption", "")
-        m = re.search(r"\d+", cap)
+        m = re.search(r"\d+", msg.get("caption", ""))
         i = int(m.group(0)) if m else st.get("next", 0)
         if i >= len(job["segments"]):
             say(token, cid, f"seg{i:02d} — в джобе только {len(job['segments'])} сегментов.")
@@ -216,12 +213,43 @@ def main():
         dur = media.get("duration", "?")
         log(f"seg{i:02d} <- voice {dur}s ({dest.stat().st_size // 1024} KB)", status)
 
-        nxt = ""
         if st["next"] < len(job["segments"]):
             nxt = f"\n\nseg{st['next']:02d} — читай:\n\n{job['segments'][st['next']]['text'].replace('+', '')}"
         else:
             nxt = "\n\nЭто был последний. " + report(job)
         say(token, cid, f"Принял seg{i:02d} ({dur} с).{nxt}")
+
+    return saved, active, owner
+
+
+def main():
+    status = ["# voice inbox"]
+    token = os.environ.get("TG_BOT_TOKEN", "").strip()
+    if not token:
+        log("FAIL: no TG_BOT_TOKEN", status)
+        return finish(status, False)
+
+    st = load_state()
+    owner = os.environ.get("TG_CHAT_ID", "").strip() or st.get("chat_id")
+    idle = int(os.environ.get("INBOX_IDLE_SECONDS", "150"))
+    hard = int(os.environ.get("INBOX_MAX_SECONDS", "600"))
+
+    saved, active, owner = drain(token, st, owner, status)
+    log(f"первый проход: сегментов {saved}, активность {active}", status)
+
+    # Somebody is recording right now: stay on the line instead of making them
+    # wait for the next scheduled run between every segment.
+    if active and hard > 0:
+        say(token, owner, f"На связи ещё {hard // 60} минут — присылай сегменты подряд.")
+        started, last = time.monotonic(), time.monotonic()
+        while time.monotonic() - started < hard and time.monotonic() - last < idle:
+            got, act, owner = drain(token, st, owner, status, wait=25)
+            saved += got
+            if act:
+                last = time.monotonic()
+        log(f"сессия закрыта через {int(time.monotonic() - started)}s", status)
+        say(token, owner, "Пауза — ушёл. Пиши /rec или просто присылай дальше, "
+                          "подхвачу в течение пяти минут.")
 
     save_state(st)
     log(f"сохранено сегментов: {saved}", status)

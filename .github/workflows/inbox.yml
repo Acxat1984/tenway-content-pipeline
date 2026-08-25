@@ -3,9 +3,9 @@ name: voice-inbox
 on:
   workflow_dispatch: {}
   schedule:
-    # Каждые 15 минут: наговорил в бота — через четверть часа сегменты в репо,
-    # а их коммит уже сам запускает build-videos.
-    - cron: "*/15 * * * *"
+    # Каждые 5 минут — столько ждёт первое сообщение. Дальше запуск видит,
+    # что вы за телефоном, и отвечает вживую, пока не замолчите.
+    - cron: "*/5 * * * *"
 
 concurrency:
   group: inbox
@@ -17,7 +17,7 @@ permissions:
 jobs:
   inbox:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
 
@@ -32,6 +32,8 @@ jobs:
         env:
           TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
           TG_CHAT_ID: ${{ secrets.TG_CHAT_ID }}
+          INBOX_IDLE_SECONDS: "150"
+          INBOX_MAX_SECONDS: "600"
         run: python worker/inbox.py
 
       - name: Commit recordings
