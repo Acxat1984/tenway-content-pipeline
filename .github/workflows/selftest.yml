@@ -1,0 +1,89 @@
+name: selftest
+
+on:
+  workflow_dispatch: {}
+  push:
+    branches: [main]
+    paths: ["worker/voiceover.py", "worker/lexicon.py", ".github/workflows/selftest.yml"]
+
+permissions:
+  contents: read
+
+jobs:
+  selftest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: System deps
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+
+      - name: Python deps
+        run: pip install -q -r worker/requirements.txt
+
+      - name: Voice-over from recordings (synthetic)
+        run: |
+          python - <<'PY'
+          import json, pathlib, subprocess, sys, tempfile, shutil
+          sys.path.insert(0, "worker")
+          import voiceover as vo
+
+          job = json.load(open("jobs/2026-08-25-chatgpt-3-fishki.json"))
+          d = pathlib.Path("voice") / job["id"]
+          d.mkdir(parents=True, exist_ok=True)
+
+          # Stand-in recordings: a tone padded with silence, in the containers a
+          # phone or Telegram would actually produce.
+          exts = [".m4a", ".ogg", ".mp3", ".wav", ".m4a", ".mp3", ".ogg", ".wav"]
+          for i, ext in enumerate(exts):
+              subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-f", "lavfi",
+                              "-i", f"sine=frequency=220:duration={2.0 + i * 0.4}",
+                              "-af", "adelay=400|400,apad=pad_dur=0.5,volume=0.3",
+                              str(d / f"seg{i:02d}{ext}")], check=True)
+
+          out = pathlib.Path(tempfile.mkdtemp())
+          status = []
+          meta = vo.build(job, out, status)
+          print("\n".join(status))
+          assert meta, "voiceover.build вернул None"
+          assert len(meta["segments"]) == len(job["segments"])
+          assert meta["voice_used"] == "self"
+          for s in meta["segments"]:
+              assert s["dur"] > 0.2, s
+              assert "+" not in s["text"], s
+              assert (out / s["file"]).exists()
+          # Padding was 0.9s per file; trimming must have shortened every one.
+          for i, s in enumerate(meta["segments"]):
+              raw = 2.0 + i * 0.4 + 0.9
+              assert s["dur"] < raw, f"тишина не обрезана: {s['dur']} vs {raw}"
+          print(f"\nOK: {len(meta['segments'])} сегментов, тишина обрезана, уровень выровнен")
+
+          for f in d.glob("seg*"):
+              f.unlink()
+          shutil.rmtree(out, ignore_errors=True)
+          PY
+
+      - name: Lexicon and stress marks
+        run: |
+          python - <<'PY'
+          import json, sys
+          sys.path.insert(0, "worker")
+          import lexicon
+
+          bad = {k: v for k, v in lexicon.LEXICON.items() if lexicon.bad_marks(v)}
+          assert not bad, f"ударение не на гласной в словаре: {bad}"
+
+          for jp in __import__("pathlib").Path("jobs").glob("*.json"):
+              job = json.loads(jp.read_text(encoding="utf-8"))
+              for i, seg in enumerate(job["segments"]):
+                  assert not lexicon.bad_marks(seg["text"]), f"{jp.name} seg{i:02d}"
+
+          said, unknown = lexicon.transcribe("ChatGPT, Claude и API против Notion")
+          assert "чат джи-пи-т+и" in said and not unknown, (said, unknown)
+          print("OK: словарь и разметка ударений чистые")
+          PY

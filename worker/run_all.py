@@ -3,7 +3,7 @@ import json, os, sys, traceback
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
-import fishtts, record, assemble, notify  # noqa: E402
+import fishtts, record, assemble, notify, voiceover  # noqa: E402
 
 ROOT = Path(__file__).parent.parent
 JOBS, OUT = ROOT / "jobs", ROOT / "out"
@@ -17,10 +17,15 @@ def build(job_path: Path):
     status = [f"# {jid}", f"job: {job_path.name}"]
     ok = False
     try:
-        if not os.environ.get("FISH_API_KEY"):
+        # Russian jobs are read by a human; Fish keeps the English ones, where
+        # its stress and Latin-word problems do not arise.
+        if job.get("voice") == "self":
+            meta = voiceover.build(job, outdir, status)
+        elif not os.environ.get("FISH_API_KEY"):
             status.append("SKIP: секреты не настроены (FISH_API_KEY) — добавь в Settings → Secrets → Actions")
             return False, status
-        meta = fishtts.tts_job(job, outdir, status)
+        else:
+            meta = fishtts.tts_job(job, outdir, status)
         if meta:
             durations = [s["dur"] for s in meta["segments"]]
             screen = record.record(job, durations, outdir, status)
