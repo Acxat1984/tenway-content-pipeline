@@ -36,8 +36,8 @@ jobs:
       - name: Python deps
         run: |
           pip install -q -r worker/requirements.txt
-          pip install -q --index-url https://download.pytorch.org/whl/cpu torch
-          pip install -q numpy
+          pip install -q --index-url https://download.pytorch.org/whl/cpu torch torchaudio
+          pip install -q numpy omegaconf soundfile
 
       - name: Cache torch hub
         uses: actions/cache@v4
