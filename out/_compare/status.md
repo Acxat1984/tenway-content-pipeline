@@ -5,14 +5,9 @@ active: ['silero']
 skipped (нет ключа): ['elevenlabs', 'yandex', 'azure', 'openai']
 silero/eugene ...
 silero: loading v4_ru
-silero error: No module named 'omegaconf'
-silero/eugene: FAILED
+sendAudio silero_eugene.mp3 -> 200
 silero/aidar ...
-silero: loading v4_ru
-silero error: No module named 'omegaconf'
-silero/aidar: FAILED
+sendAudio silero_aidar.mp3 -> 200
 silero/baya ...
-silero: loading v4_ru
-silero error: No module named 'omegaconf'
-silero/baya: FAILED
-sent 0 samples
+sendAudio silero_baya.mp3 -> 200
+sent 3 samples
