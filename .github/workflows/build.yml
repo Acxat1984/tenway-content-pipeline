@@ -7,6 +7,12 @@ on:
     # меняются каждые 15 минут и сборку запускать не должны.
     paths: ["jobs/**", "voice/**/seg*", "worker/**", "!worker/audition.py", "!worker/stress.py", "!worker/compare.py", "!worker/providers.py", "!worker/tune.py", "!worker/inbox.py", ".github/workflows/build.yml"]
   workflow_dispatch: {}
+  # Записи коммитит приёмник под GITHUB_TOKEN, а такой пуш workflow не
+  # запускает — это защита GitHub от рекурсии. Поэтому сборку цепляем к
+  # завершению приёмника: workflow_run под запрет не попадает.
+  workflow_run:
+    workflows: ["voice-inbox"]
+    types: [completed]
 
 concurrency:
   group: build
