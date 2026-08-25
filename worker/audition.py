@@ -59,13 +59,23 @@ def catalog(status, pages=3):
     return items
 
 
+def norm(s: str) -> str:
+    """Fold a title for matching: letters only, doubles collapsed.
+
+    Uploaders respell clone names freely — Мелстрой / Меллстрой / Мел Строй
+    all name the same blogger — so compare on the folded form.
+    """
+    s = re.sub(r"[^a-zа-яё]", "", str(s).lower().replace("ё", "е"))
+    return re.sub(r"(.)\1+", r"\1", s)
+
+
 def score(it):
     """Rank a model for narrating a short vertical explainer. None = unusable."""
     langs = [str(x).lower() for x in (it.get("languages") or [])]
     if "ru" not in langs:
         return None
-    title = str(it.get("title") or "").lower()
-    if any(b in title for b in BLOCK_TITLE):
+    title = norm(it.get("title"))
+    if any(norm(b) in title for b in BLOCK_TITLE):
         return None
     tags = {str(t).lower() for t in (it.get("tags") or [])}
     if tags & BLOCK_TAGS:
