@@ -37,9 +37,9 @@ jobs:
         env:
           TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
           TG_CHAT_ID: ${{ secrets.TG_CHAT_ID }}
-          INBOX_IDLE_SECONDS: ${{ inputs.minutes && '900' || '150' }}
-          INBOX_MAX_SECONDS: ${{ inputs.minutes && format('{0}', inputs.minutes * 60) || '600' }}
-          INBOX_ALWAYS_LISTEN: ${{ inputs.minutes && '1' || '0' }}
+          # Пусто при запуске по расписанию, задано при ручном — арифметики
+          # в выражениях Actions нет, минуты в секунды переводит сам воркер.
+          INBOX_MINUTES: ${{ inputs.minutes }}
         run: python worker/inbox.py
 
       - name: Commit recordings

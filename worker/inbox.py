@@ -231,12 +231,13 @@ def main():
 
     st = load_state()
     owner = os.environ.get("TG_CHAT_ID", "").strip() or st.get("chat_id")
-    idle = int(os.environ.get("INBOX_IDLE_SECONDS", "150"))
-    hard = int(os.environ.get("INBOX_MAX_SECONDS", "600"))
-
-    # A hand-started session holds the line whether or not anyone has written
-    # yet — that is the point of starting it: you are about to record.
-    always = os.environ.get("INBOX_ALWAYS_LISTEN", "0") == "1"
+    # A hand-started session names its own length and holds the line for it;
+    # a scheduled one only lingers if somebody is actually there.
+    minutes = os.environ.get("INBOX_MINUTES", "").strip()
+    if minutes.isdigit() and int(minutes) > 0:
+        hard, idle, always = int(minutes) * 60, 900, True
+    else:
+        hard, idle, always = 600, 150, False
 
     saved, active, owner = drain(token, st, owner, status)
     log(f"первый проход: сегментов {saved}, активность {active}", status)
