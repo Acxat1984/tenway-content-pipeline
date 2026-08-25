@@ -22,7 +22,7 @@ LEXICON = {
     "chatgpt": "чат джи-пи-т+и",
     "gpt": "джи-пи-т+и",
     "claude": "кл+од",
-    "openai": "оуп+ен эй-а+й",
+    "openai": "оуп+ен эй-+ай",
     "anthropic": "антр+опик",
     "gemini": "джем+ини",
     "midjourney": "мидж+орни",
@@ -54,8 +54,8 @@ LEXICON = {
     "slack": "слэк",
     "github": "гитх+аб",
     # термины
-    "ai": "эй-а+й",
-    "api": "эй-пи-а+й",
+    "ai": "эй-+ай",
+    "api": "эй-пи-+ай",
     "prompt": "промпт",
     "promt": "промпт",
     "it": "ай-т+и",
@@ -69,10 +69,18 @@ LEXICON = {
     "b2b": "би-ту-б+и",
     "b2c": "би-ту-с+и",
     "saas": "саас",
-    "ok": "о+кей",
+    "ok": "ок+ей",
 }
 
 LATIN = re.compile(r"[A-Za-z][A-Za-z0-9]*(?:[-+][A-Za-z0-9]+)*")
+VOWELS = "аеёиоуыэюя"
+
+
+def bad_marks(text: str):
+    """Stress marks sitting on a consonant — a typo that mangles the reading."""
+    return [text[m.start():m.start() + 6]
+            for m in re.finditer(r"\+(.)", text)
+            if m.group(1).lower() not in VOWELS]
 
 
 def spell(word: str) -> str:

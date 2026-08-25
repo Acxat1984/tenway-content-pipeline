@@ -2,6 +2,8 @@
 import json, os, re, subprocess, sys
 from pathlib import Path
 
+import lexicon
+
 import requests
 
 API = "https://api.fish.audio"
@@ -107,6 +109,10 @@ def tts_job(job: dict, outdir: Path, status) -> dict | None:
     if not voices:
         log("FAIL: could not list Fish Audio voices", status)
         return None
+    for i, seg in enumerate(job["segments"]):
+        bad = lexicon.bad_marks(seg["text"])
+        if bad:
+            log(f"WARN seg{i:02d}: ударение стоит не на гласной — {bad}", status)
     want = job.get("voice", "male")
     ref = voices.get(want) if want in ("male", "female") else want
     segs = []

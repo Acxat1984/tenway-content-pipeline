@@ -18,7 +18,7 @@ OUT = ROOT / "out" / "_tune"
 
 PHRASE = ("Ты пл+атишь за ChatGPT и исп+ользуешь его проц+ентов на д+есять. "
           "Claude, Gemini и Midjourney — там то же с+амое. "
-          "Заведи API, поставь Notion — и рабо+та пойдёт.")
+          "Заведи API, поставь Notion — и раб+ота пойдёт.")
 
 VOICE = "eugene"
 
