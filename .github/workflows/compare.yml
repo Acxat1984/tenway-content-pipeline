@@ -1,0 +1,81 @@
+name: tts-compare
+
+on:
+  workflow_dispatch:
+    inputs:
+      text:
+        description: "Фраза с разметкой +удар (пусто — фраза по умолчанию)"
+        required: false
+        default: ""
+      per_provider:
+        description: "Сколько голосов от каждого движка"
+        required: false
+        default: "3"
+
+concurrency:
+  group: build
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  compare:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: System deps
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+
+      - name: Python deps
+        run: |
+          pip install -q -r worker/requirements.txt
+          pip install -q --index-url https://download.pytorch.org/whl/cpu torch
+          pip install -q numpy
+
+      - name: Cache torch hub
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/torch/hub
+          key: torch-hub-silero-v4ru
+
+      - name: Compare engines
+        env:
+          TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
+          TG_CHAT_ID: ${{ secrets.TG_CHAT_ID }}
+          ELEVEN_API_KEY: ${{ secrets.ELEVEN_API_KEY }}
+          YANDEX_API_KEY: ${{ secrets.YANDEX_API_KEY }}
+          YANDEX_FOLDER_ID: ${{ secrets.YANDEX_FOLDER_ID }}
+          AZURE_SPEECH_KEY: ${{ secrets.AZURE_SPEECH_KEY }}
+          AZURE_SPEECH_REGION: ${{ secrets.AZURE_SPEECH_REGION }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          COMPARE_TEXT: ${{ inputs.text }}
+          COMPARE_PER_PROVIDER: ${{ inputs.per_provider }}
+        run: python worker/compare.py
+
+      - name: Upload samples
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: compare
+          path: |
+            out/_compare/*.mp3
+            out/_compare/status.md
+          if-no-files-found: ignore
+          retention-days: 14
+
+      - name: Commit journal back
+        if: always()
+        run: |
+          git config user.name "pipeline-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add -A out/_compare/
+          git diff --cached --quiet || git commit -m "tts compare [skip ci]"
+          git pull --rebase origin main || true
+          git push
