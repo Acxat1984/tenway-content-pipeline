@@ -137,7 +137,12 @@ def push(status):
     if run("git", "diff", "--cached", "--quiet").returncode == 0:
         return
     run("git", "commit", "-m", "voice inbox")
-    run("git", "pull", "--rebase", "origin", "main")
+    run("git", "fetch", "origin", "main")
+    # A half-finished rebase leaves a detached HEAD and the push fails outright.
+    if run("git", "rebase", "-X", "theirs", "origin/main").returncode != 0:
+        run("git", "rebase", "--abort")
+        log("push: rebase конфликт, оставляю запись до следующего раза", status)
+        return
     r = run("git", "push", "origin", "HEAD:main")
     log("push: ok" if r.returncode == 0 else f"push failed: {r.stderr[-200:]}", status)
 

@@ -27,6 +27,11 @@ jobs:
     timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
+        with:
+          # workflow_run указывает на коммит момента события, где ещё нет
+          # маркера DONE от прошедшей сборки — иначе джоба рендерится дважды
+          # и ролик уходит в Telegram повторно.
+          ref: main
 
       - name: Есть ли что собирать
         id: check
@@ -94,5 +99,8 @@ jobs:
           git config user.email "bot@users.noreply.github.com"
           git add -A out/
           git diff --cached --quiet || git commit -m "render results [skip ci]"
-          git pull --rebase origin main || true
-          git push
+          git fetch origin main
+          # Свежесобранный рендер новее того, что лежит в origin: при конфликте
+          # по mp4 берём свою сторону, а не бросаем rebase на полпути.
+          git rebase -X theirs origin/main || { git rebase --abort; exit 1; }
+          git push origin HEAD:main
