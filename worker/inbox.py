@@ -234,8 +234,13 @@ def main():
     idle = int(os.environ.get("INBOX_IDLE_SECONDS", "150"))
     hard = int(os.environ.get("INBOX_MAX_SECONDS", "600"))
 
+    # A hand-started session holds the line whether or not anyone has written
+    # yet — that is the point of starting it: you are about to record.
+    always = os.environ.get("INBOX_ALWAYS_LISTEN", "0") == "1"
+
     saved, active, owner = drain(token, st, owner, status)
     log(f"первый проход: сегментов {saved}, активность {active}", status)
+    active = active or always
 
     # Somebody is recording right now: stay on the line instead of making them
     # wait for the next scheduled run between every segment.
