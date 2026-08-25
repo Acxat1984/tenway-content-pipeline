@@ -3,7 +3,7 @@ name: build-videos
 on:
   push:
     branches: [main]
-    paths: ["jobs/**", "worker/**", ".github/workflows/build.yml"]
+    paths: ["jobs/**", "worker/**", "!worker/audition.py", ".github/workflows/build.yml"]
   workflow_dispatch: {}
 
 concurrency:

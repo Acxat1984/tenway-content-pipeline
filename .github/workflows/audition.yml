@@ -1,0 +1,78 @@
+name: voice-audition
+
+on:
+  workflow_dispatch:
+    inputs:
+      text:
+        description: "Фраза для прослушки (пусто — фраза по умолчанию)"
+        required: false
+        default: ""
+      limit:
+        description: "Сколько голосов прислать"
+        required: false
+        default: "8"
+      ids:
+        description: "Конкретные reference_id через запятую (пусто — авто-подбор)"
+        required: false
+        default: ""
+      exclude:
+        description: "reference_id, которые уже забракованы, через запятую"
+        required: false
+        default: ""
+
+concurrency:
+  group: build
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  audition:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: System deps
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+
+      - name: Python deps
+        run: pip install -q -r worker/requirements.txt
+
+      - name: Audition voices
+        env:
+          FISH_API_KEY: ${{ secrets.FISH_API_KEY }}
+          TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
+          TG_CHAT_ID: ${{ secrets.TG_CHAT_ID }}
+          AUDITION_TEXT: ${{ inputs.text }}
+          AUDITION_LIMIT: ${{ inputs.limit }}
+          AUDITION_IDS: ${{ inputs.ids }}
+          AUDITION_EXCLUDE: ${{ inputs.exclude }}
+        run: python worker/audition.py
+
+      - name: Upload samples
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: audition
+          path: |
+            out/_audition/*.mp3
+            out/_audition/status.md
+            out/_audition/catalog.json
+          if-no-files-found: ignore
+          retention-days: 14
+
+      - name: Commit journal back
+        if: always()
+        run: |
+          git config user.name "pipeline-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add -A out/_audition/
+          git diff --cached --quiet || git commit -m "voice audition [skip ci]"
+          git pull --rebase origin main || true
+          git push
