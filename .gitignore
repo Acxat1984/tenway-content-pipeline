@@ -5,3 +5,4 @@ out/**/concat.txt
 out/**/video_raw/
 __pycache__/
 .env
+out/**/*.wav
