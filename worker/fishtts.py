@@ -1,5 +1,5 @@
 """Fish Audio TTS: discover popular RU stock voices + synthesize segments."""
-import json, os, subprocess, sys
+import json, os, re, subprocess, sys
 from pathlib import Path
 
 import requests
@@ -10,6 +10,23 @@ HDR = {"Authorization": f"Bearer {KEY}"}
 
 MALE_HINTS = ["male", "муж", "man ", "мужс", "dmit", "дмитр", "алекс", "иван", "серг", "андре", "narrator male"]
 FEMALE_HINTS = ["female", "жен", "woman", "girl", "svet", "свет", "анна", "мария", "елен", "ольг", "narrator female"]
+
+
+ACUTE = "\u0301"  # combining acute accent
+
+
+def spoken(text: str) -> str:
+    """`+` before a vowel becomes a combining acute — the only notation Fish honours.
+
+    Probed in out/_stress: capitals are folded away before synthesis and a bare
+    `+` is voiced as a pause, but the acute measurably changes the reading.
+    """
+    return re.sub(r"\+(.)", lambda m: m.group(1) + ACUTE, text)
+
+
+def written(text: str) -> str:
+    """Same line with stress notation removed, for subtitles and logs."""
+    return text.replace("+", "").replace(ACUTE, "")
 
 
 def log(msg, status_lines=None):
@@ -95,10 +112,11 @@ def tts_job(job: dict, outdir: Path, status) -> dict | None:
     segs = []
     for i, seg in enumerate(job["segments"]):
         p = outdir / f"seg{i:02d}.mp3"
-        if not synth(seg["text"], ref, p, status):
+        if not synth(spoken(seg["text"]), ref, p, status):
             log(f"FAIL: tts segment {i}", status)
             return None
-        segs.append({"i": i, "file": p.name, "dur": round(duration(p), 3), "text": seg["text"]})
+        # Subtitles get the clean line — stress marks belong in the audio, not on screen.
+        segs.append({"i": i, "file": p.name, "dur": round(duration(p), 3), "text": written(seg["text"])})
         log(f"seg{i:02d}: {segs[-1]['dur']}s", status)
     meta = {"voice_used": ref, "voice_title": voices.get(f"{want}_title", ""), "voices": voices, "segments": segs}
     (outdir / "audio_meta.json").write_text(json.dumps(meta, ensure_ascii=False, indent=1))
