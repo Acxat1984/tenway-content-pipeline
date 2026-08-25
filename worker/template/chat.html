@@ -74,6 +74,25 @@
     box-shadow:0 0 0 14px var(--charcoal), 0 22px 50px rgba(0,0,0,.6);
     padding:34px 40px; border-radius:12px; opacity:0; transition:opacity .25s ease; }
   #flowcap.show { opacity:1; }
+
+  /* ---- bullets: заголовок и строки с цифрами, по одной ---- */
+  /* Низ кадра оставлен субтитрам, поэтому список центрируется в верхних двух
+     третях, а не растекается по всей высоте. */
+  #bul { position:absolute; inset:0 0 320px 0; z-index:35; background:var(--charcoal);
+    padding:120px 70px 0; display:flex; flex-direction:column; justify-content:center;
+    opacity:0; transition:opacity .18s ease; }
+  #bul.show { opacity:1; }
+  #bul .head { font-family:'Geist Mono',monospace; font-size:58px; font-weight:700; line-height:1.15;
+    color:var(--cream); margin-bottom:20px; }
+  #bul .note { font-size:34px; color:var(--stone); margin-bottom:60px; }
+  #bul .row { display:flex; align-items:baseline; gap:28px; padding:30px 0;
+    border-bottom:2px solid rgba(245,241,232,.10); opacity:0; transform:translateY(18px);
+    transition:opacity .25s ease, transform .25s ease; }
+  #bul .row.on { opacity:1; transform:none; }
+  #bul .row .lbl { font-size:44px; color:var(--cream); flex:1; line-height:1.25; }
+  #bul .row .val { font-family:'Geist Mono',monospace; font-size:46px; font-weight:700;
+    color:var(--sage); white-space:nowrap; }
+  #bul .row.accent .val { color:var(--cream); background:var(--wine); padding:8px 20px; border-radius:10px; }
 </style>
 </head>
 <body>
@@ -82,6 +101,7 @@
   <div id="chat"></div>
   <div id="badge"></div>
   <div class="card" id="card"></div>
+  <div id="bul"></div>
   <div id="flow"><div id="flowcanvas"></div></div>
   <div id="flowcap"></div>
 </div>
@@ -198,6 +218,27 @@ async function flow(scene, durMs){
 
 function hideFlow(){ $('#flow').classList.remove('show'); $('#flowcap').classList.remove('show'); }
 
+
+// Список с цифрами: строки проявляются по очереди, чтобы взгляд шёл сверху вниз,
+// а не хватал всю таблицу разом.
+async function bullets(scene, durMs){
+  hideCard(); hideFlow();
+  const b = $('#bul');
+  const rows = scene.rows || [];
+  b.innerHTML = (scene.head ? `<div class="head">${scene.head}</div>` : '')
+    + (scene.note ? `<div class="note">${scene.note}</div>` : '')
+    + rows.map(r => `<div class="row${r.accent ? ' accent' : ''}">`
+        + `<div class="lbl">${r.label}</div><div class="val">${r.value || ''}</div></div>`).join('');
+  b.classList.add('show');
+  const els = b.querySelectorAll('.row');
+  // Половина сегмента на проявление, половина — чтобы дочитать.
+  const step = rows.length ? (durMs * 0.5) / rows.length : 0;
+  for (const el of els){ el.classList.add('on'); await sleep(step); }
+  await sleep(Math.max(0, durMs - step * rows.length));
+}
+
+function hideBullets(){ $('#bul').classList.remove('show'); }
+
 async function run(){
   const TL = window.TIMELINE;
   document.title = 'RUNNING';
@@ -205,7 +246,8 @@ async function run(){
     const d = seg.dur * 1000;
     const sc = seg.scene || {type:'hold'};
     if (sc.type === 'flow'){ await flow(sc, d); continue; }
-    hideFlow();
+    if (sc.type === 'bullets'){ await bullets(sc, d); continue; }
+    hideFlow(); hideBullets();
     if (sc.type === 'title' || sc.type === 'outro') await card(sc, d);
     else if (sc.type === 'user') await bubble('user', sc, d);
     else if (sc.type === 'ai') await bubble('ai', sc, d);
