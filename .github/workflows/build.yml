@@ -28,19 +28,47 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Есть ли что собирать
+        id: check
+        # Приёмник идёт по расписанию, и каждое его завершение дёргает сборку.
+        # Ставить ffmpeg с Chromium ради маркера DONE — три минуты впустую,
+        # поэтому сначала дешёвая проверка на системном python3.
+        run: |
+          python3 - <<'EOF'
+          import json, os, pathlib
+          todo = []
+          for jp in sorted(pathlib.Path("jobs").glob("*.json")):
+              try:
+                  job = json.loads(jp.read_text(encoding="utf-8"))
+              except ValueError:
+                  continue
+              if job.get("status") != "approved":
+                  continue
+              if (pathlib.Path("out") / job["id"] / "DONE").exists():
+                  continue
+              todo.append(job["id"])
+          print("Собирать:", ", ".join(todo) if todo else "нечего")
+          with open(os.environ["GITHUB_OUTPUT"], "a") as f:
+              f.write("has_work=" + ("true" if todo else "false") + "\n")
+          EOF
+
       - uses: actions/setup-python@v5
+        if: steps.check.outputs.has_work == 'true'
         with:
           python-version: "3.12"
 
       - name: System deps
+        if: steps.check.outputs.has_work == 'true'
         run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg fonts-dejavu-core
 
       - name: Python deps + browser
+        if: steps.check.outputs.has_work == 'true'
         run: |
           pip install -q -r worker/requirements.txt
           python -m playwright install --with-deps chromium
 
       - name: Build approved jobs
+        if: steps.check.outputs.has_work == 'true'
         env:
           FISH_API_KEY: ${{ secrets.FISH_API_KEY }}
           TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
@@ -48,7 +76,7 @@ jobs:
         run: python worker/run_all.py
 
       - name: Upload artifacts
-        if: always()
+        if: always() && steps.check.outputs.has_work == 'true'
         uses: actions/upload-artifact@v4
         with:
           name: renders
@@ -60,7 +88,7 @@ jobs:
           retention-days: 14
 
       - name: Commit status back
-        if: always()
+        if: always() && steps.check.outputs.has_work == 'true'
         run: |
           git config user.name "pipeline-bot"
           git config user.email "bot@users.noreply.github.com"
