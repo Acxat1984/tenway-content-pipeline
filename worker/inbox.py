@@ -15,11 +15,12 @@ Recording session, from the phone:
     /seg 3               следующее голосовое пойдёт в seg03
     <голосовое>          принимается как очередной сегмент
     /status              что уже записано, чего не хватает
+    /done                закончить приём сразу, не дожидаясь тишины
 
 Only the owner's chat is accepted: anyone can message a bot, and an unfiltered
 inbox would let a stranger's audio into the video.
 """
-import json, os, re, sys, time
+import json, os, re, subprocess, sys, time
 from pathlib import Path
 
 import requests
@@ -120,6 +121,27 @@ def fetch_voice(token, file_id, dest: Path, status) -> bool:
     return True
 
 
+def push(status):
+    """Commit what has arrived so far.
+
+    A session lives inside a workflow run, and the runner takes its disk with
+    it — a timeout or a cancel would otherwise lose every segment recorded so
+    far. Pushing per segment also lets the build start on the last one.
+    """
+    def run(*args):
+        return subprocess.run(args, capture_output=True, text=True)
+
+    run("git", "config", "user.name", "pipeline-bot")
+    run("git", "config", "user.email", "bot@users.noreply.github.com")
+    run("git", "add", "-A", "voice/")
+    if run("git", "diff", "--cached", "--quiet").returncode == 0:
+        return
+    run("git", "commit", "-m", "voice inbox")
+    run("git", "pull", "--rebase", "origin", "main")
+    r = run("git", "push", "origin", "HEAD:main")
+    log("push: ok" if r.returncode == 0 else f"push failed: {r.stderr[-200:]}", status)
+
+
 def handle_text(text, st, token, cid, status):
     """Commands that steer the session. Returns True if the text was a command."""
     t = text.strip().lower()
@@ -147,6 +169,12 @@ def handle_text(text, st, token, cid, status):
             return True
         st["next"] = i
         say(token, cid, f"seg{i:02d} — читай:\n\n{job['segments'][i]['text'].replace('+', '')}")
+        return True
+
+    if t.startswith("/done") or t.startswith("/stop"):
+        job = pick_job(st.get("job"))
+        st["stop"] = True
+        say(token, cid, ("Закончил приём.\n\n" + report(job)) if job else "Закончил приём.")
         return True
 
     if t.startswith("/status"):
@@ -218,6 +246,8 @@ def drain(token, st, owner, status, wait=0):
         else:
             nxt = "\n\nЭто был последний. " + report(job)
         say(token, cid, f"Принял seg{i:02d} ({dur} с).{nxt}")
+        save_state(st)
+        push(status)
 
     return saved, active, owner
 
@@ -248,14 +278,19 @@ def main():
     if active and hard > 0:
         say(token, owner, f"На связи ещё {hard // 60} минут — присылай сегменты подряд.")
         started, last = time.monotonic(), time.monotonic()
-        while time.monotonic() - started < hard and time.monotonic() - last < idle:
+        while (time.monotonic() - started < hard
+               and time.monotonic() - last < idle
+               and not st.get("stop")):
             got, act, owner = drain(token, st, owner, status, wait=25)
             saved += got
             if act:
                 last = time.monotonic()
-        log(f"сессия закрыта через {int(time.monotonic() - started)}s", status)
-        say(token, owner, "Пауза — ушёл. Пиши /rec или просто присылай дальше, "
-                          "подхвачу в течение пяти минут.")
+        log(f"сессия закрыта через {int(time.monotonic() - started)}s"
+            + (" по /done" if st.get("stop") else ""), status)
+        if not st.get("stop"):
+            say(token, owner, "Пауза — ушёл. Пиши /rec или просто присылай дальше, "
+                              "подхвачу в течение пяти минут.")
+    st.pop("stop", None)
 
     save_state(st)
     log(f"сохранено сегментов: {saved}", status)
