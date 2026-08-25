@@ -74,6 +74,41 @@ def sheet(job: dict) -> str:
     return "\n".join(lines)
 
 
+def silent(job: dict, outdir: Path, status) -> dict | None:
+    """Segment-length silence instead of a voice track.
+
+    A screencast with no narration still needs the timeline the rest of the
+    pipeline is built on, so each segment becomes silence of its declared
+    length. Concatenation, timing and muxing then work unchanged.
+    """
+    segs = []
+    for i, seg in enumerate(job["segments"]):
+        d = float(seg.get("dur", 0))
+        if d <= 0:
+            log(f"FAIL: seg{i:02d} без \"dur\" — в немом ролике длительность задаётся вручную", status)
+            return None
+        dst = outdir / f"seg{i:02d}.mp3"
+        r = subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-f", "lavfi",
+                            "-i", "anullsrc=r=48000:cl=mono", "-t", f"{d}",
+                            "-codec:a", "libmp3lame", "-b:a", "128k", str(dst)],
+                           capture_output=True, text=True)
+        if r.returncode != 0 or not dst.exists():
+            log(f"ffmpeg silence failed on seg{i:02d}: {r.stderr[-200:]}", status)
+            return None
+        # Empty text keeps the subtitle pass from writing captions over a
+        # screencast that is meant to carry one line of its own.
+        segs.append({"i": i, "file": dst.name, "dur": round(duration(dst), 3),
+                     "text": seg.get("caption", "")})
+        log(f"seg{i:02d}: {segs[-1]['dur']}s тишины", status)
+
+    total = round(sum(s["dur"] for s in segs), 2)
+    log(f"немой ролик: {len(segs)} сегментов, {total}s", status)
+    meta = {"voice_used": "silent", "voice_title": "без озвучки", "segments": segs}
+    (outdir / "audio_meta.json").write_text(json.dumps(meta, ensure_ascii=False, indent=1),
+                                            encoding="utf-8")
+    return meta
+
+
 def build(job: dict, outdir: Path, status) -> dict | None:
     """Return the same meta shape tts_job produces, built from recordings."""
     jid = job["id"]

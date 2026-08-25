@@ -53,6 +53,27 @@
     padding:22px 36px; border-radius:16px; opacity:0; transform:translateY(20px);
     transition:all .3s ease; }
   #badge.show { opacity:1; transform:none; }
+
+  /* ---- flow: схема автоматизации, медленный проезд ---- */
+  #flow { position:absolute; inset:0; z-index:40; background:var(--charcoal);
+    opacity:0; transition:opacity .2s ease; overflow:hidden; }
+  #flow.show { opacity:1; }
+  #flowcanvas { position:absolute; left:0; top:0; will-change:transform; }
+  #flowcanvas .node { position:absolute; background:#332E27; border:3px solid rgba(160,172,145,.55);
+    border-radius:20px; padding:26px 32px; width:400px; box-shadow:0 18px 40px rgba(0,0,0,.45); }
+  #flowcanvas .node .ttl { font-family:'Geist Mono',monospace; font-size:30px; color:var(--sage-l);
+    letter-spacing:.04em; margin-bottom:12px; }
+  #flowcanvas .node .sub { font-size:26px; color:var(--stone); line-height:1.3; }
+  #flowcanvas .node.hot { border-color:var(--sage); background:#3B3A2C; }
+  #flowcanvas svg { position:absolute; left:0; top:0; overflow:visible; }
+  #flowcanvas svg path { fill:none; stroke:rgba(160,172,145,.5); stroke-width:4; }
+  /* Одна строка поверх схемы — весь текст ролика, как в оригинале приёма. */
+  #flowcap { position:absolute; left:60px; right:60px; bottom:180px; z-index:50;
+    font-family:'Geist Mono',monospace; font-size:52px; font-weight:700; line-height:1.25;
+    color:var(--cream); background:var(--charcoal); border-left:10px solid var(--sage);
+    box-shadow:0 0 0 14px var(--charcoal), 0 22px 50px rgba(0,0,0,.6);
+    padding:34px 40px; border-radius:12px; opacity:0; transition:opacity .25s ease; }
+  #flowcap.show { opacity:1; }
 </style>
 </head>
 <body>
@@ -61,6 +82,8 @@
   <div id="chat"></div>
   <div id="badge"></div>
   <div class="card" id="card"></div>
+  <div id="flow"><div id="flowcanvas"></div></div>
+  <div id="flowcap"></div>
 </div>
 <script>
 const $ = s => document.querySelector(s);
@@ -111,12 +134,78 @@ async function bubble(kind, scene, durMs){
   await sleep(Math.max(0, durMs - typeMs));
 }
 
+
+// Схема шире и выше кадра: строим её один раз и медленно ведём камеру.
+// Приём из разбора: смотреть не на объяснение, а на объём работающей машины.
+async function flow(scene, durMs){
+  hideCard();
+  const wrap = $('#flow'), canvas = $('#flowcanvas'), cap = $('#flowcap');
+  const nodes = scene.nodes || [];
+  // Геометрия задаётся сценой: схема должна быть заметно выше кадра, иначе
+  // проезжать нечего и приём рассыпается.
+  const COLS = scene.cols || 2, DX = scene.dxStep || 460, DY = scene.dyStep || 340, PAD = 70;
+  canvas.innerHTML = '';
+  const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+  svg.setAttribute('width', COLS * DX + 500);
+  svg.setAttribute('height', Math.ceil(nodes.length / COLS) * DY + 400);
+  canvas.appendChild(svg);
+
+  const pos = [];
+  nodes.forEach((n, i) => {
+    let x, y;
+    if (scene.zigzag){
+      // Одна нода в ряду, со сдвигом через одну: лента тянется вниз на всю
+      // высоту и при этом занимает кадр по ширине.
+      y = PAD + i * DY;
+      x = PAD + (i % 2 ? DX : 0);
+    } else {
+      const row = Math.floor(i / COLS);
+      // Змейка: чётные ряды слева направо, нечётные обратно — линии не рвутся.
+      const col = row % 2 ? COLS - 1 - (i % COLS) : i % COLS;
+      x = PAD + col * DX; y = PAD + row * DY;
+    }
+    pos.push({x, y});
+    const el = document.createElement('div');
+    el.className = 'node' + (n.hot ? ' hot' : '');
+    el.style.left = x + 'px'; el.style.top = y + 'px';
+    el.innerHTML = `<div class="ttl">${n.title}</div>` + (n.sub ? `<div class="sub">${n.sub}</div>` : '');
+    canvas.appendChild(el);
+  });
+  for (let i = 1; i < pos.length; i++){
+    const a = pos[i - 1], b = pos[i];
+    const p = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+    const ax = a.x + 200, ay = a.y + 70, bx = b.x + 200, by = b.y + 70;
+    p.setAttribute('d', `M ${ax} ${ay} C ${ax} ${(ay + by) / 2}, ${bx} ${(ay + by) / 2}, ${bx} ${by}`);
+    svg.appendChild(p);
+  }
+
+  const H = (scene.zigzag ? nodes.length : Math.ceil(nodes.length / COLS)) * DY + PAD * 2;
+  const travel = Math.max(0, H - 1920) + 260;
+  const scale = scene.scale || 1;
+  canvas.style.transform = `translate(0px, 0px) scale(${scale})`;
+  canvas.style.transformOrigin = '0 0';
+  wrap.classList.add('show');
+  if (scene.caption){ cap.textContent = scene.caption; cap.classList.add('show'); }
+
+  // Проезд идёт всю длительность сегмента — ровно, без рывков.
+  const HOLD = Math.min(900, durMs * 0.08);
+  await sleep(HOLD);
+  canvas.style.transition = `transform ${durMs - HOLD}ms linear`;
+  await sleep(30);
+  canvas.style.transform = `translate(${scene.dx || 0}px, ${-travel}px) scale(${scale})`;
+  await sleep(durMs - HOLD);
+}
+
+function hideFlow(){ $('#flow').classList.remove('show'); $('#flowcap').classList.remove('show'); }
+
 async function run(){
   const TL = window.TIMELINE;
   document.title = 'RUNNING';
   for (const seg of TL.segments){
     const d = seg.dur * 1000;
     const sc = seg.scene || {type:'hold'};
+    if (sc.type === 'flow'){ await flow(sc, d); continue; }
+    hideFlow();
     if (sc.type === 'title' || sc.type === 'outro') await card(sc, d);
     else if (sc.type === 'user') await bubble('user', sc, d);
     else if (sc.type === 'ai') await bubble('ai', sc, d);

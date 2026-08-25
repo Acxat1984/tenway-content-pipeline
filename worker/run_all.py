@@ -19,7 +19,9 @@ def build(job_path: Path):
     try:
         # Russian jobs are read by a human; Fish keeps the English ones, where
         # its stress and Latin-word problems do not arise.
-        if job.get("voice") == "self":
+        if job.get("voice") == "silent":
+            meta = voiceover.silent(job, outdir, status)
+        elif job.get("voice") == "self":
             meta = voiceover.build(job, outdir, status)
         elif not os.environ.get("FISH_API_KEY"):
             status.append("SKIP: секреты не настроены (FISH_API_KEY) — добавь в Settings → Secrets → Actions")
