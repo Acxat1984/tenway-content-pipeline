@@ -72,16 +72,72 @@ def hn(hours: int, min_points: int, status):
     return out
 
 
-def reddit(sub: str, status):
+def reddit_token(status):
+    """Reddit blocks the public .json from datacentre IPs, and a CI runner is
+    one — so the app credentials are the only way in from here. Free to create
+    at reddit.com/prefs/apps as a "script" app."""
+    cid = os.environ.get("REDDIT_CLIENT_ID", "").strip()
+    sec = os.environ.get("REDDIT_CLIENT_SECRET", "").strip()
+    if not (cid and sec):
+        return None
+    try:
+        r = requests.post("https://www.reddit.com/api/v1/access_token",
+                          auth=(cid, sec), data={"grant_type": "client_credentials"},
+                          headers=UA, timeout=30)
+        if r.status_code != 200:
+            log(f"reddit auth -> {r.status_code}: {r.text[:120]}", status)
+            return None
+        return r.json().get("access_token")
+    except Exception as e:
+        log(f"reddit auth error: {e}", status)
+        return None
+
+
+def lobsters(status):
+    """Lobste.rs stays reachable from CI and skews to practitioners."""
+    try:
+        data = get("https://lobste.rs/t/ai.json")
+    except Exception as e:
+        log(f"lobsters error: {e}", status)
+        return []
+    out = []
+    for p in data:
+        title = p.get("title") or ""
+        if not TOPIC.search(title) or NOISE.search(title):
+            continue
+        created = p.get("created_at", "")
+        out.append({
+            "src": "lobsters", "title": title,
+            "url": p.get("url") or p.get("short_id_url", ""),
+            "discuss": p.get("comments_url") or p.get("short_id_url", ""),
+            "score": p.get("score", 0), "comments": p.get("comment_count", 0),
+            "age_h": 12.0, "created": created,
+            "text": (p.get("description_plain") or "")[:400],
+        })
+    log(f"lobsters: {len(out)} по теме", status)
+    return out
+
+
+def reddit(sub: str, status, token=None):
     """Top of the day plus the subreddit's own recent baseline.
 
     A big number means nothing on a big subreddit — what matters is how far a
     post outran what that subreddit normally does, which is why the median of
     the current hot page is fetched alongside.
     """
+    if token:
+        base_url, hdr = "https://oauth.reddit.com", {**UA, "Authorization": f"bearer {token}"}
+    else:
+        base_url, hdr = "https://www.reddit.com", UA
     try:
-        top = get(f"https://www.reddit.com/r/{sub}/top.json", {"t": "day", "limit": 25})
-        hot = get(f"https://www.reddit.com/r/{sub}/hot.json", {"limit": 50})
+        top = requests.get(f"{base_url}/r/{sub}/top",
+                           headers=hdr, params={"t": "day", "limit": 25}, timeout=30)
+        top.raise_for_status()
+        top = top.json()
+        hot = requests.get(f"{base_url}/r/{sub}/hot",
+                           headers=hdr, params={"limit": 50}, timeout=30)
+        hot.raise_for_status()
+        hot = hot.json()
     except Exception as e:
         log(f"r/{sub} error: {e}", status)
         return []
@@ -146,9 +202,18 @@ def main():
     min_points = int(os.environ.get("RADAR_HN_POINTS", "80"))
 
     items = hn(hours, min_points, status)
-    for sub in SUBS:
-        items += reddit(sub, status)
-        time.sleep(1.5)  # Reddit не любит частых запросов даже к публичному json
+    items += lobsters(status)
+
+    token = reddit_token(status)
+    if token:
+        log("reddit: авторизован по app-ключу", status)
+    else:
+        log("reddit: нет REDDIT_CLIENT_ID/SECRET — публичный json с CI блокируется, "
+            "сабреддиты пропускаю", status)
+    if token:
+        for sub in SUBS:
+            items += reddit(sub, status, token)
+            time.sleep(1.5)  # Reddit не любит частых запросов подряд
 
     fresh = [it for it in items if it["age_h"] <= hours]
     picked = rank(fresh)[:top_n]
