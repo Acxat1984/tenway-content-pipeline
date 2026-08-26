@@ -4,7 +4,7 @@ on:
   workflow_dispatch: {}
   push:
     branches: [main]
-    paths: ["worker/voiceover.py", "worker/lexicon.py", "worker/inbox.py", ".github/workflows/selftest.yml"]
+    paths: ["worker/voiceover.py", "worker/lexicon.py", "worker/inbox.py", "worker/assemble.py", "jobs/**", ".github/workflows/selftest.yml"]
 
 permissions:
   contents: read
@@ -115,4 +115,25 @@ jobs:
           assert st["next"] == 3, "выход за границы сегментов не должен двигать счётчик"
           assert not inbox.handle_text("привет", st, "T", "1", [])
           print("OK: команды приёмника разбираются верно")
+          PY
+
+      - name: Subtitles fit the frame
+        run: |
+          python - <<'PY'
+          import json, pathlib, sys
+          sys.path.insert(0, "worker")
+          import assemble
+
+          bad = []
+          for jp in sorted(pathlib.Path("jobs").glob("*.json")):
+              job = json.loads(jp.read_text(encoding="utf-8"))
+              if job.get("voice") == "silent":
+                  continue
+              for i, seg in enumerate(job["segments"]):
+                  for line in assemble._chunks(seg["text"].replace("+", "")):
+                      w = assemble._text_width(line)
+                      if w > assemble.CAP_WIDTH:
+                          bad.append(f"{job['id']} seg{i:02d}: {w:.0f}px > {assemble.CAP_WIDTH} — {line}")
+          assert not bad, "субтитры не влезают по ширине:\n" + "\n".join(bad)
+          print("OK: все строки субтитров влезают в кадр")
           PY
