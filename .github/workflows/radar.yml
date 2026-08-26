@@ -44,15 +44,24 @@ jobs:
           RADAR_HOURS: ${{ inputs.hours || '36' }}
           RADAR_TOP: ${{ inputs.top || '12' }}
         run: |
-          export RADAR_STAMP="$(date -u +%Y-%m-%d)"
-          python worker/radar.py
+          echo "RADAR_STAMP=$(date -u +%Y-%m-%d)" >> "$GITHUB_ENV"
+          RADAR_STAMP="$(date -u +%Y-%m-%d)" python worker/radar.py
+
+      - name: Write the script
+        # Без ключа шаг просто сообщает об этом и выходит: дайджест уже собран,
+        # сценарий в этом случае пишется вручную.
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
+          TG_CHAT_ID: ${{ secrets.TG_CHAT_ID }}
+        run: pip install -q anthropic && python worker/scriptgen.py || true
 
       - name: Commit digest
         if: always()
         run: |
           git config user.name "pipeline-bot"
           git config user.email "bot@users.noreply.github.com"
-          git add -A research/
+          git add -A research/ jobs/
           git diff --cached --quiet || git commit -m "radar digest"
           git fetch origin main
           git rebase -X theirs origin/main || { git rebase --abort; exit 1; }
