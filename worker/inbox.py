@@ -80,10 +80,22 @@ def approved_jobs():
 
 
 def pick_job(jid=None):
+    """Named job, else the one still waiting on recordings.
+
+    Picking the first job by name sent /rec back to an already-recorded video,
+    so an unrecorded job wins, and among those the one with the most segments
+    left to do.
+    """
     jobs = approved_jobs()
     if jid:
         return next((j for j in jobs if j["id"] == jid), None)
-    return jobs[0] if jobs else None
+    if not jobs:
+        return None
+    todo = [(len(missing(j)), j) for j in jobs]
+    pending = [(n, j) for n, j in todo if n]
+    if pending:
+        return max(pending, key=lambda t: t[0])[1]
+    return jobs[0]
 
 
 def missing(job):
@@ -156,9 +168,18 @@ def handle_text(text, st, token, cid, status):
         if not job:
             say(token, cid, f"Не нашёл джобу {arg or '(нет approved с voice: self)'}")
             return True
-        st["job"], st["next"] = job["id"], 0
-        seg0 = job["segments"][0]["text"].replace("+", "")
-        say(token, cid, f"Пишем {job['id']}.\n\nseg00 — читай:\n\n{seg0}")
+        st["job"] = job["id"]
+        miss = missing(job)
+        # Начинаем с первого недостающего, а не с нуля: перезапись целого
+        # ролика ради одного сегмента — не то, чего ждут от /rec.
+        st["next"] = miss[0] if miss else 0
+        i = st["next"]
+        others = [j["id"] for j in approved_jobs() if j["id"] != job["id"] and missing(j)]
+        head = f"Пишем {job['id']} ({len(job['segments']) - len(miss)}/{len(job['segments'])} готово)."
+        if others:
+            head += "\nЖдут записи ещё: " + ", ".join(others)
+        say(token, cid, f"{head}\n\nseg{i:02d} — читай:\n\n"
+                        f"{job['segments'][i]['text'].replace('+', '')}")
         log(f"/rec -> {job['id']}", status)
         return True
 
