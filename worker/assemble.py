@@ -30,6 +30,9 @@ def _chunks(text: str, limit: int = 34):
 
 
 def build_subs(segs: list[dict], path: Path):
+    # MarginV 440 держит субтитры над подписью и кнопками площадки; правое
+    # поле 180 уводит строку из-под колонки лайков. Кегль 68 и плотная
+    # подложка — читаемость на дешёвом телефоне.
     header = """[Script Info]
 PlayResX: 1080
 PlayResY: 1920
@@ -37,7 +40,7 @@ WrapStyle: 2
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
-Style: Cap,DejaVu Sans,64,&H00E8F1F5,&H00E8F1F5,&H00202025,&H96202025,-1,0,0,0,100,100,0,0,1,3,0,2,60,60,120,1
+Style: Cap,DejaVu Sans,68,&H00E8F1F5,&H00E8F1F5,&H00202025,&HC8202025,-1,0,0,0,100,100,0,0,1,4,0,2,80,180,440,1
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
