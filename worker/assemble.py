@@ -17,7 +17,9 @@ def _ts(sec: float) -> str:
     return f"{h}:{m:02d}:{s:05.2f}"
 
 
-def _chunks(text: str, limit: int = 34):
+# 820px рабочей ширины при кегле 68 — это примерно 21 знак кириллицы.
+# При 34 строка переносилась и уезжала за нижний край кадра.
+def _chunks(text: str, limit: int = 21):
     words, cur, out = text.split(), "", []
     for w in words:
         if len(cur) + len(w) + 1 > limit and cur:
