@@ -51,6 +51,13 @@ jobs:
                   continue
               if (pathlib.Path("out") / job["id"] / "DONE").exists():
                   continue
+              # Джоба под свой голос без полного набора записей ничего не
+              # соберёт — а приёмник дёргает сборку каждые пять минут.
+              if job.get("voice") == "self":
+                  vd = pathlib.Path("voice") / job["id"]
+                  if any(not list(vd.glob(f"seg{i:02d}.*"))
+                         for i in range(len(job["segments"]))):
+                      continue
               todo.append(job["id"])
           print("Собирать:", ", ".join(todo) if todo else "нечего")
           with open(os.environ["GITHUB_OUTPUT"], "a") as f:
@@ -97,8 +104,15 @@ jobs:
         run: |
           git config user.name "pipeline-bot"
           git config user.email "bot@users.noreply.github.com"
-          git add -A out/
+          # Сборка трогает не только out/: voiceover переписывает лист для
+          # чтения voice/<id>/README.md под текущий текст сценария. Пока он
+          # оставался незакоммиченным, rebase отказывался работать, маркер
+          # DONE не уезжал в main — и следующая сборка отправляла тот же
+          # ролик в телеграм ещё раз.
+          git add -A out/ voice/
           git diff --cached --quiet || git commit -m "render results [skip ci]"
+          # Всё, что осталось в рабочем дереве, — мусор рендера, а не работа.
+          git checkout -- .
           git fetch origin main
           # Свежесобранный рендер новее того, что лежит в origin: при конфликте
           # по mp4 берём свою сторону, а не бросаем rebase на полпути.
