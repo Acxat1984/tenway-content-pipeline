@@ -4,59 +4,29 @@
   "title": "Our decision on Cursor following its acquisition by SpaceX",
   "url": "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex/",
   "discuss": "https://news.ycombinator.com/item?id=49486172",
-  "score": 599,
-  "comments": 343,
-  "age_h": 11.0,
+  "score": 818,
+  "comments": 509,
+  "age_h": 34.3,
   "text": ""
  },
  {
   "src": "HN",
-  "title": "Judge rules Trump administration’s blacklisting of Anthropic was illegal",
-  "url": "https://www.nytimes.com/2026/08/27/technology/anthropic-government-blacklisting-ruling.html",
-  "discuss": "https://news.ycombinator.com/item?id=49473522",
-  "score": 580,
-  "comments": 417,
-  "age_h": 34.7,
-  "text": "<a href=\"https:&#x2F;&#x2F;archive.ph&#x2F;ni6I3\" rel=\"nofollow\">https:&#x2F;&#x2F;archive.ph&#x2F;ni6I3</a><p><a href=\"https:&#x2F;&#x2F;storage.courtlistener.com&#x2F;recap&#x2F;gov.uscourts.cand.465515&#x2F;gov.uscourts.cand.465515.250.0.pdf\" rel=\"nofollow\">https:&#x2F;&#x2F;storage.courtlistener.com&#x2F;recap&#x2F;gov.uscourts.cand.46...</a>"
- },
- {
-  "src": "HN",
-  "title": "Luanti removed from Google Play due to baseless AI copyright notice",
-  "url": "https://blog.luanti.org/2026/08/27/luanti-dmca-tracer-ai/",
-  "discuss": "https://news.ycombinator.com/item?id=49475079",
-  "score": 492,
-  "comments": 148,
-  "age_h": 30.2,
+  "title": "Debian votes to allow \"responsible use of generative AI\"",
+  "url": "https://lwn.net/Articles/1091231/",
+  "discuss": "https://news.ycombinator.com/item?id=49489982",
+  "score": 490,
+  "comments": 456,
+  "age_h": 22.0,
   "text": ""
  },
  {
   "src": "HN",
-  "title": "Pentagon's blacklisting of Anthropic was unlawful, US judge rules",
-  "url": "https://www.reuters.com/legal/government/us-judge-blocks-pentagons-anthropic-blacklisting-2026-08-28/",
-  "discuss": "https://news.ycombinator.com/item?id=49477055",
-  "score": 324,
-  "comments": 3,
-  "age_h": 25.3,
-  "text": ""
- },
- {
-  "src": "HN",
-  "title": "Please stop flooding our projects with AI slop to furnish your CV",
-  "url": "https://neilalexander.dev/2026/06/30/flooding-contributions",
-  "discuss": "https://news.ycombinator.com/item?id=49474143",
-  "score": 212,
-  "comments": 141,
-  "age_h": 32.9,
-  "text": ""
- },
- {
-  "src": "HN",
-  "title": "I accidentally turned LLM memory into program analysis",
-  "url": "https://pwning.systems/posts/llm-memory-program-analysis/",
-  "discuss": "https://news.ycombinator.com/item?id=49485416",
-  "score": 180,
-  "comments": 45,
-  "age_h": 13.3,
+  "title": "Good Culture Is the Biggest Productivity Hack, Not AI",
+  "url": "https://newsletter.eng-leadership.com/p/good-culture-is-the-biggest-productivity",
+  "discuss": "https://news.ycombinator.com/item?id=49491568",
+  "score": 404,
+  "comments": 100,
+  "age_h": 18.7,
   "text": ""
  },
  {
@@ -64,19 +34,29 @@
   "title": "StemDeck, a free, open-source and local AI stem separator",
   "url": "https://github.com/stemdeckapp/stemdeck",
   "discuss": "https://news.ycombinator.com/item?id=49486081",
-  "score": 124,
-  "comments": 27,
-  "age_h": 11.4,
+  "score": 228,
+  "comments": 61,
+  "age_h": 34.7,
   "text": ""
  },
  {
   "src": "HN",
-  "title": "Autonomous Mathematical Discovery in an Open-World Multi-Agent Environment",
-  "url": "https://arxiv.org/abs/2608.23691",
-  "discuss": "https://news.ycombinator.com/item?id=49481455",
-  "score": 111,
-  "comments": 34,
-  "age_h": 19.7,
+  "title": "The Rise and Fall of Agent Civilizations",
+  "url": "https://www.dwarkesh.com/p/openai-huggingface",
+  "discuss": "https://news.ycombinator.com/item?id=49494301",
+  "score": 131,
+  "comments": 74,
+  "age_h": 12.3,
+  "text": ""
+ },
+ {
+  "src": "HN",
+  "title": "Domain-Driven Agents",
+  "url": "https://coldtake.dev/blog/domain-driven-agents",
+  "discuss": "https://news.ycombinator.com/item?id=49492584",
+  "score": 86,
+  "comments": 17,
+  "age_h": 16.6,
   "text": ""
  },
  {
@@ -121,6 +101,28 @@
   "comments": 0,
   "age_h": 12.0,
   "created": "2026-08-25T10:03:24.648-05:00",
+  "text": ""
+ },
+ {
+  "src": "lobsters",
+  "title": "Are Latent Reasoning Models Easily Interpretable?",
+  "url": "https://arxiv.org/abs/2604.04902",
+  "discuss": "https://lobste.rs/s/obo3ie/are_latent_reasoning_models_easily",
+  "score": 3,
+  "comments": 0,
+  "age_h": 12.0,
+  "created": "2026-08-15T11:17:13.206-05:00",
+  "text": "Models normally do all their reasoning in a continuous hidden state instead of spitting out readable text which makes them hard to monitor. The authors tested the Coconut and CODI models and it turns out these models barely even use their hidden reasoning steps for logical tasks like PrOntoQA and ProsQA. You can force the models to stop thinking early and they almost always spit out the same respo"
+ },
+ {
+  "src": "lobsters",
+  "title": "A global workspace in language models",
+  "url": "https://www.anthropic.com/research/global-workspace",
+  "discuss": "https://lobste.rs/s/xgtzrp/global_workspace_language_models",
+  "score": 3,
+  "comments": 0,
+  "age_h": 12.0,
+  "created": "2026-07-07T13:26:18.000-05:00",
   "text": ""
  }
 ]
