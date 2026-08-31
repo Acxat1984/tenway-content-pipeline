@@ -1,62 +1,52 @@
 [
  {
   "src": "HN",
-  "title": "Our decision on Cursor following its acquisition by SpaceX",
-  "url": "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex/",
-  "discuss": "https://news.ycombinator.com/item?id=49486172",
-  "score": 818,
-  "comments": 509,
-  "age_h": 34.3,
+  "title": "Breaking Claude Code Opus 5 Auto Mode",
+  "url": "https://embracethered.com/blog/posts/2026/breaking-claude-code-opus-5-and-automode/",
+  "discuss": "https://news.ycombinator.com/item?id=49506819",
+  "score": 200,
+  "comments": 63,
+  "age_h": 6.4,
   "text": ""
  },
  {
   "src": "HN",
-  "title": "Debian votes to allow \"responsible use of generative AI\"",
-  "url": "https://lwn.net/Articles/1091231/",
-  "discuss": "https://news.ycombinator.com/item?id=49489982",
-  "score": 490,
-  "comments": 456,
-  "age_h": 22.0,
+  "title": "No AI Fridays",
+  "url": "https://noaifridays.com/",
+  "discuss": "https://news.ycombinator.com/item?id=49498095",
+  "score": 277,
+  "comments": 197,
+  "age_h": 25.7,
   "text": ""
  },
  {
   "src": "HN",
-  "title": "Good Culture Is the Biggest Productivity Hack, Not AI",
-  "url": "https://newsletter.eng-leadership.com/p/good-culture-is-the-biggest-productivity",
-  "discuss": "https://news.ycombinator.com/item?id=49491568",
-  "score": 404,
-  "comments": 100,
-  "age_h": 18.7,
+  "title": "Claude Session URL appended to commit messages and PR descriptions by default",
+  "url": "https://github.com/anthropics/claude-code/issues/66504",
+  "discuss": "https://news.ycombinator.com/item?id=49498201",
+  "score": 204,
+  "comments": 226,
+  "age_h": 25.4,
   "text": ""
  },
  {
   "src": "HN",
-  "title": "StemDeck, a free, open-source and local AI stem separator",
-  "url": "https://github.com/stemdeckapp/stemdeck",
-  "discuss": "https://news.ycombinator.com/item?id=49486081",
-  "score": 228,
-  "comments": 61,
-  "age_h": 34.7,
-  "text": ""
- },
- {
-  "src": "HN",
-  "title": "The Rise and Fall of Agent Civilizations",
-  "url": "https://www.dwarkesh.com/p/openai-huggingface",
-  "discuss": "https://news.ycombinator.com/item?id=49494301",
-  "score": 131,
-  "comments": 74,
-  "age_h": 12.3,
-  "text": ""
- },
- {
-  "src": "HN",
-  "title": "Domain-Driven Agents",
-  "url": "https://coldtake.dev/blog/domain-driven-agents",
-  "discuss": "https://news.ycombinator.com/item?id=49492584",
-  "score": 86,
+  "title": "How to build a diffusion language model",
+  "url": "https://kuleshov-group.github.io/blog/blog/2026/how-to-build-a-diffusion-language-model/",
+  "discuss": "https://news.ycombinator.com/item?id=49503956",
+  "score": 139,
   "comments": 17,
-  "age_h": 16.6,
+  "age_h": 14.5,
+  "text": ""
+ },
+ {
+  "src": "HN",
+  "title": "Continuous Diffusion Language Models (CDLM's)",
+  "url": "https://sander.ai/2026/08/24/continuous-dlms.html",
+  "discuss": "https://news.ycombinator.com/item?id=49502611",
+  "score": 122,
+  "comments": 42,
+  "age_h": 17.4,
   "text": ""
  },
  {
@@ -123,6 +113,17 @@
   "comments": 0,
   "age_h": 12.0,
   "created": "2026-07-07T13:26:18.000-05:00",
+  "text": ""
+ },
+ {
+  "src": "lobsters",
+  "title": "The 'Breaking' News: The OpenAI–Hugging Face Incident",
+  "url": "https://youtu.be/87DyyMV0kCY",
+  "discuss": "https://lobste.rs/s/ahonc7/breaking_news_openai_hugging_face",
+  "score": 0,
+  "comments": 8,
+  "age_h": 12.0,
+  "created": "2026-08-11T11:50:09.392-05:00",
   "text": ""
  }
 ]
