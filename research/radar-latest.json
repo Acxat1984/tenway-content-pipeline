@@ -1,32 +1,92 @@
 [
  {
   "src": "HN",
-  "title": "Apple caught off guard by AI demand for Mac Mini and Mac Studio",
-  "url": "https://www.macrumors.com/2026/08/30/apple-unexpected-mac-mini-and-studio-demand/",
-  "discuss": "https://news.ycombinator.com/item?id=49508982",
-  "score": 424,
-  "comments": 481,
-  "age_h": 23.2,
-  "text": ""
- },
- {
-  "src": "HN",
-  "title": "Breaking Claude Code Opus 5 Auto Mode",
-  "url": "https://embracethered.com/blog/posts/2026/breaking-claude-code-opus-5-and-automode/",
-  "discuss": "https://news.ycombinator.com/item?id=49506819",
-  "score": 375,
-  "comments": 116,
-  "age_h": 28.0,
-  "text": ""
- },
- {
-  "src": "HN",
-  "title": "The safest job from AI may be writing",
-  "url": "http://muratbuffalo.blogspot.com/2026/08/the-safest-job-from-ai-may-be-writing.html",
-  "discuss": "https://news.ycombinator.com/item?id=49512856",
-  "score": 135,
-  "comments": 179,
+  "title": "Claude Fable 5.1 and Claude Mythos 5.1",
+  "url": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+  "discuss": "https://news.ycombinator.com/item?id=49525378",
+  "score": 1279,
+  "comments": 1198,
   "age_h": 17.6,
+  "text": "What&#x27;s new in Claude Fable 5.1\n – <a href=\"https:&#x2F;&#x2F;platform.claude.com&#x2F;docs&#x2F;en&#x2F;models&#x2F;fable-5-1&#x2F;whats-new-fable-5-1\" rel=\"nofollow\">https:&#x2F;&#x2F;platform.claude.com&#x2F;docs&#x2F;en&#x2F;models&#x2F;fable-5-1&#x2F;whats-n...</a><p>System Card: <a href=\"https:&#x2F;&#x2F;www-cdn.anthropic.com&#x2F;0339e6a7c5c7b87f5c07798616dc32c215d14235&#x2F;Claude%20Fable%205.1%20&amp;%20Claude%20Mythos%205.1%20System%20Card.pdf\" rel=\"nofollow\">https:&#x2F;&#x2F;www-cdn.anthropic.com&#x2F;0339e6a7c5c7b87f5c07798616dc32...</a>"
+ },
+ {
+  "src": "HN",
+  "title": "How accurate have Ed Zitron's AI skeptic predictions been?",
+  "url": "https://danluu.com/zitron/",
+  "discuss": "https://news.ycombinator.com/item?id=49526069",
+  "score": 738,
+  "comments": 812,
+  "age_h": 16.9,
+  "text": ""
+ },
+ {
+  "src": "HN",
+  "title": "The ChatGPT/Codex app bundles a full copy of LibreOffice",
+  "url": "https://simonwillison.net/2026/Sep/1/codex-libreoffice/",
+  "discuss": "https://news.ycombinator.com/item?id=49527396",
+  "score": 431,
+  "comments": 193,
+  "age_h": 15.4,
+  "text": ""
+ },
+ {
+  "src": "HN",
+  "title": "Dwarf Fortress' creator says the industry's in shambles over AI",
+  "url": "https://www.pcgamer.com/gaming-industry/dwarf-fortress-creator-says-the-industrys-in-shambles-over-ai-and-layoff-happy-ceos-everyone-i-know-their-bosses-are-slowly-getting-psychosis/",
+  "discuss": "https://news.ycombinator.com/item?id=49523720",
+  "score": 228,
+  "comments": 231,
+  "age_h": 19.6,
+  "text": ""
+ },
+ {
+  "src": "HN",
+  "title": "Apple reveals 'shocking evidence' from ex-employee's MacBook in OpenAI suit",
+  "url": "https://9to5mac.com/2026/08/31/apple-openai-forensic-macbook-evidence/",
+  "discuss": "https://news.ycombinator.com/item?id=49527573",
+  "score": 221,
+  "comments": 160,
+  "age_h": 15.2,
+  "text": ""
+ },
+ {
+  "src": "HN",
+  "title": "My local model setup on an M4 Pro Mac Mini",
+  "url": "https://lws.io/blog/my-local-model-setup/",
+  "discuss": "https://news.ycombinator.com/item?id=49529132",
+  "score": 225,
+  "comments": 137,
+  "age_h": 13.0,
+  "text": ""
+ },
+ {
+  "src": "HN",
+  "title": "Atlas: A World Model for Spatial Intelligence",
+  "url": "https://www.worldlabs.ai/blog/atlas",
+  "discuss": "https://news.ycombinator.com/item?id=49525160",
+  "score": 231,
+  "comments": 55,
+  "age_h": 17.9,
+  "text": ""
+ },
+ {
+  "src": "HN",
+  "title": "EFF to Courts: Don't Rewrite Copyright over AI Hype",
+  "url": "https://www.eff.org/deeplinks/2026/08/eff-courts-dont-rewrite-copyright-over-ai-hype",
+  "discuss": "https://news.ycombinator.com/item?id=49521315",
+  "score": 163,
+  "comments": 186,
+  "age_h": 22.6,
+  "text": ""
+ },
+ {
+  "src": "HN",
+  "title": "The efficient frontier of LLM inference",
+  "url": "https://www.baseten.co/blog/the-efficient-frontier-of-llm-inference/",
+  "discuss": "https://news.ycombinator.com/item?id=49529898",
+  "score": 129,
+  "comments": 35,
+  "age_h": 11.7,
   "text": ""
  },
  {
@@ -34,20 +94,20 @@
   "title": "AI Can Make You Suck Faster Too",
   "url": "https://www.hermit-tech.com/blog/ai-can-make-you-suck-faster-too",
   "discuss": "https://news.ycombinator.com/item?id=49518316",
-  "score": 100,
-  "comments": 112,
-  "age_h": 6.3,
+  "score": 179,
+  "comments": 163,
+  "age_h": 30.0,
   "text": ""
  },
  {
   "src": "HN",
-  "title": "Agent memory as a file format",
-  "url": "https://calpaterson.com/memoryfields.html",
-  "discuss": "https://news.ycombinator.com/item?id=49508317",
-  "score": 177,
-  "comments": 91,
-  "age_h": 24.6,
-  "text": ""
+  "title": "Show HN: Weedout – Safari extension that hides YouTube AI-labeled videos",
+  "url": "https://masteranza.github.io/weedout/",
+  "discuss": "https://news.ycombinator.com/item?id=49528895",
+  "score": 154,
+  "comments": 68,
+  "age_h": 13.4,
+  "text": "I&#x27;m the developer. I built this because AI-generated conspiracy videos were getting out of control in my own YouTube feed. Weedout is a $1.99 Safari extension for macOS that removes videos YouTube labels “Made with AI” from feed, search, related videos, playlists and Shorts. It uses YouTube&#x27;s label rather than AI detection, runs locally, and does not catch unlabeled videos.<p>Source for developers who want to fork or build: <a href=\"https:&#x2F;&#x2F;github.com&#x2F;masteranza&#x2F;weedout-for-youtube\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;masteranza&#x2F;weedout-for-youtu"
  },
  {
   "src": "lobsters",
@@ -58,72 +118,6 @@
   "comments": 29,
   "age_h": 12.0,
   "created": "2026-08-27T00:32:18.671-05:00",
-  "text": ""
- },
- {
-  "src": "lobsters",
-  "title": "Inventing ELIZA - How the First Chatbot Shaped the Future of AI",
-  "url": "https://mitpress.mit.edu/9780262052481/inventing-eliza/",
-  "discuss": "https://lobste.rs/s/hquwey/inventing_eliza_how_first_chatbot_shaped",
-  "score": 12,
-  "comments": 7,
-  "age_h": 12.0,
-  "created": "2026-07-15T09:12:05.069-05:00",
-  "text": "The book \"Inventing ELIZA - How the First Chatbot Shaped the Future of AI\".  It is Open Access so the link to the PDF is [here](https://direct.mit.edu/books/book-pdf/2615293/book_9780262052504.pdf)\r\n\r\nThe book has a companion [site](findingeliza.org) - I was monitoring this since I first heard the [episode](https://corecursive.com/eliza-with-jeff-shrager/) on CoRecursive."
- },
- {
-  "src": "lobsters",
-  "title": "The Limits of AI (1985)",
-  "url": "https://www.youtube.com/watch?v=ePsQksj99LM",
-  "discuss": "https://lobste.rs/s/xculjp/limits_ai_1985",
-  "score": 8,
-  "comments": 4,
-  "age_h": 12.0,
-  "created": "2026-08-16T19:20:07.821-05:00",
-  "text": ""
- },
- {
-  "src": "lobsters",
-  "title": "Super-intelligence or Superstition? Exploring Psychological Factors Influencing Belief in AI Predictions about Personal Behavior",
-  "url": "https://arxiv.org/abs/2408.06602",
-  "discuss": "https://lobste.rs/s/2djazj/super_intelligence_superstition",
-  "score": 5,
-  "comments": 0,
-  "age_h": 12.0,
-  "created": "2026-08-25T10:03:24.648-05:00",
-  "text": ""
- },
- {
-  "src": "lobsters",
-  "title": "Are Latent Reasoning Models Easily Interpretable?",
-  "url": "https://arxiv.org/abs/2604.04902",
-  "discuss": "https://lobste.rs/s/obo3ie/are_latent_reasoning_models_easily",
-  "score": 3,
-  "comments": 0,
-  "age_h": 12.0,
-  "created": "2026-08-15T11:17:13.206-05:00",
-  "text": "Models normally do all their reasoning in a continuous hidden state instead of spitting out readable text which makes them hard to monitor. The authors tested the Coconut and CODI models and it turns out these models barely even use their hidden reasoning steps for logical tasks like PrOntoQA and ProsQA. You can force the models to stop thinking early and they almost always spit out the same respo"
- },
- {
-  "src": "lobsters",
-  "title": "A global workspace in language models",
-  "url": "https://www.anthropic.com/research/global-workspace",
-  "discuss": "https://lobste.rs/s/xgtzrp/global_workspace_language_models",
-  "score": 3,
-  "comments": 0,
-  "age_h": 12.0,
-  "created": "2026-07-07T13:26:18.000-05:00",
-  "text": ""
- },
- {
-  "src": "lobsters",
-  "title": "The 'Breaking' News: The OpenAI–Hugging Face Incident",
-  "url": "https://youtu.be/87DyyMV0kCY",
-  "discuss": "https://lobste.rs/s/ahonc7/breaking_news_openai_hugging_face",
-  "score": 0,
-  "comments": 8,
-  "age_h": 12.0,
-  "created": "2026-08-11T11:50:09.392-05:00",
   "text": ""
  }
 ]
