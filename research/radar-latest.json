@@ -1,62 +1,22 @@
 [
  {
   "src": "HN",
-  "title": "Discovery of a new OpenAI agent message board",
-  "url": "https://collusion.wiki/",
-  "discuss": "https://news.ycombinator.com/item?id=49563355",
-  "score": 1738,
-  "comments": 1332,
-  "age_h": 22.9,
-  "text": "<a href=\"https:&#x2F;&#x2F;www.reuters.com&#x2F;world&#x2F;europe&#x2F;openai-agents-hijacked-german-website-previously-undisclosed-ai-breakout-this-2026-09-04&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;www.reuters.com&#x2F;world&#x2F;europe&#x2F;openai-agents-hijacked-...</a>"
- },
- {
-  "src": "HN",
-  "title": "Google AI Mode shows same products 21.6% more expensive than traditional search",
-  "url": "https://productrise.app/blog/google-ai-mode-prefers-more-expensive-products",
-  "discuss": "https://news.ycombinator.com/item?id=49563386",
-  "score": 383,
-  "comments": 73,
-  "age_h": 22.8,
-  "text": ""
- },
- {
-  "src": "HN",
-  "title": "Corporate America is getting hooked on open-source AI",
-  "url": "https://www.nytimes.com/2026/09/04/technology/open-source-ai-anthropic-openai.html",
-  "discuss": "https://news.ycombinator.com/item?id=49566137",
-  "score": 297,
-  "comments": 272,
-  "age_h": 19.2,
-  "text": "<a href=\"https:&#x2F;&#x2F;archive.is&#x2F;kmOqm\" rel=\"nofollow\">https:&#x2F;&#x2F;archive.is&#x2F;kmOqm</a>"
- },
- {
-  "src": "HN",
-  "title": "Can AI design circuit boards yet?",
-  "url": "https://eebench.org/blog/can-ai-design-circuit-boards-yet/",
-  "discuss": "https://news.ycombinator.com/item?id=49569366",
-  "score": 263,
-  "comments": 162,
-  "age_h": 15.0,
-  "text": ""
- },
- {
-  "src": "HN",
-  "title": "GPT-6 Astra on OpenRouter",
-  "url": "https://openrouter.ai/openai/gpt-6-astra",
-  "discuss": "https://news.ycombinator.com/item?id=49570545",
-  "score": 233,
-  "comments": 143,
-  "age_h": 13.1,
-  "text": ""
- },
- {
-  "src": "HN",
   "title": "AI handles incidents, engineers lose touch with their systems",
   "url": "https://www.sylvainkalache.com/blog/ai-handles-incidents-engineers-lose-touch-with-their-systems",
   "discuss": "https://news.ycombinator.com/item?id=49574167",
-  "score": 135,
-  "comments": 106,
-  "age_h": 2.9,
+  "score": 383,
+  "comments": 334,
+  "age_h": 27.3,
+  "text": ""
+ },
+ {
+  "src": "HN",
+  "title": "GPT-6 Astra on robot arms",
+  "url": "https://openai.robocurve.org/gpt-6-astra/",
+  "discuss": "https://news.ycombinator.com/item?id=49582582",
+  "score": 197,
+  "comments": 146,
+  "age_h": 9.3,
   "text": ""
  },
  {
@@ -64,49 +24,9 @@
   "title": "Portal by Spotify cut my Claude Code token usage by 90%",
   "url": "https://engineering.atspotify.com/2026/9/portal-by-spotify-cut-my-claude-code-token-usage-by-90",
   "discuss": "https://news.ycombinator.com/item?id=49571465",
-  "score": 144,
-  "comments": 63,
-  "age_h": 11.1,
-  "text": ""
- },
- {
-  "src": "HN",
-  "title": "“Next-token predictor” is the wrong mental model for LLMs",
-  "url": "https://gmcgoldr.github.io/2026/09/04/llm-next-token-predictors.html",
-  "discuss": "https://news.ycombinator.com/item?id=49567310",
-  "score": 115,
-  "comments": 246,
-  "age_h": 17.6,
-  "text": ""
- },
- {
-  "src": "HN",
-  "title": "Nobody is saying why OpenAI and Anthropic had outages",
-  "url": "https://www.wired.com/story/nobody-is-saying-why-openai-and-anthropic-had-outages-today/",
-  "discuss": "https://news.ycombinator.com/item?id=49567594",
-  "score": 195,
-  "comments": 4,
-  "age_h": 17.3,
-  "text": "<a href=\"https:&#x2F;&#x2F;archive.ph&#x2F;3zcMG\" rel=\"nofollow\">https:&#x2F;&#x2F;archive.ph&#x2F;3zcMG</a>"
- },
- {
-  "src": "HN",
-  "title": "Grep beats LSP? Why coding agents ignore your fancier tools",
-  "url": "https://www.agentconnect.md/blog/grep-beat-lsp-harness/",
-  "discuss": "https://news.ycombinator.com/item?id=49560260",
-  "score": 96,
-  "comments": 66,
-  "age_h": 31.1,
-  "text": ""
- },
- {
-  "src": "HN",
-  "title": "OpenAI agents hijacked German website in previously undisclosed AI breakout",
-  "url": "https://www.reuters.com/world/europe/openai-agents-hijacked-german-website-previously-undisclosed-ai-breakout-this-2026-09-04/",
-  "discuss": "https://news.ycombinator.com/item?id=49562744",
-  "score": 93,
-  "comments": 2,
-  "age_h": 24.3,
+  "score": 260,
+  "comments": 166,
+  "age_h": 35.5,
   "text": ""
  },
  {
@@ -118,6 +38,83 @@
   "comments": 29,
   "age_h": 12.0,
   "created": "2026-08-27T00:32:18.671-05:00",
+  "text": ""
+ },
+ {
+  "src": "lobsters",
+  "title": "The Limits of AI (1985)",
+  "url": "https://www.youtube.com/watch?v=ePsQksj99LM",
+  "discuss": "https://lobste.rs/s/xculjp/limits_ai_1985",
+  "score": 8,
+  "comments": 4,
+  "age_h": 12.0,
+  "created": "2026-08-16T19:20:07.821-05:00",
+  "text": ""
+ },
+ {
+  "src": "lobsters",
+  "title": "US government backs OpenAI in New York Times copyright case",
+  "url": "https://www.reuters.com/legal/litigation/us-government-backs-openai-new-york-times-copyright-case-2026-09-02/",
+  "discuss": "https://lobste.rs/s/xoklqk/us_government_backs_openai_new_york_times",
+  "score": 6,
+  "comments": 1,
+  "age_h": 12.0,
+  "created": "2026-09-02T20:13:14.049-05:00",
+  "text": ""
+ },
+ {
+  "src": "lobsters",
+  "title": "Terence Tao on “prematurely solving [a maths] problem by purely AI-powered methods”",
+  "url": "https://mathstodon.xyz/@tao/117207856734787448",
+  "discuss": "https://lobste.rs/s/nohdoj/terence_tao_on_prematurely_solving_maths",
+  "score": 6,
+  "comments": 0,
+  "age_h": 12.0,
+  "created": "2026-09-06T02:45:24.038-05:00",
+  "text": "I recommend reading the whole thread, but I linked to the part I found the most relevant. I believe the same is true for programming."
+ },
+ {
+  "src": "lobsters",
+  "title": "Super-intelligence or Superstition? Exploring Psychological Factors Influencing Belief in AI Predictions about Personal Behavior",
+  "url": "https://arxiv.org/abs/2408.06602",
+  "discuss": "https://lobste.rs/s/2djazj/super_intelligence_superstition",
+  "score": 5,
+  "comments": 0,
+  "age_h": 12.0,
+  "created": "2026-08-25T10:03:24.648-05:00",
+  "text": ""
+ },
+ {
+  "src": "lobsters",
+  "title": "Researchers use AI to ‘democratize’ 3D printing of crucial metal alloy",
+  "url": "https://news.wsu.edu/news/2026/08/24/researchers-use-ai-to-democratize-3d-printing-of-crucial-metal-alloy/",
+  "discuss": "https://lobste.rs/s/em1whz/researchers_use_ai_democratize_3d",
+  "score": 4,
+  "comments": 3,
+  "age_h": 12.0,
+  "created": "2026-09-01T17:42:12.660-05:00",
+  "text": ""
+ },
+ {
+  "src": "lobsters",
+  "title": "Are Latent Reasoning Models Easily Interpretable?",
+  "url": "https://arxiv.org/abs/2604.04902",
+  "discuss": "https://lobste.rs/s/obo3ie/are_latent_reasoning_models_easily",
+  "score": 3,
+  "comments": 0,
+  "age_h": 12.0,
+  "created": "2026-08-15T11:17:13.206-05:00",
+  "text": "Models normally do all their reasoning in a continuous hidden state instead of spitting out readable text which makes them hard to monitor. The authors tested the Coconut and CODI models and it turns out these models barely even use their hidden reasoning steps for logical tasks like PrOntoQA and ProsQA. You can force the models to stop thinking early and they almost always spit out the same respo"
+ },
+ {
+  "src": "lobsters",
+  "title": "The 'Breaking' News: The OpenAI–Hugging Face Incident",
+  "url": "https://youtu.be/87DyyMV0kCY",
+  "discuss": "https://lobste.rs/s/ahonc7/breaking_news_openai_hugging_face",
+  "score": 0,
+  "comments": 8,
+  "age_h": 12.0,
+  "created": "2026-08-11T11:50:09.392-05:00",
   "text": ""
  }
 ]
