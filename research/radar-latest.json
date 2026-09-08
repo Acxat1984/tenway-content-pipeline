@@ -1,62 +1,72 @@
 [
  {
   "src": "HN",
-  "title": "Your intellectual fly is open when you use an LLM to author a post (2025)",
-  "url": "https://bcantrill.dtrace.org/2025/12/05/your-intellectual-fly-is-open/",
-  "discuss": "https://news.ycombinator.com/item?id=49585644",
-  "score": 669,
-  "comments": 410,
+  "title": "Tell HN: OpenAI brings back 5 hour limit for plus and business standard users",
+  "url": "https://news.ycombinator.com/item?id=49600233",
+  "discuss": "https://news.ycombinator.com/item?id=49600233",
+  "score": 125,
+  "comments": 140,
+  "age_h": 18.9,
+  "text": "In case you&#x27;re wondering why the limits behave so very different from last week. Also: this makes limit resets kind woth significantly less."
+ },
+ {
+  "src": "HN",
+  "title": "How well do agents use test/verification techniques?",
+  "url": "https://danluu.com/agentic-testing/",
+  "discuss": "https://news.ycombinator.com/item?id=49605246",
+  "score": 100,
+  "comments": 27,
+  "age_h": 8.6,
+  "text": ""
+ },
+ {
+  "src": "HN",
+  "title": "AI models ran real businesses: They sent $12,431 in fake invoices, lost $3,200",
+  "url": "https://www.bottlenecklabs.com/blog/benchmarking-7-autonomous-businesses",
+  "discuss": "https://news.ycombinator.com/item?id=49601338",
+  "score": 100,
+  "comments": 117,
+  "age_h": 17.1,
+  "text": ""
+ },
+ {
+  "src": "HN",
+  "title": "I tested 10 model/harness combinations on the same Three.js task",
+  "url": "https://alvins82.github.io/hangar-harness-model-tests/",
+  "discuss": "https://news.ycombinator.com/item?id=49605433",
+  "score": 88,
+  "comments": 52,
+  "age_h": 7.8,
+  "text": ""
+ },
+ {
+  "src": "HN",
+  "title": "Initial effects of AI technology on employment look positive",
+  "url": "https://www.economist.com/finance-and-economics/2026/09/04/the-jobs-apocalypse-is-postponed-an-ai-jobs-boom-is-here",
+  "discuss": "https://news.ycombinator.com/item?id=49596610",
+  "score": 88,
+  "comments": 132,
   "age_h": 24.9,
-  "text": ""
- },
- {
-  "src": "HN",
-  "title": "How I feel about AI",
-  "url": "https://beza1e1.tuxen.de/ai_feelings.html",
-  "discuss": "https://news.ycombinator.com/item?id=49587128",
-  "score": 158,
-  "comments": 254,
-  "age_h": 21.8,
-  "text": ""
- },
- {
-  "src": "HN",
-  "title": "Research acceleration: The view inside OpenAI",
-  "url": "https://openai.com/index/research-acceleration-view-inside-openai",
-  "discuss": "https://news.ycombinator.com/item?id=49587217",
-  "score": 188,
-  "comments": 143,
-  "age_h": 21.7,
-  "text": ""
- },
- {
-  "src": "HN",
-  "title": "GPT-6 Astra on robot arms",
-  "url": "https://openai.robocurve.org/gpt-6-astra/",
-  "discuss": "https://news.ycombinator.com/item?id=49582582",
-  "score": 235,
-  "comments": 187,
-  "age_h": 35.0,
-  "text": ""
+  "text": "<a href=\"https:&#x2F;&#x2F;archive.md&#x2F;5hi5i\" rel=\"nofollow\">https:&#x2F;&#x2F;archive.md&#x2F;5hi5i</a>"
  },
  {
   "src": "HN",
   "title": "I refused to train the AI that could replace me",
   "url": "https://restofworld.org/2026/ai-training-jobs-expert-replacement/",
   "discuss": "https://news.ycombinator.com/item?id=49593959",
-  "score": 86,
-  "comments": 99,
-  "age_h": 8.2,
+  "score": 95,
+  "comments": 113,
+  "age_h": 30.9,
   "text": ""
  },
  {
   "src": "HN",
-  "title": "AI, Tools and Transformation",
-  "url": "https://www.ben-evans.com/benedictevans/2026/9/3/ai-tools-and-transformation",
-  "discuss": "https://news.ycombinator.com/item?id=49582656",
-  "score": 152,
-  "comments": 70,
-  "age_h": 34.6,
+  "title": "Show HN: Engrim – A universal, local-first SQLite memory engine for AI CLIs",
+  "url": "https://github.com/timgordontg/engrim",
+  "discuss": "https://news.ycombinator.com/item?id=49594008",
+  "score": 88,
+  "comments": 51,
+  "age_h": 30.7,
   "text": ""
  },
  {
@@ -113,16 +123,5 @@
   "age_h": 12.0,
   "created": "2026-09-01T17:42:12.660-05:00",
   "text": ""
- },
- {
-  "src": "lobsters",
-  "title": "Are Latent Reasoning Models Easily Interpretable?",
-  "url": "https://arxiv.org/abs/2604.04902",
-  "discuss": "https://lobste.rs/s/obo3ie/are_latent_reasoning_models_easily",
-  "score": 3,
-  "comments": 0,
-  "age_h": 12.0,
-  "created": "2026-08-15T11:17:13.206-05:00",
-  "text": "Models normally do all their reasoning in a continuous hidden state instead of spitting out readable text which makes them hard to monitor. The authors tested the Coconut and CODI models and it turns out these models barely even use their hidden reasoning steps for logical tasks like PrOntoQA and ProsQA. You can force the models to stop thinking early and they almost always spit out the same respo"
  }
 ]
