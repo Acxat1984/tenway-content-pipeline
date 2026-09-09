@@ -1,127 +1,122 @@
 [
  {
   "src": "HN",
-  "title": "Tell HN: OpenAI brings back 5 hour limit for plus and business standard users",
-  "url": "https://news.ycombinator.com/item?id=49600233",
-  "discuss": "https://news.ycombinator.com/item?id=49600233",
-  "score": 125,
-  "comments": 140,
-  "age_h": 18.9,
-  "text": "In case you&#x27;re wondering why the limits behave so very different from last week. Also: this makes limit resets kind woth significantly less."
+  "title": "I resigned from Anthropic today",
+  "url": "https://twitter.com/hilbertspaess/status/2097476196791709843#m",
+  "discuss": "https://news.ycombinator.com/item?id=49619227",
+  "score": 588,
+  "comments": 789,
+  "age_h": 10.9,
+  "text": "<a href=\"https:&#x2F;&#x2F;xcancel.com&#x2F;hilbertspaess&#x2F;status&#x2F;2097476196791709843#m\" rel=\"nofollow\">https:&#x2F;&#x2F;xcancel.com&#x2F;hilbertspaess&#x2F;status&#x2F;2097476196791709843...</a>"
+ },
+ {
+  "src": "HN",
+  "title": "LibreOffice breaks download records after declaring it has no AI features",
+  "url": "https://manualdousuario.net/en/libreoffice-download-record-no-ai/",
+  "discuss": "https://news.ycombinator.com/item?id=49610538",
+  "score": 685,
+  "comments": 233,
+  "age_h": 21.5,
+  "text": ""
+ },
+ {
+  "src": "HN",
+  "title": "Muse – Meta’s personal AI agent",
+  "url": "https://ai.meta.com/muse/",
+  "discuss": "https://news.ycombinator.com/item?id=49615537",
+  "score": 536,
+  "comments": 583,
+  "age_h": 16.2,
+  "text": ""
+ },
+ {
+  "src": "HN",
+  "title": "I-have-ADHD: A skill to stop coding agents from burying the answer",
+  "url": "https://github.com/ayghri/i-have-adhd",
+  "discuss": "https://news.ycombinator.com/item?id=49610631",
+  "score": 466,
+  "comments": 319,
+  "age_h": 21.4,
+  "text": ""
+ },
+ {
+  "src": "HN",
+  "title": "Tao: Open math problems being non-renewably mined by AI",
+  "url": "https://mathstodon.xyz/@tao/117237320796901560",
+  "discuss": "https://news.ycombinator.com/item?id=49616968",
+  "score": 384,
+  "comments": 340,
+  "age_h": 14.6,
+  "text": ""
+ },
+ {
+  "src": "HN",
+  "title": "We Must Return to the Office to Use AI in Person",
+  "url": "https://www.mcsweeneys.net/articles/why-we-must-return-to-the-office-to-use-ai-in-person",
+  "discuss": "https://news.ycombinator.com/item?id=49610229",
+  "score": 380,
+  "comments": 65,
+  "age_h": 21.9,
+  "text": ""
+ },
+ {
+  "src": "HN",
+  "title": "Kimi K3 (2.8T) at 1 token/s on a MacBook Pro, streamed from four SSDs",
+  "url": "https://github.com/argonautlabsai/deltafin",
+  "discuss": "https://news.ycombinator.com/item?id=49616257",
+  "score": 265,
+  "comments": 138,
+  "age_h": 15.5,
+  "text": ""
+ },
+ {
+  "src": "HN",
+  "title": "Show HN: Copperhead – Cursor for circuit boards",
+  "url": "https://copperhead.sh/",
+  "discuss": "https://news.ycombinator.com/item?id=49610059",
+  "score": 230,
+  "comments": 93,
+  "age_h": 22.2,
+  "text": ""
+ },
+ {
+  "src": "HN",
+  "title": "Large language models develop novel social biases through adaptive exploration",
+  "url": "https://openreview.net/challenge?redirect=%2Fforum%3Fid%3Dpc7fqaOcAH",
+  "discuss": "https://news.ycombinator.com/item?id=49617581",
+  "score": 174,
+  "comments": 90,
+  "age_h": 13.8,
+  "text": ""
+ },
+ {
+  "src": "HN",
+  "title": "OpenAI fought dirty on career-making math problem",
+  "url": "https://techcrunch.com/2026/09/08/openai-fought-dirty-on-career-making-math-problem-says-nyu-mathematician/",
+  "discuss": "https://news.ycombinator.com/item?id=49615926",
+  "score": 163,
+  "comments": 60,
+  "age_h": 15.8,
+  "text": ""
+ },
+ {
+  "src": "HN",
+  "title": "Show HN: LLM Attention Visualization",
+  "url": "https://ishamf.dev/p/llm-attention-visualizer/",
+  "discuss": "https://news.ycombinator.com/item?id=49613068",
+  "score": 156,
+  "comments": 24,
+  "age_h": 18.6,
+  "text": ""
  },
  {
   "src": "HN",
   "title": "How well do agents use test/verification techniques?",
   "url": "https://danluu.com/agentic-testing/",
   "discuss": "https://news.ycombinator.com/item?id=49605246",
-  "score": 100,
-  "comments": 27,
-  "age_h": 8.6,
-  "text": ""
- },
- {
-  "src": "HN",
-  "title": "AI models ran real businesses: They sent $12,431 in fake invoices, lost $3,200",
-  "url": "https://www.bottlenecklabs.com/blog/benchmarking-7-autonomous-businesses",
-  "discuss": "https://news.ycombinator.com/item?id=49601338",
-  "score": 100,
-  "comments": 117,
-  "age_h": 17.1,
-  "text": ""
- },
- {
-  "src": "HN",
-  "title": "I tested 10 model/harness combinations on the same Three.js task",
-  "url": "https://alvins82.github.io/hangar-harness-model-tests/",
-  "discuss": "https://news.ycombinator.com/item?id=49605433",
-  "score": 88,
-  "comments": 52,
-  "age_h": 7.8,
-  "text": ""
- },
- {
-  "src": "HN",
-  "title": "Initial effects of AI technology on employment look positive",
-  "url": "https://www.economist.com/finance-and-economics/2026/09/04/the-jobs-apocalypse-is-postponed-an-ai-jobs-boom-is-here",
-  "discuss": "https://news.ycombinator.com/item?id=49596610",
-  "score": 88,
-  "comments": 132,
-  "age_h": 24.9,
-  "text": "<a href=\"https:&#x2F;&#x2F;archive.md&#x2F;5hi5i\" rel=\"nofollow\">https:&#x2F;&#x2F;archive.md&#x2F;5hi5i</a>"
- },
- {
-  "src": "HN",
-  "title": "I refused to train the AI that could replace me",
-  "url": "https://restofworld.org/2026/ai-training-jobs-expert-replacement/",
-  "discuss": "https://news.ycombinator.com/item?id=49593959",
-  "score": 95,
-  "comments": 113,
-  "age_h": 30.9,
-  "text": ""
- },
- {
-  "src": "HN",
-  "title": "Show HN: Engrim – A universal, local-first SQLite memory engine for AI CLIs",
-  "url": "https://github.com/timgordontg/engrim",
-  "discuss": "https://news.ycombinator.com/item?id=49594008",
-  "score": 88,
-  "comments": 51,
-  "age_h": 30.7,
-  "text": ""
- },
- {
-  "src": "lobsters",
-  "title": "The turbulent AI era is here",
-  "url": "https://www.gatesnotes.com/work/make-ai-work-for-everyone/reader/a-turbulent-ai-era-and-critical-choices-to-make?WT.mc_id=20260826_ai-overture-2026-med-med",
-  "discuss": "https://lobste.rs/s/aixljs/turbulent_ai_era_is_here",
-  "score": 13,
-  "comments": 29,
-  "age_h": 12.0,
-  "created": "2026-08-27T00:32:18.671-05:00",
-  "text": ""
- },
- {
-  "src": "lobsters",
-  "title": "The Limits of AI (1985)",
-  "url": "https://www.youtube.com/watch?v=ePsQksj99LM",
-  "discuss": "https://lobste.rs/s/xculjp/limits_ai_1985",
-  "score": 8,
-  "comments": 4,
-  "age_h": 12.0,
-  "created": "2026-08-16T19:20:07.821-05:00",
-  "text": ""
- },
- {
-  "src": "lobsters",
-  "title": "US government backs OpenAI in New York Times copyright case",
-  "url": "https://www.reuters.com/legal/litigation/us-government-backs-openai-new-york-times-copyright-case-2026-09-02/",
-  "discuss": "https://lobste.rs/s/xoklqk/us_government_backs_openai_new_york_times",
-  "score": 6,
-  "comments": 1,
-  "age_h": 12.0,
-  "created": "2026-09-02T20:13:14.049-05:00",
-  "text": ""
- },
- {
-  "src": "lobsters",
-  "title": "Super-intelligence or Superstition? Exploring Psychological Factors Influencing Belief in AI Predictions about Personal Behavior",
-  "url": "https://arxiv.org/abs/2408.06602",
-  "discuss": "https://lobste.rs/s/2djazj/super_intelligence_superstition",
-  "score": 5,
-  "comments": 0,
-  "age_h": 12.0,
-  "created": "2026-08-25T10:03:24.648-05:00",
-  "text": ""
- },
- {
-  "src": "lobsters",
-  "title": "Researchers use AI to ‘democratize’ 3D printing of crucial metal alloy",
-  "url": "https://news.wsu.edu/news/2026/08/24/researchers-use-ai-to-democratize-3d-printing-of-crucial-metal-alloy/",
-  "discuss": "https://lobste.rs/s/em1whz/researchers_use_ai_democratize_3d",
-  "score": 4,
-  "comments": 3,
-  "age_h": 12.0,
-  "created": "2026-09-01T17:42:12.660-05:00",
+  "score": 184,
+  "comments": 66,
+  "age_h": 32.6,
   "text": ""
  }
 ]
