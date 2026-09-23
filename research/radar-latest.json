@@ -1,22 +1,72 @@
 [
  {
   "src": "HN",
-  "title": "Kev: Tiny Jev-like family of decision models built on top of Qwen3.5",
-  "url": "https://github.com/jaredpalmer/kev/tree/main",
-  "discuss": "https://news.ycombinator.com/item?id=49783999",
-  "score": 438,
-  "comments": 196,
-  "age_h": 28.7,
+  "title": "Claude Opus 5.5",
+  "url": "https://www.anthropic.com/claude-opus-5-5",
+  "discuss": "https://news.ycombinator.com/item?id=49803892",
+  "score": 1596,
+  "comments": 986,
+  "age_h": 19.4,
   "text": ""
  },
  {
   "src": "HN",
-  "title": "AI coding has made CI a bottleneck, so we reworked ours to keep up",
-  "url": "https://linear.app/now/ci-bottleneck-reworked",
-  "discuss": "https://news.ycombinator.com/item?id=49792067",
-  "score": 257,
-  "comments": 294,
-  "age_h": 16.5,
+  "title": "GPT-6 Sol and Luna",
+  "url": "https://openai.com/index/introducing-gpt-6-sol-and-luna/",
+  "discuss": "https://news.ycombinator.com/item?id=49805509",
+  "score": 1590,
+  "comments": 762,
+  "age_h": 17.9,
+  "text": ""
+ },
+ {
+  "src": "HN",
+  "title": "OpenAI GPT–6 Astra breaks Enigma message that has resisted solution since 2005",
+  "url": "https://www.cryptocellar.org/bgac/the-mvueh-break.html",
+  "discuss": "https://news.ycombinator.com/item?id=49801324",
+  "score": 678,
+  "comments": 395,
+  "age_h": 22.0,
+  "text": ""
+ },
+ {
+  "src": "HN",
+  "title": "Pentagon says overreliance on AI contributed to missile strike on Iran school",
+  "url": "https://www.bloomberg.com/graphics/2026-iran-school-attack/",
+  "discuss": "https://news.ycombinator.com/item?id=49806430",
+  "score": 696,
+  "comments": 345,
+  "age_h": 16.8,
+  "text": "<a href=\"https:&#x2F;&#x2F;archive.ph&#x2F;0V37g\" rel=\"nofollow\">https:&#x2F;&#x2F;archive.ph&#x2F;0V37g</a>"
+ },
+ {
+  "src": "HN",
+  "title": "AI Has No Wisdom and Neither Will You",
+  "url": "https://alexn.org/blog/2026/09/22/ai-has-no-wisdom-and-neither-will-you/",
+  "discuss": "https://news.ycombinator.com/item?id=49799965",
+  "score": 380,
+  "comments": 528,
+  "age_h": 23.7,
+  "text": ""
+ },
+ {
+  "src": "HN",
+  "title": "OpenAI is well positioned to fast-follow Jev",
+  "url": "https://arcturus-labs.com/blog/2026/09/21/will-openai-eat-jevs-lunch/",
+  "discuss": "https://news.ycombinator.com/item?id=49802161",
+  "score": 297,
+  "comments": 210,
+  "age_h": 21.2,
+  "text": ""
+ },
+ {
+  "src": "HN",
+  "title": "Claude Opus 5.5 Intelligence, Performance and Price Analysis (Max)",
+  "url": "https://artificialanalysis.ai/models/claude-opus-5-5",
+  "discuss": "https://news.ycombinator.com/item?id=49804316",
+  "score": 306,
+  "comments": 95,
+  "age_h": 19.0,
   "text": ""
  },
  {
@@ -24,99 +74,49 @@
   "title": "Can gzip be a language model?",
   "url": "https://nathan.rs/posts/gzip-lm/",
   "discuss": "https://news.ycombinator.com/item?id=49797323",
-  "score": 187,
-  "comments": 74,
-  "age_h": 5.8,
+  "score": 392,
+  "comments": 154,
+  "age_h": 29.7,
   "text": ""
  },
  {
   "src": "HN",
-  "title": "macOS 27: Workaround to avoid downloading AI models and save storage",
-  "url": "https://www.reddit.com/r/MacOSBeta/comments/1vlnf13/workaround_to_avoid_downloading_ai_models_and/",
-  "discuss": "https://news.ycombinator.com/item?id=49787535",
-  "score": 230,
-  "comments": 114,
-  "age_h": 21.7,
+  "title": "Claude Opus 5.5",
+  "url": "https://www.anthropic.com/claude-opus-5-5",
+  "discuss": "https://news.ycombinator.com/item?id=49803863",
+  "score": 273,
+  "comments": 2,
+  "age_h": 19.4,
+  "text": "<a href=\"https:&#x2F;&#x2F;github.com&#x2F;anthropics&#x2F;ClaudeForFoundationModels&#x2F;commit&#x2F;5180901338a50bef050d5e9464583753ed3869a3\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;anthropics&#x2F;ClaudeForFoundationModels&#x2F;comm...</a>"
+ },
+ {
+  "src": "HN",
+  "title": "Unreal Agent",
+  "url": "https://unreallabs.ai/blog/unreal-agent/",
+  "discuss": "https://news.ycombinator.com/item?id=49805748",
+  "score": 203,
+  "comments": 110,
+  "age_h": 17.6,
+  "text": "<a href=\"https:&#x2F;&#x2F;github.com&#x2F;unreallabsai&#x2F;unreal-agent\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;unreallabsai&#x2F;unreal-agent</a>"
+ },
+ {
+  "src": "HN",
+  "title": "LLM Ass Bench",
+  "url": "https://www.assbench.com/",
+  "discuss": "https://news.ycombinator.com/item?id=49807688",
+  "score": 157,
+  "comments": 45,
+  "age_h": 15.3,
   "text": ""
  },
  {
   "src": "HN",
-  "title": "Heretic removes restrictions from language models",
-  "url": "https://heretic-project.org/",
-  "discuss": "https://news.ycombinator.com/item?id=49783101",
-  "score": 254,
-  "comments": 108,
-  "age_h": 31.3,
-  "text": ""
- },
- {
-  "src": "HN",
-  "title": "Amazon blocks Meta’s new Muse AI agent from shopping on amazon.com",
-  "url": "https://www.forbes.com/sites/jonmarkman/2026/09/21/amazon-blocks-metas-new-muse-ai-agent-from-shopping-on-amazoncom/",
-  "discuss": "https://news.ycombinator.com/item?id=49789982",
-  "score": 148,
-  "comments": 156,
-  "age_h": 18.9,
-  "text": ""
- },
- {
-  "src": "HN",
-  "title": "Claude Status – Elevated errors for multiple models",
+  "title": "Elevated errors for multiple models – Resolved",
   "url": "https://status.claude.com/incidents/7g1qpkyz5gxh",
   "discuss": "https://news.ycombinator.com/item?id=49795579",
-  "score": 122,
-  "comments": 91,
-  "age_h": 10.8,
-  "text": ""
- },
- {
-  "src": "HN",
-  "title": "Frontier AI on Your Own Hardware",
-  "url": "https://timdettmers.com/2026/09/21/dlab-open-source-week/",
-  "discuss": "https://news.ycombinator.com/item?id=49791647",
-  "score": 167,
-  "comments": 83,
-  "age_h": 17.0,
-  "text": ""
- },
- {
-  "src": "HN",
-  "title": "The Claude Delusion",
-  "url": "https://pluralistic.net/2026/09/21/sunsetting/",
-  "discuss": "https://news.ycombinator.com/item?id=49787765",
-  "score": 94,
-  "comments": 162,
-  "age_h": 21.4,
-  "text": ""
- },
- {
-  "src": "HN",
-  "title": "Robin Williams' Daughter to Fans Creating AI Videos: 'Have Some Shame'",
-  "url": "https://variety.com/2026/film/news/robin-williams-daughter-ai-videos-1236871568/",
-  "discuss": "https://news.ycombinator.com/item?id=49795718",
-  "score": 89,
-  "comments": 56,
-  "age_h": 10.5,
-  "text": ""
- },
- {
-  "src": "HN",
-  "title": "AI chatbots give wrong answers to financial queries 'most of the time'",
-  "url": "https://www.ft.com/content/c0cd359d-df84-4208-a789-ffa864b43666",
-  "discuss": "https://news.ycombinator.com/item?id=49783062",
-  "score": 154,
-  "comments": 88,
-  "age_h": 31.4,
-  "text": ""
- },
- {
-  "src": "HN",
-  "title": "Don't Use AI to Write",
-  "url": "https://paulbakker.io/writing/no-ai-for-writing/",
-  "discuss": "https://news.ycombinator.com/item?id=49784816",
-  "score": 141,
-  "comments": 83,
-  "age_h": 27.0,
+  "score": 139,
+  "comments": 110,
+  "age_h": 34.8,
   "text": ""
  }
 ]
