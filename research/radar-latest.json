@@ -1,22 +1,12 @@
 [
  {
   "src": "HN",
-  "title": "Claude discovers a novel enzyme system with CRISPR-like repeats",
-  "url": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system",
-  "discuss": "https://news.ycombinator.com/item?id=49820134",
-  "score": 677,
-  "comments": 689,
-  "age_h": 17.9,
-  "text": ""
- },
- {
-  "src": "HN",
-  "title": "Claude Code reads AGENTS.md only when telemetry is on [fixed]",
-  "url": "https://blog.szypowi.cz/p/claude-code-reads-agents.md-only-when-telemetry-is-on/",
-  "discuss": "https://news.ycombinator.com/item?id=49814947",
-  "score": 471,
-  "comments": 270,
-  "age_h": 23.8,
+  "title": "Meta takes down a critical video about meta AI Glasses after filming at Meta",
+  "url": "https://www.reddit.com/r/facebook/comments/1wotwrk/meta_takes_down_a_critical_video_about_meta_ai/",
+  "discuss": "https://news.ycombinator.com/item?id=49827794",
+  "score": 614,
+  "comments": 367,
+  "age_h": 27.6,
   "text": ""
  },
  {
@@ -24,79 +14,9 @@
   "title": "Feds Target AI Critics as \"Foreign Agents\"",
   "url": "https://www.kenklippenstein.com/p/feds-think-ai-critics-are-foreign",
   "discuss": "https://news.ycombinator.com/item?id=49824686",
-  "score": 302,
-  "comments": 316,
-  "age_h": 11.3,
-  "text": ""
- },
- {
-  "src": "HN",
-  "title": "GPT-6 Astra has gained the ability to drive a car",
-  "url": "https://drivingbench.com/",
-  "discuss": "https://news.ycombinator.com/item?id=49817404",
-  "score": 293,
-  "comments": 228,
-  "age_h": 20.8,
-  "text": ""
- },
- {
-  "src": "HN",
-  "title": "Meta takes down a critical video about meta AI Glasses after filming at Meta",
-  "url": "https://www.reddit.com/r/facebook/comments/1wotwrk/meta_takes_down_a_critical_video_about_meta_ai/",
-  "discuss": "https://news.ycombinator.com/item?id=49827794",
-  "score": 232,
-  "comments": 109,
-  "age_h": 3.6,
-  "text": ""
- },
- {
-  "src": "HN",
-  "title": "Gemini 3.8 text-to-speech",
-  "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-text-to-speech/",
-  "discuss": "https://news.ycombinator.com/item?id=49817615",
-  "score": 313,
-  "comments": 139,
-  "age_h": 20.5,
-  "text": ""
- },
- {
-  "src": "HN",
-  "title": "VSCode's SSH Agent Is Bananas (2025)",
-  "url": "https://fly.io/blog/vscode-ssh-wtf/",
-  "discuss": "https://news.ycombinator.com/item?id=49822555",
-  "score": 251,
-  "comments": 159,
-  "age_h": 15.0,
-  "text": ""
- },
- {
-  "src": "HN",
-  "title": "OpenAI breaches Medicare, Albanese reveals",
-  "url": "https://www.smh.com.au/politics/federal/openai-breaches-medicare-albanese-reveals-20260924-p6100u.html",
-  "discuss": "https://news.ycombinator.com/item?id=49822556",
-  "score": 217,
-  "comments": 241,
-  "age_h": 15.0,
-  "text": ""
- },
- {
-  "src": "HN",
-  "title": "Tokens too cheap to meter",
-  "url": "https://jyn.dev/tokens-too-cheap-to-meter/",
-  "discuss": "https://news.ycombinator.com/item?id=49813482",
-  "score": 312,
-  "comments": 212,
-  "age_h": 26.7,
-  "text": ""
- },
- {
-  "src": "HN",
-  "title": "OpenAI is enlisting an influencer army to make it look 'good for the world'",
-  "url": "https://www.businessinsider.com/inside-open-ai-influencer-marketing-strategy-chatgpt-ads-sponsorships-instagram-2026-9",
-  "discuss": "https://news.ycombinator.com/item?id=49815127",
-  "score": 212,
-  "comments": 205,
-  "age_h": 23.5,
+  "score": 380,
+  "comments": 425,
+  "age_h": 35.3,
   "text": ""
  },
  {
@@ -104,19 +24,100 @@
   "title": "Early rogue AI agent activity and attempts to hack found on urlquery.net",
   "url": "https://transluce.org/agent-activity",
   "discuss": "https://news.ycombinator.com/item?id=49826565",
-  "score": 153,
-  "comments": 131,
-  "age_h": 6.7,
+  "score": 260,
+  "comments": 268,
+  "age_h": 30.7,
   "text": ""
  },
  {
   "src": "HN",
-  "title": "Once Claude can measure something, it can make it faster",
-  "url": "https://claude.dev/blog/how-we-made-claude-ai-faster/",
-  "discuss": "https://news.ycombinator.com/item?id=49821196",
-  "score": 205,
-  "comments": 141,
-  "age_h": 16.6,
+  "title": "'That's so AI ' What gen Alpha's biggest insult tells us",
+  "url": "https://www.theguardian.com/society/2026/sep/24/thats-so-ai-what-gen-alphas-biggest-insult-tells-us",
+  "discuss": "https://news.ycombinator.com/item?id=49829650",
+  "score": 168,
+  "comments": 229,
+  "age_h": 23.6,
+  "text": ""
+ },
+ {
+  "src": "HN",
+  "title": "OpenAI agent hacked Australian government website, PM says",
+  "url": "https://www.bbc.com/news/live/cvgl73pxgndwt",
+  "discuss": "https://news.ycombinator.com/item?id=49825580",
+  "score": 253,
+  "comments": 198,
+  "age_h": 33.3,
+  "text": ""
+ },
+ {
+  "src": "HN",
+  "title": "Best LLM for every budget, updated daily",
+  "url": "https://bestmodelforyourbudget.terrydjony.com/",
+  "discuss": "https://news.ycombinator.com/item?id=49830866",
+  "score": 176,
+  "comments": 109,
+  "age_h": 21.9,
+  "text": ""
+ },
+ {
+  "src": "HN",
+  "title": "Tutoring company tells parents to save their money and 'use AI instead'",
+  "url": "https://www.afr.com/policy/health-and-education/tutoring-company-tell-parents-to-save-their-money-and-use-ai-instead-20260923-p60z0r",
+  "discuss": "https://news.ycombinator.com/item?id=49831690",
+  "score": 121,
+  "comments": 186,
+  "age_h": 20.9,
+  "text": ""
+ },
+ {
+  "src": "HN",
+  "title": "Contrastive Language Models",
+  "url": "https://contrastive-lm.notion.site/",
+  "discuss": "https://news.ycombinator.com/item?id=49826221",
+  "score": 165,
+  "comments": 54,
+  "age_h": 31.7,
+  "text": ""
+ },
+ {
+  "src": "HN",
+  "title": "AI safety is mostly a sex cult in Berkeley",
+  "url": "https://www.verysane.ai/p/ai-safety-is-mostly-a-sex-cult-in",
+  "discuss": "https://news.ycombinator.com/item?id=49831269",
+  "score": 118,
+  "comments": 29,
+  "age_h": 21.4,
+  "text": ""
+ },
+ {
+  "src": "HN",
+  "title": "Hackers influence ChatGPT and Gemini to direct users to scam centers",
+  "url": "https://medium.com/@arielsimon/dark-sourcery-how-hackers-manipulate-ai-to-scam-you-88df434d2073",
+  "discuss": "https://news.ycombinator.com/item?id=49829387",
+  "score": 138,
+  "comments": 49,
+  "age_h": 24.1,
+  "text": ""
+ },
+ {
+  "src": "lobsters",
+  "title": "I Built Non-Autoregressive Decision Models a Year Ago. Then a Frontier Lab Called It a \"Breakthrough\"",
+  "url": "https://dev.to/nandakishor_m_6cc0adfde9f/i-built-non-autoregressive-decision-models-a-year-ago-then-a-frontier-lab-called-it-a-18me",
+  "discuss": "https://lobste.rs/s/kaqsr5/i_built_non_autoregressive_decision",
+  "score": 61,
+  "comments": 6,
+  "age_h": 12.0,
+  "created": "2026-09-19T08:41:57.630-05:00",
+  "text": ""
+ },
+ {
+  "src": "HN",
+  "title": "Australia says OpenAI agent hacked into government website",
+  "url": "https://www.channelnewsasia.com/world/australia-openai-agent-breach-government-portal-6406411",
+  "discuss": "https://news.ycombinator.com/item?id=49825024",
+  "score": 121,
+  "comments": 3,
+  "age_h": 34.6,
   "text": ""
  }
 ]
