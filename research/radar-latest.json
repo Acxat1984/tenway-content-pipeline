@@ -1,92 +1,82 @@
 [
  {
   "src": "HN",
-  "title": "OpenAI Feared \"Optics\" of what might appear on Hacker News",
+  "title": "Unsealed Briefs in Authors’ Case v. Microsoft/OpenAI",
   "url": "https://authorsguild.org/news/ag-v-openai-top-execs-knew-mass-book-piracy-was-illegal/",
   "discuss": "https://news.ycombinator.com/item?id=49863864",
-  "score": 298,
-  "comments": 252,
-  "age_h": 5.9,
-  "text": ""
- },
- {
-  "src": "HN",
-  "title": "One Month Without AI",
-  "url": "https://blog.bustikiller.com/2026/09/25/one-month-without-ai.html",
-  "discuss": "https://news.ycombinator.com/item?id=49855018",
-  "score": 175,
-  "comments": 223,
-  "age_h": 26.1,
-  "text": ""
- },
- {
-  "src": "HN",
-  "title": "OpenAI bots meddled with multiple US Government agency sites",
-  "url": "https://www.bbc.com/news/articles/cw62jje658dlo",
-  "discuss": "https://news.ycombinator.com/item?id=49856665",
-  "score": 120,
-  "comments": 179,
-  "age_h": 22.2,
-  "text": ""
- },
- {
-  "src": "HN",
-  "title": "Drawgent: Coding agent on a live Excalidraw canvas",
-  "url": "https://tangled.org/yanndegat.tngl.sh/drawgent",
-  "discuss": "https://news.ycombinator.com/item?id=49857729",
-  "score": 158,
-  "comments": 42,
-  "age_h": 20.3,
-  "text": ""
- },
- {
-  "src": "HN",
-  "title": "CEO of Mistral: AI is software. It can be controlled",
-  "url": "https://www.lemonde.fr/en/economy/article/2026/09/24/arthur-mensch-ceo-of-french-start-up-mistral-ai-ai-is-software-it-can-be-controlled_6757890_19.html",
-  "discuss": "https://news.ycombinator.com/item?id=49856034",
-  "score": 94,
-  "comments": 162,
-  "age_h": 23.4,
-  "text": ""
- },
- {
-  "src": "HN",
-  "title": "An agent used DNS to reach an external chatbot",
-  "url": "https://alignment.openai.com/misalignment-reports/an-agent-used-dns-to-reach-an-external-chatbot/",
-  "discuss": "https://news.ycombinator.com/item?id=49853137",
-  "score": 113,
-  "comments": 115,
-  "age_h": 32.0,
-  "text": ""
- },
- {
-  "src": "HN",
-  "title": "Turning GLM-5.3-Flash into a Jev-like decision model",
-  "url": "https://www.privatemode.ai/blog/system-one-from-glm-flash",
-  "discuss": "https://news.ycombinator.com/item?id=49857656",
-  "score": 103,
-  "comments": 42,
-  "age_h": 20.4,
-  "text": "We found an approach to get Jev-like properties from standard LLMs like GLM-5.3-Flash.<p>The core idea is to craft the input prompt so that the first output token answers the question. This makes it possible to get a decision with a single forward pass.<p>In the blog post, we describe the approach in detail for GLM-5.3-Flash and vLLM. We benchmark this setup against Jev and Laya. We find that our setup is on-par with Jev in terms of accuracy and speed and that it substantially outperforms Laya.<p>Still, in terms of costs per decision, Jev is several x better than our setup. In turn, our setup "
- },
- {
-  "src": "HN",
-  "title": "A single function Jev-like wrapper for LLMs, including vision models",
-  "url": "http://allanrbo.blogspot.com/2026/09/a-jev-like-wrapper-for-llms-including.html",
-  "discuss": "https://news.ycombinator.com/item?id=49853175",
-  "score": 142,
-  "comments": 44,
+  "score": 619,
+  "comments": 606,
   "age_h": 31.9,
   "text": ""
  },
  {
   "src": "HN",
-  "title": "The Copilot+ PC brand is dead",
-  "url": "https://www.windowscentral.com/microsoft/windows-11/the-copilot-pc-brand-is-dead-microsoft-and-pc-makers-quietly-pull-back-on-tarnished-windows-11-ai-pc-branding",
-  "discuss": "https://news.ycombinator.com/item?id=49854945",
-  "score": 104,
-  "comments": 67,
-  "age_h": 26.3,
+  "title": "AI companies in race to demonstrate their model most threatening to humanity",
+  "url": "https://thecivilian.co.nz/2026/09/27/ai-companies-in-fierce-arms-race-to-demonstrate-their-model-is-the-most-existentially-threatening-to-humanity/",
+  "discuss": "https://news.ycombinator.com/item?id=49875148",
+  "score": 335,
+  "comments": 258,
+  "age_h": 5.7,
+  "text": ""
+ },
+ {
+  "src": "HN",
+  "title": "There are no \"rogue\" AI agents",
+  "url": "https://eoinhiggins.substack.com/p/there-are-no-rogue-ai-agents",
+  "discuss": "https://news.ycombinator.com/item?id=49868083",
+  "score": 377,
+  "comments": 260,
+  "age_h": 21.9,
+  "text": ""
+ },
+ {
+  "src": "HN",
+  "title": "Prompting Claude Opus 5.5",
+  "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-opus-5-5",
+  "discuss": "https://news.ycombinator.com/item?id=49874728",
+  "score": 168,
+  "comments": 178,
+  "age_h": 6.7,
+  "text": ""
+ },
+ {
+  "src": "HN",
+  "title": "SNL Weekend Update: Anthropic CEO Dario Amodei on A.I.'S Threat to Humanity [video]",
+  "url": "https://www.youtube.com/watch?v=-Nvne3LzBls",
+  "discuss": "https://news.ycombinator.com/item?id=49868831",
+  "score": 186,
+  "comments": 100,
+  "age_h": 20.7,
+  "text": ""
+ },
+ {
+  "src": "HN",
+  "title": "Thinking fast and slow in AI: The role of metacognition (2021)",
+  "url": "https://arxiv.org/abs/2110.01834",
+  "discuss": "https://news.ycombinator.com/item?id=49873241",
+  "score": 137,
+  "comments": 48,
+  "age_h": 10.9,
+  "text": ""
+ },
+ {
+  "src": "HN",
+  "title": "Show HN: TinyAIArena watch AI agents battle it out",
+  "url": "https://tinyaiarena.com/",
+  "discuss": "https://news.ycombinator.com/item?id=49867775",
+  "score": 114,
+  "comments": 45,
+  "age_h": 22.4,
+  "text": "Did you ever click on an “AI Arena” expecting glorious battle and instead get a boring benchmark? If so, this project is for you: proper life-or-death fights between four models on a picturesque 8×8 grid. May the most intelligent one win!<p>Click on any of the matches to spectate them.<p>Code: <a href=\"https:&#x2F;&#x2F;github.com&#x2F;hp6&#x2F;ai-arena\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;hp6&#x2F;ai-arena</a>"
+ },
+ {
+  "src": "HN",
+  "title": "\"As a Language Model\": Chat Template Switches LLM Self-Referential Voice",
+  "url": "https://arxiv.org/abs/2609.25021",
+  "discuss": "https://news.ycombinator.com/item?id=49865343",
+  "score": 102,
+  "comments": 101,
+  "age_h": 27.8,
   "text": ""
  },
  {
@@ -121,5 +111,16 @@
   "age_h": 12.0,
   "created": "2026-09-09T13:27:24.767-05:00",
   "text": "(I used both AI and vibecoding tags because the article describes training a logistic regression on LLM output. I thought there was a statistics tag that would have been appropriate but apparently not!)"
+ },
+ {
+  "src": "lobsters",
+  "title": "US government backs OpenAI in New York Times copyright case",
+  "url": "https://www.reuters.com/legal/litigation/us-government-backs-openai-new-york-times-copyright-case-2026-09-02/",
+  "discuss": "https://lobste.rs/s/xoklqk/us_government_backs_openai_new_york_times",
+  "score": 6,
+  "comments": 1,
+  "age_h": 12.0,
+  "created": "2026-09-02T20:13:14.049-05:00",
+  "text": ""
  }
 ]
