@@ -1,83 +1,93 @@
 [
  {
   "src": "HN",
-  "title": "From the creator of Redis; run LLM locally with ds4",
-  "url": "https://dwarfstar.sh/",
-  "discuss": "https://news.ycombinator.com/item?id=49936575",
-  "score": 263,
-  "comments": 68,
-  "age_h": 17.8,
+  "title": "Kolibri: A Sovereign Open-Weight Model",
+  "url": "https://aleph-alpha.com/en/blog/kolibri-has-landed-a-sovereign-open-weight-model/",
+  "discuss": "https://news.ycombinator.com/item?id=49942706",
+  "score": 621,
+  "comments": 318,
+  "age_h": 27.0,
+  "text": "tech report: <a href=\"https:&#x2F;&#x2F;aleph-alpha.com&#x2F;downloads&#x2F;tech-report.pdf\" rel=\"nofollow\">https:&#x2F;&#x2F;aleph-alpha.com&#x2F;downloads&#x2F;tech-report.pdf</a><p>additional paper: <a href=\"https:&#x2F;&#x2F;tej.as&#x2F;blog&#x2F;aleph-alpha-kolibri\" rel=\"nofollow\">https:&#x2F;&#x2F;tej.as&#x2F;blog&#x2F;aleph-alpha-kolibri</a>"
+ },
+ {
+  "src": "HN",
+  "title": "I quit OpenAI because its culture is broken",
+  "url": "https://www.theatlantic.com/technology/2026/10/openai-safety-team-resignation/688881/?gift=v5U_UzUTothfWXsPxtvNVAh7esWToMRD6XnbXmc5WgA",
+  "discuss": "https://news.ycombinator.com/item?id=49944227",
+  "score": 278,
+  "comments": 524,
+  "age_h": 22.8,
+  "text": "<a href=\"https:&#x2F;&#x2F;archive.ph&#x2F;5GQx8\" rel=\"nofollow\">https:&#x2F;&#x2F;archive.ph&#x2F;5GQx8</a><p><a href=\"https:&#x2F;&#x2F;www.theguardian.com&#x2F;technology&#x2F;2026&#x2F;oct&#x2F;03&#x2F;openai-safety-leader-quits-warning-ai-companys-culture-is-broken\" rel=\"nofollow\">https:&#x2F;&#x2F;www.theguardian.com&#x2F;technology&#x2F;2026&#x2F;oct&#x2F;03&#x2F;openai-sa...</a>"
+ },
+ {
+  "src": "HN",
+  "title": "Aleph Alpha Kolibri: How the sovereign German LLM works",
+  "url": "https://tej.as/blog/aleph-alpha-kolibri",
+  "discuss": "https://news.ycombinator.com/item?id=49943034",
+  "score": 413,
+  "comments": 12,
+  "age_h": 25.9,
+  "text": "<a href=\"https:&#x2F;&#x2F;aleph-alpha.com&#x2F;en&#x2F;blog&#x2F;kolibri-has-landed-a-sovereign-open-weight-model&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;aleph-alpha.com&#x2F;en&#x2F;blog&#x2F;kolibri-has-landed-a-soverei...</a>"
+ },
+ {
+  "src": "HN",
+  "title": "LeCun has \"zero concerns\" about AI wiping out humanity, recent \"rogue\" incidents",
+  "url": "https://fortune.com/2026/10/01/ai-godfather-yann-lecun-has-zero-concerns-about-human-extinction-says-anthropic-ceo-dario-amodei-is-deuded/",
+  "discuss": "https://news.ycombinator.com/item?id=49946228",
+  "score": 181,
+  "comments": 273,
+  "age_h": 18.9,
+  "text": "<a href=\"https:&#x2F;&#x2F;archive.ph&#x2F;TyDPf\" rel=\"nofollow\">https:&#x2F;&#x2F;archive.ph&#x2F;TyDPf</a>"
+ },
+ {
+  "src": "HN",
+  "title": "Getting the most out of Opus 5.5 in Claude and Claude Code",
+  "url": "https://claude.dev/blog/getting-the-most-out-of-opus-5-5/",
+  "discuss": "https://news.ycombinator.com/item?id=49946567",
+  "score": 221,
+  "comments": 152,
+  "age_h": 18.1,
   "text": ""
  },
  {
   "src": "HN",
-  "title": "AI Makes Me Sad",
-  "url": "https://mondobe.com/ai-makes-me-sad",
-  "discuss": "https://news.ycombinator.com/item?id=49934487",
-  "score": 188,
-  "comments": 226,
-  "age_h": 20.6,
+  "title": "Agents don't need memory, they need documentation",
+  "url": "https://liao.gg/blog/agents-dont-need-memory",
+  "discuss": "https://news.ycombinator.com/item?id=49945933",
+  "score": 220,
+  "comments": 123,
+  "age_h": 19.6,
   "text": ""
  },
  {
   "src": "HN",
-  "title": "With most information hidden, the game Stratego had stumped AI until now",
-  "url": "https://arstechnica.com/science/2026/10/ai-finally-beat-the-best-stratego-player-in-history-and-did-it-on-a-budget/",
-  "discuss": "https://news.ycombinator.com/item?id=49933740",
-  "score": 223,
-  "comments": 110,
-  "age_h": 21.7,
-  "text": "<a href=\"https:&#x2F;&#x2F;www.nature.com&#x2F;articles&#x2F;s41586-026-11036-y\" rel=\"nofollow\">https:&#x2F;&#x2F;www.nature.com&#x2F;articles&#x2F;s41586-026-11036-y</a><p><a href=\"https:&#x2F;&#x2F;arxiv.org&#x2F;abs&#x2F;2511.07312\" rel=\"nofollow\">https:&#x2F;&#x2F;arxiv.org&#x2F;abs&#x2F;2511.07312</a>"
- },
- {
-  "src": "HN",
-  "title": "One month coding with GLM 5.3 Flash",
-  "url": "https://wagtail.org/blog/one-month-on-glm-53-flash/",
-  "discuss": "https://news.ycombinator.com/item?id=49934620",
-  "score": 168,
-  "comments": 127,
-  "age_h": 20.4,
+  "title": "OpenAI safety leader quits, warning AI company's culture is 'broken'",
+  "url": "https://www.theguardian.com/technology/2026/oct/03/openai-safety-leader-quits-warning-ai-companys-culture-is-broken",
+  "discuss": "https://news.ycombinator.com/item?id=49948332",
+  "score": 264,
+  "comments": 3,
+  "age_h": 14.3,
   "text": ""
  },
  {
   "src": "HN",
-  "title": "Greg Kroah-Hartman – Security in the LLM Age [video]",
-  "url": "https://www.youtube.com/watch?v=NnV_cWeoo5Q",
-  "discuss": "https://news.ycombinator.com/item?id=49929391",
-  "score": 250,
-  "comments": 80,
-  "age_h": 33.0,
-  "text": ""
+  "title": "Religious scholars met with Anthropic",
+  "url": "https://www.nytimes.com/2026/09/29/us/anthropic-claude-morals-ai.html",
+  "discuss": "https://news.ycombinator.com/item?id=49950052",
+  "score": 95,
+  "comments": 230,
+  "age_h": 10.0,
+  "text": "<a href=\"https:&#x2F;&#x2F;archive.is&#x2F;y8FW0\" rel=\"nofollow\">https:&#x2F;&#x2F;archive.is&#x2F;y8FW0</a>"
  },
  {
   "src": "HN",
-  "title": "Every SaaS business will become a harness around a model",
-  "url": "https://blog.sshh.io/p/the-harness-is-the-company",
-  "discuss": "https://news.ycombinator.com/item?id=49938616",
-  "score": 137,
-  "comments": 94,
-  "age_h": 14.7,
+  "title": "Pop!_OS bans AI-generated code from much of its codebase",
+  "url": "https://www.neowin.net/news/system76-bans-ai-generated-code-across-many-of-its-cosmic-codebases/",
+  "discuss": "https://news.ycombinator.com/item?id=49946321",
+  "score": 106,
+  "comments": 157,
+  "age_h": 18.7,
   "text": ""
- },
- {
-  "src": "HN",
-  "title": "The Four Horsemen of Agentic Coding",
-  "url": "https://distantprovince.substack.com/p/the-four-horsemen-of-agentic-coding",
-  "discuss": "https://news.ycombinator.com/item?id=49934511",
-  "score": 108,
-  "comments": 88,
-  "age_h": 20.5,
-  "text": ""
- },
- {
-  "src": "HN",
-  "title": "Show HN: Made an open-source Lego AI generator",
-  "url": "https://github.com/anteloc/ldraw-nova",
-  "discuss": "https://news.ycombinator.com/item?id=49937916",
-  "score": 117,
-  "comments": 46,
-  "age_h": 15.9,
-  "text": "Hi there :-) New on HN, first time posting.<p>Past year, around December, I started experimenting with making ChatGPT and Claude generate source code in LDraw language.<p>This LDraw is literally an &quot;assembly&quot; language, a low-level programming language that describes how to assemble LEGO pieces together into models, one placement instruction at a time.<p>When executed by specific tools, like e.g. LDView, LeoCAD, Studio... these instructions become LEGO CAD models, that can be interacted with, modified, etc.<p>Or, in other words: one LDraw source file in .mpd or .ldr format is equivale"
  },
  {
   "src": "lobsters",
@@ -111,16 +121,5 @@
   "age_h": 12.0,
   "created": "2026-09-09T13:27:24.767-05:00",
   "text": "(I used both AI and vibecoding tags because the article describes training a logistic regression on LLM output. I thought there was a statistics tag that would have been appropriate but apparently not!)"
- },
- {
-  "src": "lobsters",
-  "title": "US government backs OpenAI in New York Times copyright case",
-  "url": "https://www.reuters.com/legal/litigation/us-government-backs-openai-new-york-times-copyright-case-2026-09-02/",
-  "discuss": "https://lobste.rs/s/xoklqk/us_government_backs_openai_new_york_times",
-  "score": 6,
-  "comments": 1,
-  "age_h": 12.0,
-  "created": "2026-09-02T20:13:14.049-05:00",
-  "text": ""
  }
 ]
