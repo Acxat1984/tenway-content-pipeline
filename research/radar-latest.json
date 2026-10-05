@@ -1,92 +1,22 @@
 [
  {
   "src": "HN",
-  "title": "Kolibri: A Sovereign Open-Weight Model",
-  "url": "https://aleph-alpha.com/en/blog/kolibri-has-landed-a-sovereign-open-weight-model/",
-  "discuss": "https://news.ycombinator.com/item?id=49942706",
-  "score": 621,
-  "comments": 318,
-  "age_h": 27.0,
-  "text": "tech report: <a href=\"https:&#x2F;&#x2F;aleph-alpha.com&#x2F;downloads&#x2F;tech-report.pdf\" rel=\"nofollow\">https:&#x2F;&#x2F;aleph-alpha.com&#x2F;downloads&#x2F;tech-report.pdf</a><p>additional paper: <a href=\"https:&#x2F;&#x2F;tej.as&#x2F;blog&#x2F;aleph-alpha-kolibri\" rel=\"nofollow\">https:&#x2F;&#x2F;tej.as&#x2F;blog&#x2F;aleph-alpha-kolibri</a>"
- },
- {
-  "src": "HN",
-  "title": "I quit OpenAI because its culture is broken",
-  "url": "https://www.theatlantic.com/technology/2026/10/openai-safety-team-resignation/688881/?gift=v5U_UzUTothfWXsPxtvNVAh7esWToMRD6XnbXmc5WgA",
-  "discuss": "https://news.ycombinator.com/item?id=49944227",
-  "score": 278,
-  "comments": 524,
-  "age_h": 22.8,
-  "text": "<a href=\"https:&#x2F;&#x2F;archive.ph&#x2F;5GQx8\" rel=\"nofollow\">https:&#x2F;&#x2F;archive.ph&#x2F;5GQx8</a><p><a href=\"https:&#x2F;&#x2F;www.theguardian.com&#x2F;technology&#x2F;2026&#x2F;oct&#x2F;03&#x2F;openai-safety-leader-quits-warning-ai-companys-culture-is-broken\" rel=\"nofollow\">https:&#x2F;&#x2F;www.theguardian.com&#x2F;technology&#x2F;2026&#x2F;oct&#x2F;03&#x2F;openai-sa...</a>"
- },
- {
-  "src": "HN",
-  "title": "Aleph Alpha Kolibri: How the sovereign German LLM works",
-  "url": "https://tej.as/blog/aleph-alpha-kolibri",
-  "discuss": "https://news.ycombinator.com/item?id=49943034",
-  "score": 413,
-  "comments": 12,
-  "age_h": 25.9,
-  "text": "<a href=\"https:&#x2F;&#x2F;aleph-alpha.com&#x2F;en&#x2F;blog&#x2F;kolibri-has-landed-a-sovereign-open-weight-model&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;aleph-alpha.com&#x2F;en&#x2F;blog&#x2F;kolibri-has-landed-a-soverei...</a>"
- },
- {
-  "src": "HN",
-  "title": "LeCun has \"zero concerns\" about AI wiping out humanity, recent \"rogue\" incidents",
-  "url": "https://fortune.com/2026/10/01/ai-godfather-yann-lecun-has-zero-concerns-about-human-extinction-says-anthropic-ceo-dario-amodei-is-deuded/",
-  "discuss": "https://news.ycombinator.com/item?id=49946228",
-  "score": 181,
-  "comments": 273,
-  "age_h": 18.9,
-  "text": "<a href=\"https:&#x2F;&#x2F;archive.ph&#x2F;TyDPf\" rel=\"nofollow\">https:&#x2F;&#x2F;archive.ph&#x2F;TyDPf</a>"
- },
- {
-  "src": "HN",
-  "title": "Getting the most out of Opus 5.5 in Claude and Claude Code",
-  "url": "https://claude.dev/blog/getting-the-most-out-of-opus-5-5/",
-  "discuss": "https://news.ycombinator.com/item?id=49946567",
-  "score": 221,
-  "comments": 152,
-  "age_h": 18.1,
+  "title": "Anthropic reported diary entry to police, woman faces felony charge",
+  "url": "https://www.techspot.com/news/114091-florida-woman-used-claude-diary-anthropic-reported-shoot.html",
+  "discuss": "https://news.ycombinator.com/item?id=49961057",
+  "score": 83,
+  "comments": 68,
+  "age_h": 9.4,
   "text": ""
  },
  {
   "src": "HN",
-  "title": "Agents don't need memory, they need documentation",
-  "url": "https://liao.gg/blog/agents-dont-need-memory",
-  "discuss": "https://news.ycombinator.com/item?id=49945933",
-  "score": 220,
-  "comments": 123,
-  "age_h": 19.6,
-  "text": ""
- },
- {
-  "src": "HN",
-  "title": "OpenAI safety leader quits, warning AI company's culture is 'broken'",
-  "url": "https://www.theguardian.com/technology/2026/oct/03/openai-safety-leader-quits-warning-ai-companys-culture-is-broken",
-  "discuss": "https://news.ycombinator.com/item?id=49948332",
-  "score": 264,
-  "comments": 3,
-  "age_h": 14.3,
-  "text": ""
- },
- {
-  "src": "HN",
-  "title": "Religious scholars met with Anthropic",
-  "url": "https://www.nytimes.com/2026/09/29/us/anthropic-claude-morals-ai.html",
-  "discuss": "https://news.ycombinator.com/item?id=49950052",
-  "score": 95,
-  "comments": 230,
-  "age_h": 10.0,
-  "text": "<a href=\"https:&#x2F;&#x2F;archive.is&#x2F;y8FW0\" rel=\"nofollow\">https:&#x2F;&#x2F;archive.is&#x2F;y8FW0</a>"
- },
- {
-  "src": "HN",
-  "title": "Pop!_OS bans AI-generated code from much of its codebase",
-  "url": "https://www.neowin.net/news/system76-bans-ai-generated-code-across-many-of-its-cosmic-codebases/",
-  "discuss": "https://news.ycombinator.com/item?id=49946321",
-  "score": 106,
-  "comments": 157,
-  "age_h": 18.7,
+  "title": "Show HN: AI search for every photo and every frame of video on macOS",
+  "url": "https://github.com/allenv0/SCM",
+  "discuss": "https://news.ycombinator.com/item?id=49952111",
+  "score": 156,
+  "comments": 71,
+  "age_h": 29.6,
   "text": ""
  },
  {
@@ -98,6 +28,16 @@
   "comments": 6,
   "age_h": 12.0,
   "created": "2026-09-19T08:41:57.630-05:00",
+  "text": ""
+ },
+ {
+  "src": "HN",
+  "title": "How to scale intent, quality, and artistry with AI [video]",
+  "url": "https://www.youtube.com/watch?v=GLvFTMtw4Jk",
+  "discuss": "https://news.ycombinator.com/item?id=49951891",
+  "score": 95,
+  "comments": 38,
+  "age_h": 30.4,
   "text": ""
  },
  {
@@ -121,5 +61,71 @@
   "age_h": 12.0,
   "created": "2026-09-09T13:27:24.767-05:00",
   "text": "(I used both AI and vibecoding tags because the article describes training a logistic regression on LLM output. I thought there was a statistics tag that would have been appropriate but apparently not!)"
+ },
+ {
+  "src": "lobsters",
+  "title": "US government backs OpenAI in New York Times copyright case",
+  "url": "https://www.reuters.com/legal/litigation/us-government-backs-openai-new-york-times-copyright-case-2026-09-02/",
+  "discuss": "https://lobste.rs/s/xoklqk/us_government_backs_openai_new_york_times",
+  "score": 6,
+  "comments": 1,
+  "age_h": 12.0,
+  "created": "2026-09-02T20:13:14.049-05:00",
+  "text": ""
+ },
+ {
+  "src": "lobsters",
+  "title": "Super-intelligence or Superstition? Exploring Psychological Factors Influencing Belief in AI Predictions about Personal Behavior",
+  "url": "https://arxiv.org/abs/2408.06602",
+  "discuss": "https://lobste.rs/s/2djazj/super_intelligence_superstition",
+  "score": 5,
+  "comments": 0,
+  "age_h": 12.0,
+  "created": "2026-08-25T10:03:24.648-05:00",
+  "text": ""
+ },
+ {
+  "src": "lobsters",
+  "title": "Researchers use AI to ‘democratize’ 3D printing of crucial metal alloy",
+  "url": "https://news.wsu.edu/news/2026/08/24/researchers-use-ai-to-democratize-3d-printing-of-crucial-metal-alloy/",
+  "discuss": "https://lobste.rs/s/em1whz/researchers_use_ai_democratize_3d",
+  "score": 4,
+  "comments": 3,
+  "age_h": 12.0,
+  "created": "2026-09-01T17:42:12.660-05:00",
+  "text": ""
+ },
+ {
+  "src": "lobsters",
+  "title": "Text-to-meowdio models",
+  "url": "https://www.kmjn.org/notes/text_to_meowdio_models.html",
+  "discuss": "https://lobste.rs/s/1xr8zc/text_meowdio_models",
+  "score": 4,
+  "comments": 2,
+  "age_h": 12.0,
+  "created": "2026-09-29T11:51:35.804-05:00",
+  "text": ""
+ },
+ {
+  "src": "lobsters",
+  "title": "openarm: A fully open-source humanoid arm for physical AI research and deployment in contact-rich environments",
+  "url": "https://github.com/enactic/OpenArm",
+  "discuss": "https://lobste.rs/s/lizqwo/openarm_fully_open_source_humanoid_arm",
+  "score": 4,
+  "comments": 0,
+  "age_h": 12.0,
+  "created": "2026-09-15T07:52:26.056-05:00",
+  "text": ""
+ },
+ {
+  "src": "lobsters",
+  "title": "How OpenAI Used Its Own LLMs to Design Its Jalapeño Chip",
+  "url": "https://spectrum.ieee.org/llms-for-chip-design",
+  "discuss": "https://lobste.rs/s/7knhjd/how_openai_used_its_own_llms_design_its",
+  "score": 3,
+  "comments": 0,
+  "age_h": 12.0,
+  "created": "2026-09-19T04:52:30.528-05:00",
+  "text": ""
  }
 ]
