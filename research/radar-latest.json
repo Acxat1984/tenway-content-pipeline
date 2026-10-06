@@ -4,18 +4,48 @@
   "title": "Anthropic reported diary entry to police, woman faces felony charge",
   "url": "https://www.techspot.com/news/114091-florida-woman-used-claude-diary-anthropic-reported-shoot.html",
   "discuss": "https://news.ycombinator.com/item?id=49961057",
-  "score": 83,
-  "comments": 68,
-  "age_h": 9.4,
+  "score": 757,
+  "comments": 590,
+  "age_h": 31.8,
   "text": ""
  },
  {
   "src": "HN",
-  "title": "Show HN: AI search for every photo and every frame of video on macOS",
-  "url": "https://github.com/allenv0/SCM",
-  "discuss": "https://news.ycombinator.com/item?id=49952111",
-  "score": 156,
-  "comments": 71,
+  "title": "Beam: Reflection's 501B open-weight model",
+  "url": "https://reflection.ai/blog/introducing-beam",
+  "discuss": "https://news.ycombinator.com/item?id=49969183",
+  "score": 484,
+  "comments": 156,
+  "age_h": 18.2,
+  "text": ""
+ },
+ {
+  "src": "HN",
+  "title": "Opus 5.5 agents discover two room-temperature magnetic semiconductor candidates",
+  "url": "https://www.vals.ai/blogs/room-temperature-magnetic-semiconductors",
+  "discuss": "https://news.ycombinator.com/item?id=49970667",
+  "score": 403,
+  "comments": 271,
+  "age_h": 16.5,
+  "text": ""
+ },
+ {
+  "src": "HN",
+  "title": "OpenAI \"rogue\" agent activities found on Wikimedia projects",
+  "url": "https://diff.wikimedia.org/2026/10/05/openai-rogue-agent-activities-found-on-wikimedia-projects/",
+  "discuss": "https://news.ycombinator.com/item?id=49968105",
+  "score": 288,
+  "comments": 186,
+  "age_h": 19.6,
+  "text": ""
+ },
+ {
+  "src": "HN",
+  "title": "Sales of sub-€25,000 electric car models set to rise sevenfold",
+  "url": "https://www.transportenvironment.org/articles/wave-of-affordable-electric-cars-is-boosting-consumers-choice-sales-of-sub-eur25-000-models-set-to-rise-sevenfold",
+  "discuss": "https://news.ycombinator.com/item?id=49961890",
+  "score": 83,
+  "comments": 131,
   "age_h": 29.6,
   "text": ""
  },
@@ -28,16 +58,6 @@
   "comments": 6,
   "age_h": 12.0,
   "created": "2026-09-19T08:41:57.630-05:00",
-  "text": ""
- },
- {
-  "src": "HN",
-  "title": "How to scale intent, quality, and artistry with AI [video]",
-  "url": "https://www.youtube.com/watch?v=GLvFTMtw4Jk",
-  "discuss": "https://news.ycombinator.com/item?id=49951891",
-  "score": 95,
-  "comments": 38,
-  "age_h": 30.4,
   "text": ""
  },
  {
@@ -104,28 +124,6 @@
   "comments": 2,
   "age_h": 12.0,
   "created": "2026-09-29T11:51:35.804-05:00",
-  "text": ""
- },
- {
-  "src": "lobsters",
-  "title": "openarm: A fully open-source humanoid arm for physical AI research and deployment in contact-rich environments",
-  "url": "https://github.com/enactic/OpenArm",
-  "discuss": "https://lobste.rs/s/lizqwo/openarm_fully_open_source_humanoid_arm",
-  "score": 4,
-  "comments": 0,
-  "age_h": 12.0,
-  "created": "2026-09-15T07:52:26.056-05:00",
-  "text": ""
- },
- {
-  "src": "lobsters",
-  "title": "How OpenAI Used Its Own LLMs to Design Its Jalapeño Chip",
-  "url": "https://spectrum.ieee.org/llms-for-chip-design",
-  "discuss": "https://lobste.rs/s/7knhjd/how_openai_used_its_own_llms_design_its",
-  "score": 3,
-  "comments": 0,
-  "age_h": 12.0,
-  "created": "2026-09-19T04:52:30.528-05:00",
   "text": ""
  }
 ]
