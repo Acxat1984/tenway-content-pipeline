@@ -1,92 +1,22 @@
 [
  {
   "src": "HN",
-  "title": "OpenAI annualised revenues $20B less than previously signalled",
-  "url": "https://www.cnbc.com/2026/10/08/open-ai-revenue-nvidia-oracle-coreweave.html",
-  "discuss": "https://news.ycombinator.com/item?id=50008187",
-  "score": 407,
-  "comments": 281,
-  "age_h": 20.8,
+  "title": "Typesafe AI raises $870M at $7.5B",
+  "url": "https://typesafe.ai/blog/series-ai",
+  "discuss": "https://news.ycombinator.com/item?id=50023450",
+  "score": 384,
+  "comments": 301,
+  "age_h": 19.7,
   "text": ""
  },
  {
   "src": "HN",
-  "title": "OpenAI withdraws three mathematical results",
-  "url": "https://twitter.com/danintheory/status/2108065033070789090",
-  "discuss": "https://news.ycombinator.com/item?id=50002650",
-  "score": 342,
-  "comments": 586,
-  "age_h": 30.4,
-  "text": "<a href=\"https:&#x2F;&#x2F;github.com&#x2F;openai&#x2F;math&#x2F;blob&#x2F;main&#x2F;history.md\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;openai&#x2F;math&#x2F;blob&#x2F;main&#x2F;history.md</a>"
- },
- {
-  "src": "HN",
-  "title": "I gave Opus 5.5 one prompt and six hours to visualize Invisible Cities",
-  "url": "https://quesma.com/blog/invisible-cities-one-shot/",
-  "discuss": "https://news.ycombinator.com/item?id=50004790",
-  "score": 393,
-  "comments": 194,
-  "age_h": 25.5,
-  "text": ""
- },
- {
-  "src": "HN",
-  "title": "OpenAI Withdraws 3 Math Papers",
-  "url": "https://github.com/openai/math/blob/main/history.md",
-  "discuss": "https://news.ycombinator.com/item?id=50003107",
-  "score": 341,
-  "comments": 3,
-  "age_h": 29.4,
-  "text": ""
- },
- {
-  "src": "HN",
-  "title": "Let your AI agents paint big arrows, boxes and text on your screen",
+  "title": "Show HN: Let your AI agents paint big arrows, boxes and text on your screen",
   "url": "https://github.com/franzenzenhofer/big-arrow-on-the-screen",
   "discuss": "https://news.ycombinator.com/item?id=50018817",
-  "score": 152,
-  "comments": 58,
-  "age_h": 2.5,
-  "text": ""
- },
- {
-  "src": "HN",
-  "title": "OpenAI, the Partition Principle, and Mathematics",
-  "url": "https://karagila.org/2026/openai-pp/",
-  "discuss": "https://news.ycombinator.com/item?id=50013902",
-  "score": 145,
-  "comments": 228,
-  "age_h": 14.0,
-  "text": ""
- },
- {
-  "src": "HN",
-  "title": "I think I found a planet nobody knew existed. I used Claude Code to find it",
-  "url": "https://www.reddit.com/r/ClaudeAI/s/mbe5IY2LF9",
-  "discuss": "https://news.ycombinator.com/item?id=50002665",
-  "score": 222,
-  "comments": 108,
-  "age_h": 30.4,
-  "text": ""
- },
- {
-  "src": "HN",
-  "title": "Step 5 Preview, a 1M-context MoE from StepFun, shows up on OpenRouter",
-  "url": "https://openrouter.ai/stepfun/step-5-preview",
-  "discuss": "https://news.ycombinator.com/item?id=50007764",
-  "score": 133,
-  "comments": 34,
-  "age_h": 21.2,
-  "text": ""
- },
- {
-  "src": "HN",
-  "title": "AI-ready biological data: $1.8B global commitment",
-  "url": "https://biohub.org/news/virtual-biology-initiative-expansion/",
-  "discuss": "https://news.ycombinator.com/item?id=50011999",
-  "score": 133,
-  "comments": 19,
-  "age_h": 16.8,
+  "score": 400,
+  "comments": 179,
+  "age_h": 25.7,
   "text": ""
  },
  {
@@ -94,19 +24,69 @@
   "title": "OpenAI fires three safety researchers for \"mishandling research information\"",
   "url": "https://techcrunch.com/2026/10/08/fired-openai-safety-researchers-dispute-misconduct-claims-warn-of-chilling-effect/",
   "discuss": "https://news.ycombinator.com/item?id=50018350",
-  "score": 82,
-  "comments": 43,
-  "age_h": 3.5,
+  "score": 342,
+  "comments": 213,
+  "age_h": 26.8,
+  "text": "Later: <a href=\"https:&#x2F;&#x2F;www.cnbc.com&#x2F;2026&#x2F;10&#x2F;09&#x2F;openai-fired-researchers-ai-concerns.html\" rel=\"nofollow\">https:&#x2F;&#x2F;www.cnbc.com&#x2F;2026&#x2F;10&#x2F;09&#x2F;openai-fired-researchers-ai-...</a>"
+ },
+ {
+  "src": "HN",
+  "title": "Anthropic AI model submits false tip on unsolved Philly murder, police say",
+  "url": "https://www.nbcphiladelphia.com/news/local/anthropic-ai-model-submits-false-tip-on-unsolved-philly-murder-police-say/4477051/",
+  "discuss": "https://news.ycombinator.com/item?id=50027118",
+  "score": 178,
+  "comments": 128,
+  "age_h": 14.8,
   "text": ""
  },
  {
   "src": "HN",
-  "title": "Sub-1-Bit LLM Compression via Latent Factorization",
-  "url": "https://github.com/SamsungLabs/LittleBit",
-  "discuss": "https://news.ycombinator.com/item?id=50005608",
-  "score": 86,
-  "comments": 24,
-  "age_h": 24.0,
+  "title": "Microsoft-Decision-1, our model for fast decision-making",
+  "url": "https://commandline.microsoft.com/microsoft-decision-1-model-foundry/",
+  "discuss": "https://news.ycombinator.com/item?id=50024913",
+  "score": 187,
+  "comments": 62,
+  "age_h": 18.1,
+  "text": ""
+ },
+ {
+  "src": "HN",
+  "title": "What mathematicians should know about the Lean Theorem Prover: reliability & AI",
+  "url": "https://terrytao.wordpress.com/2026/10/09/what-mathematicians-should-know-about-the-lean-theorem-proverquestions-of-reliability-and-ai/",
+  "discuss": "https://news.ycombinator.com/item?id=50024090",
+  "score": 138,
+  "comments": 35,
+  "age_h": 19.1,
+  "text": ""
+ },
+ {
+  "src": "HN",
+  "title": "Pointing AI at archives found a forgotten meteorite, lost rhinos, and more",
+  "url": "https://jessewaites.com/blog/post/i-pointed-ai-at-400-years-of-archives/",
+  "discuss": "https://news.ycombinator.com/item?id=50019056",
+  "score": 156,
+  "comments": 80,
+  "age_h": 25.2,
+  "text": ""
+ },
+ {
+  "src": "HN",
+  "title": "Why are coding agents so dumb?",
+  "url": "https://mtlynch.io/why-are-coding-agents-so-dumb/",
+  "discuss": "https://news.ycombinator.com/item?id=50020947",
+  "score": 94,
+  "comments": 89,
+  "age_h": 22.4,
+  "text": ""
+ },
+ {
+  "src": "HN",
+  "title": "The super intelligence shit is a humiliation ritual for OpenAI",
+  "url": "https://bsky.app/profile/opinionhaver.bsky.social/post/3mxfo2mdjqs2z",
+  "discuss": "https://news.ycombinator.com/item?id=50021763",
+  "score": 94,
+  "comments": 83,
+  "age_h": 21.5,
   "text": ""
  },
  {
@@ -118,6 +98,28 @@
   "comments": 6,
   "age_h": 12.0,
   "created": "2026-09-19T08:41:57.630-05:00",
+  "text": ""
+ },
+ {
+  "src": "lobsters",
+  "title": "Better AI code comment detector",
+  "url": "https://entropicthoughts.com/better-ai-comment-classifier",
+  "discuss": "https://lobste.rs/s/o9cyiv/better_ai_code_comment_detector",
+  "score": 9,
+  "comments": 2,
+  "age_h": 12.0,
+  "created": "2026-09-09T13:27:24.767-05:00",
+  "text": "(I used both AI and vibecoding tags because the article describes training a logistic regression on LLM output. I thought there was a statistics tag that would have been appropriate but apparently not!)"
+ },
+ {
+  "src": "lobsters",
+  "title": "US government backs OpenAI in New York Times copyright case",
+  "url": "https://www.reuters.com/legal/litigation/us-government-backs-openai-new-york-times-copyright-case-2026-09-02/",
+  "discuss": "https://lobste.rs/s/xoklqk/us_government_backs_openai_new_york_times",
+  "score": 6,
+  "comments": 1,
+  "age_h": 12.0,
+  "created": "2026-09-02T20:13:14.049-05:00",
   "text": ""
  }
 ]
