@@ -1,92 +1,52 @@
 [
  {
   "src": "HN",
-  "title": "Typesafe AI raises $870M at $7.5B",
-  "url": "https://typesafe.ai/blog/series-ai",
-  "discuss": "https://news.ycombinator.com/item?id=50023450",
+  "title": "Bitwarden Dual License Model",
+  "url": "https://community.bitwarden.com/t/published-version-update-in-app-stores/102750",
+  "discuss": "https://news.ycombinator.com/item?id=50033407",
   "score": 384,
-  "comments": 301,
-  "age_h": 19.7,
+  "comments": 283,
+  "age_h": 22.6,
   "text": ""
  },
  {
   "src": "HN",
-  "title": "Show HN: Let your AI agents paint big arrows, boxes and text on your screen",
-  "url": "https://github.com/franzenzenhofer/big-arrow-on-the-screen",
-  "discuss": "https://news.ycombinator.com/item?id=50018817",
-  "score": 400,
-  "comments": 179,
-  "age_h": 25.7,
-  "text": ""
- },
- {
-  "src": "HN",
-  "title": "OpenAI fires three safety researchers for \"mishandling research information\"",
-  "url": "https://techcrunch.com/2026/10/08/fired-openai-safety-researchers-dispute-misconduct-claims-warn-of-chilling-effect/",
-  "discuss": "https://news.ycombinator.com/item?id=50018350",
-  "score": 342,
-  "comments": 213,
-  "age_h": 26.8,
-  "text": "Later: <a href=\"https:&#x2F;&#x2F;www.cnbc.com&#x2F;2026&#x2F;10&#x2F;09&#x2F;openai-fired-researchers-ai-concerns.html\" rel=\"nofollow\">https:&#x2F;&#x2F;www.cnbc.com&#x2F;2026&#x2F;10&#x2F;09&#x2F;openai-fired-researchers-ai-...</a>"
- },
- {
-  "src": "HN",
-  "title": "Anthropic AI model submits false tip on unsolved Philly murder, police say",
-  "url": "https://www.nbcphiladelphia.com/news/local/anthropic-ai-model-submits-false-tip-on-unsolved-philly-murder-police-say/4477051/",
-  "discuss": "https://news.ycombinator.com/item?id=50027118",
-  "score": 178,
-  "comments": 128,
-  "age_h": 14.8,
-  "text": ""
- },
- {
-  "src": "HN",
-  "title": "Microsoft-Decision-1, our model for fast decision-making",
-  "url": "https://commandline.microsoft.com/microsoft-decision-1-model-foundry/",
-  "discuss": "https://news.ycombinator.com/item?id=50024913",
-  "score": 187,
-  "comments": 62,
-  "age_h": 18.1,
-  "text": ""
- },
- {
-  "src": "HN",
-  "title": "What mathematicians should know about the Lean Theorem Prover: reliability & AI",
-  "url": "https://terrytao.wordpress.com/2026/10/09/what-mathematicians-should-know-about-the-lean-theorem-proverquestions-of-reliability-and-ai/",
-  "discuss": "https://news.ycombinator.com/item?id=50024090",
-  "score": 138,
-  "comments": 35,
-  "age_h": 19.1,
-  "text": ""
- },
- {
-  "src": "HN",
-  "title": "Pointing AI at archives found a forgotten meteorite, lost rhinos, and more",
-  "url": "https://jessewaites.com/blog/post/i-pointed-ai-at-400-years-of-archives/",
-  "discuss": "https://news.ycombinator.com/item?id=50019056",
-  "score": 156,
+  "title": "Build your own decision model",
+  "url": "https://nishtahir.com/build-your-own-decision-model/",
+  "discuss": "https://news.ycombinator.com/item?id=50037949",
+  "score": 364,
   "comments": 80,
-  "age_h": 25.2,
+  "age_h": 14.3,
   "text": ""
  },
  {
   "src": "HN",
-  "title": "Why are coding agents so dumb?",
-  "url": "https://mtlynch.io/why-are-coding-agents-so-dumb/",
-  "discuss": "https://news.ycombinator.com/item?id=50020947",
-  "score": 94,
-  "comments": 89,
-  "age_h": 22.4,
+  "title": "Talorys – A self-hosted personal AI agent on Cloudflare's free tier",
+  "url": "https://github.com/rociiu/talorys",
+  "discuss": "https://news.ycombinator.com/item?id=50031614",
+  "score": 304,
+  "comments": 138,
+  "age_h": 26.3,
   "text": ""
  },
  {
   "src": "HN",
-  "title": "The super intelligence shit is a humiliation ritual for OpenAI",
-  "url": "https://bsky.app/profile/opinionhaver.bsky.social/post/3mxfo2mdjqs2z",
-  "discuss": "https://news.ycombinator.com/item?id=50021763",
-  "score": 94,
-  "comments": 83,
-  "age_h": 21.5,
+  "title": "Nvidia in talks to acquire US 'open' model startup Reflection AI",
+  "url": "https://www.ft.com/content/052610c5-22b4-4dd4-932e-b7f9f0628b6a",
+  "discuss": "https://news.ycombinator.com/item?id=50035886",
+  "score": 168,
+  "comments": 107,
+  "age_h": 18.4,
+  "text": ""
+ },
+ {
+  "src": "HN",
+  "title": "500B Tokens Later: Letting AI Agents Decompile a First-Person Shooter",
+  "url": "https://momo5502.com/posts/2026-10-09-game-decompilation/",
+  "discuss": "https://news.ycombinator.com/item?id=50039092",
+  "score": 113,
+  "comments": 82,
+  "age_h": 11.1,
   "text": ""
  },
  {
@@ -113,6 +73,17 @@
  },
  {
   "src": "lobsters",
+  "title": "Byte Language Models: Scaling, Emergent Abstractions, and Information Allocation",
+  "url": "https://arxiv.org/html/2610.05978v1",
+  "discuss": "https://lobste.rs/s/t2fxpt/byte_language_models_scaling_emergent",
+  "score": 7,
+  "comments": 0,
+  "age_h": 12.0,
+  "created": "2026-10-10T17:25:14.935-05:00",
+  "text": "The paper challenges the assumption that language models need explicit tokenizers to be efficient demonstrating that standard flat Transformers can process raw byte sequences and actually outperform traditional subword models as parameter sizes scale. The prevailing thought in the field has been that processing raw bytes is computationally inefficient because the sequences are substantially longer"
+ },
+ {
+  "src": "lobsters",
   "title": "US government backs OpenAI in New York Times copyright case",
   "url": "https://www.reuters.com/legal/litigation/us-government-backs-openai-new-york-times-copyright-case-2026-09-02/",
   "discuss": "https://lobste.rs/s/xoklqk/us_government_backs_openai_new_york_times",
@@ -120,6 +91,39 @@
   "comments": 1,
   "age_h": 12.0,
   "created": "2026-09-02T20:13:14.049-05:00",
+  "text": ""
+ },
+ {
+  "src": "lobsters",
+  "title": "Best Books/Courses/Channels to Leapfrog on AI/ML Material",
+  "url": "https://lobste.rs/s/xff77a",
+  "discuss": "https://lobste.rs/s/xff77a/best_books_courses_channels_leapfrog_on",
+  "score": 5,
+  "comments": 4,
+  "age_h": 12.0,
+  "created": "2026-10-07T09:12:02.815-05:00",
+  "text": "Assuming I have been on hibernation since 2018-19 time frame, which materials - books, MOOC courses and YT channels would be recommended for me to get started with understanding all the current progress on AI/ML. Ideally a resource like [TeachYourselfCS](https://teachyourselfcs.com/) that can give structure and roadmap to navigate all the progress/knowledge on the domain would really help.\r\n\r\nDo w"
+ },
+ {
+  "src": "lobsters",
+  "title": "Text-to-meowdio models",
+  "url": "https://www.kmjn.org/notes/text_to_meowdio_models.html",
+  "discuss": "https://lobste.rs/s/1xr8zc/text_meowdio_models",
+  "score": 4,
+  "comments": 2,
+  "age_h": 12.0,
+  "created": "2026-09-29T11:51:35.804-05:00",
+  "text": ""
+ },
+ {
+  "src": "lobsters",
+  "title": "openarm: A fully open-source humanoid arm for physical AI research and deployment in contact-rich environments",
+  "url": "https://github.com/enactic/OpenArm",
+  "discuss": "https://lobste.rs/s/lizqwo/openarm_fully_open_source_humanoid_arm",
+  "score": 4,
+  "comments": 0,
+  "age_h": 12.0,
+  "created": "2026-09-15T07:52:26.056-05:00",
   "text": ""
  }
 ]
