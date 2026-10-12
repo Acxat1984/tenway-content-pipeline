@@ -1,52 +1,52 @@
 [
  {
   "src": "HN",
-  "title": "Bitwarden Dual License Model",
-  "url": "https://community.bitwarden.com/t/published-version-update-in-app-stores/102750",
-  "discuss": "https://news.ycombinator.com/item?id=50033407",
-  "score": 384,
-  "comments": 283,
-  "age_h": 22.6,
+  "title": "The gap in shared understanding of LLM capability is widening",
+  "url": "https://twitter.com/karpathy/status/2109361546505966046",
+  "discuss": "https://news.ycombinator.com/item?id=50047422",
+  "score": 584,
+  "comments": 841,
+  "age_h": 19.5,
   "text": ""
  },
  {
   "src": "HN",
-  "title": "Build your own decision model",
-  "url": "https://nishtahir.com/build-your-own-decision-model/",
-  "discuss": "https://news.ycombinator.com/item?id=50037949",
-  "score": 364,
-  "comments": 80,
-  "age_h": 14.3,
+  "title": "QGIS bans AI assisted contributions",
+  "url": "https://github.com/qgis/QGIS-Enhancement-Proposals/pull/387",
+  "discuss": "https://news.ycombinator.com/item?id=50054751",
+  "score": 287,
+  "comments": 295,
+  "age_h": 4.4,
   "text": ""
  },
  {
   "src": "HN",
-  "title": "Talorys – A self-hosted personal AI agent on Cloudflare's free tier",
-  "url": "https://github.com/rociiu/talorys",
-  "discuss": "https://news.ycombinator.com/item?id=50031614",
-  "score": 304,
-  "comments": 138,
-  "age_h": 26.3,
+  "title": "Why aren't AI companies being charged for hacking?",
+  "url": "https://mortoray.com/why-arent-ai-companies-being-charged-for-hacking/",
+  "discuss": "https://news.ycombinator.com/item?id=50057278",
+  "score": 198,
+  "comments": 154,
+  "age_h": 0.9,
   "text": ""
  },
  {
   "src": "HN",
-  "title": "Nvidia in talks to acquire US 'open' model startup Reflection AI",
-  "url": "https://www.ft.com/content/052610c5-22b4-4dd4-932e-b7f9f0628b6a",
-  "discuss": "https://news.ycombinator.com/item?id=50035886",
-  "score": 168,
-  "comments": 107,
-  "age_h": 18.4,
+  "title": "Using AI for just 10 minutes erodes your ability to persist at hard things",
+  "url": "https://vcresearch.berkeley.edu/news/using-ai-just-10-minutes-erodes-your-ability-persist-hard-things",
+  "discuss": "https://news.ycombinator.com/item?id=50041765",
+  "score": 137,
+  "comments": 124,
+  "age_h": 29.0,
   "text": ""
  },
  {
   "src": "HN",
-  "title": "500B Tokens Later: Letting AI Agents Decompile a First-Person Shooter",
-  "url": "https://momo5502.com/posts/2026-10-09-game-decompilation/",
-  "discuss": "https://news.ycombinator.com/item?id=50039092",
-  "score": 113,
-  "comments": 82,
-  "age_h": 11.1,
+  "title": "Local Indexing to reduce tool calling and token usage",
+  "url": "https://tedhaley.ca/pensieve/",
+  "discuss": "https://news.ycombinator.com/item?id=50049508",
+  "score": 106,
+  "comments": 34,
+  "age_h": 15.7,
   "text": ""
  },
  {
@@ -58,6 +58,16 @@
   "comments": 6,
   "age_h": 12.0,
   "created": "2026-09-19T08:41:57.630-05:00",
+  "text": ""
+ },
+ {
+  "src": "HN",
+  "title": "Nicolas Cage says he won't work with Amazon again over AI dispute",
+  "url": "https://www.latimes.com/entertainment-arts/business/story/2026-10-10/nicolas-cage-says-he-wont-work-with-amazon-again-over-ai-dispute",
+  "discuss": "https://news.ycombinator.com/item?id=50041873",
+  "score": 94,
+  "comments": 34,
+  "age_h": 28.8,
   "text": ""
  },
  {
@@ -76,7 +86,7 @@
   "title": "Byte Language Models: Scaling, Emergent Abstractions, and Information Allocation",
   "url": "https://arxiv.org/html/2610.05978v1",
   "discuss": "https://lobste.rs/s/t2fxpt/byte_language_models_scaling_emergent",
-  "score": 7,
+  "score": 8,
   "comments": 0,
   "age_h": 12.0,
   "created": "2026-10-10T17:25:14.935-05:00",
@@ -113,17 +123,6 @@
   "comments": 2,
   "age_h": 12.0,
   "created": "2026-09-29T11:51:35.804-05:00",
-  "text": ""
- },
- {
-  "src": "lobsters",
-  "title": "openarm: A fully open-source humanoid arm for physical AI research and deployment in contact-rich environments",
-  "url": "https://github.com/enactic/OpenArm",
-  "discuss": "https://lobste.rs/s/lizqwo/openarm_fully_open_source_humanoid_arm",
-  "score": 4,
-  "comments": 0,
-  "age_h": 12.0,
-  "created": "2026-09-15T07:52:26.056-05:00",
   "text": ""
  }
 ]
