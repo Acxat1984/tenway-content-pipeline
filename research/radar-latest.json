@@ -1,124 +1,52 @@
 [
  {
   "src": "HN",
-  "title": "Claude reveals ECDSA curve origins",
-  "url": "https://www.anthropic.com/research/ecdsa-curve-origins",
-  "discuss": "https://news.ycombinator.com/item?id=50122800",
-  "score": 883,
-  "comments": 328,
-  "age_h": 16.1,
-  "text": "<a href=\"https:&#x2F;&#x2F;words.filippo.io&#x2F;seeds-solved&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;words.filippo.io&#x2F;seeds-solved&#x2F;</a>"
- },
- {
-  "src": "HN",
-  "title": "90% of US working hours are spent on tasks not covered well by AI benchmarks",
-  "url": "https://www.mercor.com/research/labor-index/benchmark-map/",
-  "discuss": "https://news.ycombinator.com/item?id=50121179",
-  "score": 510,
-  "comments": 435,
-  "age_h": 17.9,
-  "text": ""
- },
- {
-  "src": "HN",
-  "title": "How the Claude Code team does code review",
-  "url": "https://claude.dev/blog/solving-code-review-at-anthropic/",
-  "discuss": "https://news.ycombinator.com/item?id=50122951",
-  "score": 354,
-  "comments": 332,
-  "age_h": 15.9,
-  "text": ""
- },
- {
-  "src": "HN",
-  "title": "Anthropic assigned highest junk credit rating in June",
-  "url": "https://www.ft.com/content/5a310aee-f555-4266-874c-b1b4db20186d",
-  "discuss": "https://news.ycombinator.com/item?id=50122112",
-  "score": 259,
-  "comments": 79,
-  "age_h": 16.8,
-  "text": "<a href=\"https:&#x2F;&#x2F;finance.yahoo.com&#x2F;technology&#x2F;ai&#x2F;articles&#x2F;anthropic-secured-highest-junk-credit-040018773.html\" rel=\"nofollow\">https:&#x2F;&#x2F;finance.yahoo.com&#x2F;technology&#x2F;ai&#x2F;articles&#x2F;anthropic-s...</a>"
- },
- {
-  "src": "HN",
-  "title": "Show HN: Gemini 4 Argon plays StarCraft",
-  "url": "https://starskirmish.com/bench/v0-2/",
-  "discuss": "https://news.ycombinator.com/item?id=50118688",
-  "score": 225,
-  "comments": 101,
-  "age_h": 20.7,
-  "text": "I&#x27;ve refreshed StarSkirmish Bench, a benchmark where LLMs play StarCraft BW by writing code, with results from the flagship models of OpenAI, Anthropic, Google, and Muse"
- },
- {
-  "src": "HN",
-  "title": "Postgres 19 delayed after AI reviewers find more bugs than humans can fix",
-  "url": "https://www.theregister.com/databases/2026/10/16/postgres-19-delayed-after-ai-reviewers-find-more-bugs-than-humans-can-fix/5303471",
-  "discuss": "https://news.ycombinator.com/item?id=50119991",
-  "score": 199,
-  "comments": 78,
-  "age_h": 19.1,
-  "text": ""
- },
- {
-  "src": "HN",
-  "title": "Designing more efficient quantum circuits with Claude",
-  "url": "https://www.anthropic.com/research/designing-efficient-quantum-circuits",
-  "discuss": "https://news.ycombinator.com/item?id=50121939",
-  "score": 145,
-  "comments": 32,
-  "age_h": 17.0,
-  "text": ""
- },
- {
-  "src": "HN",
-  "title": "What was a Token Ring network?",
-  "url": "https://dfarq.homeip.net/what-was-a-token-ring-network/",
-  "discuss": "https://news.ycombinator.com/item?id=50118318",
-  "score": 114,
-  "comments": 87,
-  "age_h": 21.3,
-  "text": ""
- },
- {
-  "src": "HN",
   "title": "Show HN: Llmspeed – feel how fast a local LLM runs before you buy the hardware",
   "url": "https://llmspeed.dev/",
   "discuss": "https://news.ycombinator.com/item?id=50127979",
-  "score": 88,
-  "comments": 37,
-  "age_h": 6.4,
+  "score": 300,
+  "comments": 82,
+  "age_h": 30.8,
   "text": ""
  },
  {
   "src": "HN",
-  "title": "Anthropic Console overcharged my card 100x due to internationalization input bug",
-  "url": "https://news.ycombinator.com/item?id=50121562",
-  "discuss": "https://news.ycombinator.com/item?id=50121562",
-  "score": 87,
-  "comments": 36,
-  "age_h": 17.5,
-  "text": "I am a LegalTech Attorney leading a developer team from Costa Rica. While trying to load credits onto my Anthropic API account (claude.com), I experienced a critical internationalization (i18n) and UX failure that has placed an unfair financial burden on me due to a severe oversight in their payment pipeline.<p>The platform prompted me for a payment. Since I am in a Spanish-speaking region where localized systems and keyboards handle dots and commas differently, I typed 5.04.<p>Anthropic’s input system completely failed to sanitize or validate the data. Instead of throwing a formatting error o"
+  "title": "Show HN: Sphinx – A hook that quizzes you on your AI's code before shipping",
+  "url": "https://sphinx-six-theta.vercel.app/",
+  "discuss": "https://news.ycombinator.com/item?id=50137950",
+  "score": 146,
+  "comments": 44,
+  "age_h": 6.9,
+  "text": "FOSS, Basically it plugs into your existing coding agent workflow and every time you push to prod it&#x27;ll throw up a questionnaire that checks if you understand how the code you&#x27;re pushing works."
  },
  {
-  "src": "lobsters",
-  "title": "I Built Non-Autoregressive Decision Models a Year Ago. Then a Frontier Lab Called It a \"Breakthrough\"",
-  "url": "https://dev.to/nandakishor_m_6cc0adfde9f/i-built-non-autoregressive-decision-models-a-year-ago-then-a-frontier-lab-called-it-a-18me",
-  "discuss": "https://lobste.rs/s/kaqsr5/i_built_non_autoregressive_decision",
-  "score": 61,
-  "comments": 6,
-  "age_h": 12.0,
-  "created": "2026-09-19T08:41:57.630-05:00",
+  "src": "HN",
+  "title": "Amazon uses AI to monitor union risk in UK warehouses",
+  "url": "https://www.opendemocracy.net/amazon-ai-surveillance-monitor-union-activity-uk-warehouses-birmingham-coventry-atlas-sutton-coldfield/",
+  "discuss": "https://news.ycombinator.com/item?id=50132278",
+  "score": 165,
+  "comments": 58,
+  "age_h": 19.4,
   "text": ""
  },
  {
-  "src": "lobsters",
-  "title": "Byte Language Models: Scaling, Emergent Abstractions, and Information Allocation",
-  "url": "https://arxiv.org/html/2610.05978v1",
-  "discuss": "https://lobste.rs/s/t2fxpt/byte_language_models_scaling_emergent",
-  "score": 8,
-  "comments": 0,
-  "age_h": 12.0,
-  "created": "2026-10-10T17:25:14.935-05:00",
-  "text": "The paper challenges the assumption that language models need explicit tokenizers to be efficient demonstrating that standard flat Transformers can process raw byte sequences and actually outperform traditional subword models as parameter sizes scale. The prevailing thought in the field has been that processing raw bytes is computationally inefficient because the sequences are substantially longer"
+  "src": "HN",
+  "title": "OpenAI discloses four more rogue incidents",
+  "url": "https://fortune.com/2026/10/16/openai-discloses-four-more-rogue-incidents-involving-financial-medical-and-government-data/",
+  "discuss": "https://news.ycombinator.com/item?id=50132502",
+  "score": 125,
+  "comments": 153,
+  "age_h": 18.9,
+  "text": ""
+ },
+ {
+  "src": "HN",
+  "title": "Codex Desktop continuously generates Crashpad pending dumps",
+  "url": "https://github.com/openai/codex/issues/25921",
+  "discuss": "https://news.ycombinator.com/item?id=50133231",
+  "score": 138,
+  "comments": 57,
+  "age_h": 17.7,
+  "text": ""
  }
 ]
