@@ -1,93 +1,63 @@
 [
  {
   "src": "HN",
-  "title": "Every AI model has the same \"controversial\" take on humans",
-  "url": "https://www.modelcompare.ai/blog/ai-models-controversial-take-on-humans",
-  "discuss": "https://news.ycombinator.com/item?id=50197313",
-  "score": 467,
-  "comments": 465,
-  "age_h": 19.7,
+  "title": "Dessa: Conversation Model trained only on speech",
+  "url": "https://block.xyz/dessa",
+  "discuss": "https://news.ycombinator.com/item?id=50213925",
+  "score": 398,
+  "comments": 146,
+  "age_h": 16.2,
   "text": ""
  },
  {
   "src": "HN",
-  "title": "OpenShell – A safe, private runtime for fleets of autonomous AI agents",
-  "url": "https://github.com/NVIDIA/OpenShell",
-  "discuss": "https://news.ycombinator.com/item?id=50198675",
-  "score": 415,
-  "comments": 197,
-  "age_h": 18.1,
+  "title": "Swedish government offices to ban ChatGPT and Claude",
+  "url": "https://www.sverigesradio.se/artikel/chat-gpt-och-claude-forbjuder-regeringskansliet",
+  "discuss": "https://news.ycombinator.com/item?id=50207405",
+  "score": 320,
+  "comments": 119,
+  "age_h": 23.7,
   "text": ""
  },
  {
   "src": "HN",
-  "title": "WorldTUI: I trained a 360M model to pretend to be a terminal",
-  "url": "https://simedw.com/2026/10/21/world-model-terminal/",
-  "discuss": "https://news.ycombinator.com/item?id=50190363",
-  "score": 556,
-  "comments": 172,
-  "age_h": 33.6,
+  "title": "Hacker reverses Samsung TV, finds on-board AI listening OpenAI account suspended",
+  "url": "https://www.reddit.com/r/antiai/comments/1xdv3e5/hacker_reverse_engineers_his_samsung_tv_and_finds/",
+  "discuss": "https://news.ycombinator.com/item?id=50218633",
+  "score": 190,
+  "comments": 48,
+  "age_h": 5.5,
   "text": ""
- },
- {
-  "src": "HN",
-  "title": "Ask HN: If the models are so good, why doesn't OpenAI just start 100 companies?",
-  "url": "https://news.ycombinator.com/item?id=50200997",
-  "discuss": "https://news.ycombinator.com/item?id=50200997",
-  "score": 206,
-  "comments": 201,
-  "age_h": 14.8,
-  "text": "Title is a bit of an exaggeration but the question is more: if the frontier models are so good, why even sell them as your primary money maker?<p>Couldn&#x27;t OpenAI or Anthropic make a lot more money by just starting companies themselves that leverage the models and building their own products?<p>Is selling tokens really the best strategy?<p>Especially with commodification and prices declining wouldn&#x27;t that indicate there is more money to be made on the application-side of the models rather than the utility side"
  },
  {
   "src": "HN",
   "title": "The same AI request emits 8.5 times more CO2 in Texas than in Sweden",
   "url": "https://berget.ai/en/blog/per-request-co2-press-release",
   "discuss": "https://news.ycombinator.com/item?id=50205229",
-  "score": 122,
-  "comments": 131,
-  "age_h": 5.2,
+  "score": 140,
+  "comments": 156,
+  "age_h": 28.7,
   "text": ""
  },
  {
   "src": "HN",
-  "title": "OpenAI CLI",
-  "url": "https://github.com/openai/openai-cli",
-  "discuss": "https://news.ycombinator.com/item?id=50191507",
-  "score": 236,
-  "comments": 111,
-  "age_h": 30.5,
+  "title": "Securing our frontier model training environment",
+  "url": "https://openai.com/index/securing-our-frontier-model-training-environment/",
+  "discuss": "https://news.ycombinator.com/item?id=50214416",
+  "score": 106,
+  "comments": 107,
+  "age_h": 15.5,
   "text": ""
  },
  {
   "src": "HN",
-  "title": "AI and the Enclosure of the Scientific Commons",
-  "url": "https://arxiv.org/abs/2610.27251",
-  "discuss": "https://news.ycombinator.com/item?id=50199230",
-  "score": 135,
-  "comments": 77,
-  "age_h": 17.4,
-  "text": ""
- },
- {
-  "src": "HN",
-  "title": "Most Americans Say AI Is Bad for Society, Oppose More Data Centers",
-  "url": "https://abcnews.com/Politics/americans-ai-bad-society-oppose-data-centers-abcpostipsos/story?id=137414085",
-  "discuss": "https://news.ycombinator.com/item?id=50200843",
-  "score": 85,
-  "comments": 55,
-  "age_h": 15.0,
-  "text": ""
- },
- {
-  "src": "HN",
-  "title": "AI analysis of CT scans finds 42.9% of patients have coronary inflammation",
-  "url": "https://www.biograph.com/newsroom/biograph-completes-first-u.s.-study-with-caristo-diagnostics%E2%80%99-ai-powered-coronary-inflammation-detection-finding-risk-in-over-42-of-asymptomatic-patients",
-  "discuss": "https://news.ycombinator.com/item?id=50198940",
-  "score": 86,
-  "comments": 43,
-  "age_h": 17.8,
-  "text": ""
+  "title": "Show HN: Corgi, a helpful {agent, terminal} multiplexer",
+  "url": "https://corgi.computer/",
+  "discuss": "https://news.ycombinator.com/item?id=50214373",
+  "score": 90,
+  "comments": 24,
+  "age_h": 15.6,
+  "text": "Hey everyone,<p>Inspired by Herdr, I&#x27;ve built an agent multiplexer that I&#x27;ve been using as my daily driver for a few weeks now.<p>I think I improved on the concept in a few ways, focusing on the ergonomics I always wished I had:<p>I show you what the agents are up to, along with a running feed of their activity.\nThere&#x27;s also a simple shortcut (F1) to go to the next unread agent.<p>I use multiple accounts, so I&#x27;ve added unified launcher for Codex&#x2F;Claude Code&#x2F;Pi.\nTheres some careful ergonomics there: fast search and resume over sessions, inline usage tracking etc.<p"
  },
  {
   "src": "lobsters",
@@ -101,16 +71,6 @@
   "text": ""
  },
  {
-  "src": "HN",
-  "title": "Claude Now Works with Google Docs, Sheets, and Slides",
-  "url": "https://claude.com/resources/articles/claude-now-works-in-google-docs-sheets-and-slides",
-  "discuss": "https://news.ycombinator.com/item?id=50190357",
-  "score": 88,
-  "comments": 14,
-  "age_h": 33.6,
-  "text": ""
- },
- {
   "src": "lobsters",
   "title": "Kolibri: A Sovereign Open-Weight Model",
   "url": "https://aleph-alpha.com/en/blog/kolibri-has-landed-a-sovereign-open-weight-model/",
@@ -119,6 +79,50 @@
   "comments": 5,
   "age_h": 12.0,
   "created": "2026-10-04T02:57:55.868-05:00",
+  "text": ""
+ },
+ {
+  "src": "lobsters",
+  "title": "Timestral: Mistral's time-series foundation models",
+  "url": "https://mistral.ai/news/timestral/",
+  "discuss": "https://lobste.rs/s/7r9dcc/timestral_mistral_s_time_series",
+  "score": 10,
+  "comments": 1,
+  "age_h": 12.0,
+  "created": "2026-10-19T06:47:04.290-05:00",
+  "text": ""
+ },
+ {
+  "src": "lobsters",
+  "title": "Byte Language Models: Scaling, Emergent Abstractions, and Information Allocation",
+  "url": "https://arxiv.org/html/2610.05978v1",
+  "discuss": "https://lobste.rs/s/t2fxpt/byte_language_models_scaling_emergent",
+  "score": 8,
+  "comments": 0,
+  "age_h": 12.0,
+  "created": "2026-10-10T17:25:14.935-05:00",
+  "text": "The paper challenges the assumption that language models need explicit tokenizers to be efficient demonstrating that standard flat Transformers can process raw byte sequences and actually outperform traditional subword models as parameter sizes scale. The prevailing thought in the field has been that processing raw bytes is computationally inefficient because the sequences are substantially longer"
+ },
+ {
+  "src": "lobsters",
+  "title": "Best Books/Courses/Channels to Leapfrog on AI/ML Material",
+  "url": "https://lobste.rs/s/xff77a",
+  "discuss": "https://lobste.rs/s/xff77a/best_books_courses_channels_leapfrog_on",
+  "score": 5,
+  "comments": 4,
+  "age_h": 12.0,
+  "created": "2026-10-07T09:12:02.815-05:00",
+  "text": "Assuming I have been on hibernation since 2018-19 time frame, which materials - books, MOOC courses and YT channels would be recommended for me to get started with understanding all the current progress on AI/ML. Ideally a resource like [TeachYourselfCS](https://teachyourselfcs.com/) that can give structure and roadmap to navigate all the progress/knowledge on the domain would really help.\r\n\r\nDo w"
+ },
+ {
+  "src": "lobsters",
+  "title": "Text-to-meowdio models",
+  "url": "https://www.kmjn.org/notes/text_to_meowdio_models.html",
+  "discuss": "https://lobste.rs/s/1xr8zc/text_meowdio_models",
+  "score": 4,
+  "comments": 2,
+  "age_h": 12.0,
+  "created": "2026-09-29T11:51:35.804-05:00",
   "text": ""
  }
 ]
