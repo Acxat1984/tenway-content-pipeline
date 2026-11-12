@@ -1,103 +1,93 @@
 [
  {
   "src": "HN",
-  "title": "AI usage generates a fragile codebase",
-  "url": "https://evanxmerz.com/post/ai-usage-generates-a-fragile-codebase/",
-  "discuss": "https://news.ycombinator.com/item?id=50438318",
-  "score": 608,
-  "comments": 575,
-  "age_h": 28.2,
-  "text": ""
- },
- {
-  "src": "HN",
-  "title": "Google SWE points 48 AI agents at NASA Lidar, finds unmapped Maya pyramid in 72h",
-  "url": "https://pietromiotti.com/latest/maya-site/?maya",
+  "title": "My AI agents found an unmapped Maya site?",
+  "url": "https://pietromiotti.com/latest/maya-site",
   "discuss": "https://news.ycombinator.com/item?id=50452455",
-  "score": 343,
-  "comments": 133,
-  "age_h": 2.5,
+  "score": 1020,
+  "comments": 379,
+  "age_h": 27.4,
   "text": ""
  },
  {
   "src": "HN",
-  "title": "Apple has new Mac app coming to make running local AI models easy",
-  "url": "https://9to5mac.com/2026/11/10/apple-has-new-mac-app-coming-to-make-running-local-ai-models-easy/",
-  "discuss": "https://news.ycombinator.com/item?id=50446520",
-  "score": 382,
-  "comments": 383,
-  "age_h": 17.2,
+  "title": "United Airlines bans AI agents from booking flights on behalf of travelers",
+  "url": "https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights/",
+  "discuss": "https://news.ycombinator.com/item?id=50458900",
+  "score": 627,
+  "comments": 640,
+  "age_h": 18.1,
   "text": ""
  },
  {
   "src": "HN",
-  "title": "Tracking Anthropic-discovered vulnerabilities",
-  "url": "https://www.vulncheck.com/blog/anthropic-glasswing-november-update",
-  "discuss": "https://news.ycombinator.com/item?id=50447074",
-  "score": 433,
-  "comments": 205,
-  "age_h": 16.3,
-  "text": ""
- },
- {
-  "src": "HN",
-  "title": "Show HN: Get your coding agent off ~2019 JavaScript, onto modern web primitives",
-  "url": "https://github.com/GoogleChrome/modern-web-guidance",
-  "discuss": "https://news.ycombinator.com/item?id=50443812",
-  "score": 407,
-  "comments": 133,
-  "age_h": 20.6,
-  "text": "Browsers natively handle a lot of what used to take 50 lines of JS (or a dependency): `CSS.highlights` for text range highlighting without &lt;span&gt;s everywhere, `&lt;dialog&gt;` and showModal() give you backdrops and ideal focus management, `field-sizing` to auto-grow textareas as the user types.. (Something yesterday&#x27;s ftrain post touched on [0])<p>Models know about some of these by name, but consistently won&#x27;t default to using the platform-native solution and instead prefer the incumbent &lt;div&gt;+JS based pattern.  We started an effort in Chrome to supplement coding agents w"
- },
- {
-  "src": "HN",
-  "title": "Gemini 4 Carbon is now available",
-  "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
-  "discuss": "https://news.ycombinator.com/item?id=50442303",
-  "score": 287,
-  "comments": 159,
-  "age_h": 22.5,
-  "text": ""
- },
- {
-  "src": "HN",
-  "title": "Claude Whiteboards, Claude Sheets, and Claude Data",
-  "url": "https://claude.com/resources/articles/sheets-whiteboards-data",
-  "discuss": "https://news.ycombinator.com/item?id=50443716",
-  "score": 259,
-  "comments": 197,
-  "age_h": 20.7,
-  "text": ""
- },
- {
-  "src": "HN",
-  "title": "CoreWeave bond yield tops 16% as AI credit stress rises",
-  "url": "https://www.cnbc.com/2026/11/06/coreweave-bond-yield-tops-16percent-as-ai-credit-stress-rises.html",
-  "discuss": "https://news.ycombinator.com/item?id=50435660",
-  "score": 194,
-  "comments": 193,
-  "age_h": 35.3,
-  "text": ""
- },
- {
-  "src": "HN",
-  "title": "Life on Claude Nine",
-  "url": "https://babuschk.in/posts/2026-01-25-life-on-claude-nine.html",
-  "discuss": "https://news.ycombinator.com/item?id=50443587",
-  "score": 116,
-  "comments": 77,
+  "title": "Gemini Decisions API",
+  "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+  "discuss": "https://news.ycombinator.com/item?id=50456791",
+  "score": 511,
+  "comments": 148,
   "age_h": 20.9,
   "text": ""
  },
  {
   "src": "HN",
-  "title": "Fireworks AI security breach impacts Notion and their customers",
-  "url": "https://www.notion.com/help/security-incident-involving-a-third-party-ai-vendor",
-  "discuss": "https://news.ycombinator.com/item?id=50437106",
-  "score": 164,
-  "comments": 63,
-  "age_h": 31.3,
+  "title": "Faster Retrieval for Better, More Efficient RAG",
+  "url": "https://machinelearning.apple.com/research/faster-retrieval",
+  "discuss": "https://news.ycombinator.com/item?id=50455633",
+  "score": 224,
+  "comments": 38,
+  "age_h": 22.5,
   "text": ""
+ },
+ {
+  "src": "HN",
+  "title": "Retirement Savings Are Fueling the AI Bubble",
+  "url": "https://lpeproject.org/blog/your-retirement-savings-are-fueling-the-ai-bubble/",
+  "discuss": "https://news.ycombinator.com/item?id=50457164",
+  "score": 163,
+  "comments": 179,
+  "age_h": 20.4,
+  "text": ""
+ },
+ {
+  "src": "HN",
+  "title": "Atuin Threads: All your agent sessions on every machine",
+  "url": "https://blog.atuin.sh/threads-agent-sessions/",
+  "discuss": "https://news.ycombinator.com/item?id=50453637",
+  "score": 226,
+  "comments": 81,
+  "age_h": 25.3,
+  "text": ""
+ },
+ {
+  "src": "HN",
+  "title": "AI, activity, and outcomes in software engineering",
+  "url": "https://cabird.com/talks/shipping-faster/",
+  "discuss": "https://news.ycombinator.com/item?id=50455332",
+  "score": 124,
+  "comments": 109,
+  "age_h": 22.9,
+  "text": "<a href=\"https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=0wumMeZsNsI\" rel=\"nofollow\">https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=0wumMeZsNsI</a>"
+ },
+ {
+  "src": "HN",
+  "title": "AWS Emulator and the engineer's job when agents write the code",
+  "url": "https://www.allthingsdistributed.com/2026/11/aws-emulator-and-the-engineers-job-when-agents-write-the-code.html",
+  "discuss": "https://news.ycombinator.com/item?id=50456740",
+  "score": 111,
+  "comments": 2,
+  "age_h": 21.0,
+  "text": ""
+ },
+ {
+  "src": "HN",
+  "title": "Show HN: Klad, a paint app your coding agent can drive (source-available)",
+  "url": "https://github.com/klad-app/klad",
+  "discuss": "https://news.ycombinator.com/item?id=50454951",
+  "score": 81,
+  "comments": 32,
+  "age_h": 23.5,
+  "text": "I&#x27;ve been developing applications for a long time and have turned to game development as well lately. One of the things that frustrated me the most was that using AI agents for game development is very annoying in the art department. Your only options right now are to either use an image genAI model and roll the dice every time you want to make an edit, or have your agent draw with something like vectors.<p>I was looking for an application that would allow me to ask an agent to make a first draft of whatever art I needed with actual brushes, and then be able to go in myself and edit every"
  },
  {
   "src": "lobsters",
@@ -119,6 +109,17 @@
   "comments": 8,
   "age_h": 12.0,
   "created": "2026-11-05T11:32:18.197-06:00",
+  "text": ""
+ },
+ {
+  "src": "lobsters",
+  "title": "Fuzzers vs. AI: Comparing Fuzzilli and BigSleep on JavaScript Engines",
+  "url": "https://projectzero.google/2026/10/fuzzing-v-AI.html",
+  "discuss": "https://lobste.rs/s/rswyzt/fuzzers_vs_ai_comparing_fuzzilli",
+  "score": 21,
+  "comments": 4,
+  "age_h": 12.0,
+  "created": "2026-10-27T14:08:23.211-05:00",
   "text": ""
  }
 ]
