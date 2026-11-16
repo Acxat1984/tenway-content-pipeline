@@ -1,43 +1,23 @@
 [
  {
   "src": "HN",
-  "title": "Nvidia allegedly engineered scarcity by funding AI startups to buy its GPUs",
-  "url": "https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus",
-  "discuss": "https://news.ycombinator.com/item?id=50493251",
-  "score": 1080,
-  "comments": 642,
-  "age_h": 35.3,
+  "title": "All AI-generated code should be Open Source",
+  "url": "https://jakub.jankiewicz.org/blog/ai-code-open-source/",
+  "discuss": "https://news.ycombinator.com/item?id=50507303",
+  "score": 1207,
+  "comments": 644,
+  "age_h": 25.4,
   "text": ""
  },
  {
   "src": "HN",
-  "title": "The Claude Delusion",
-  "url": "https://www.netmeister.org/blog/claude-delusion.html",
-  "discuss": "https://news.ycombinator.com/item?id=50496921",
-  "score": 148,
-  "comments": 195,
-  "age_h": 24.6,
+  "title": "\"Who is Hiring?\" postings stuck near 12-year lows as AI reaches half of all jobs",
+  "url": "https://www.hntrends.com/2026/november.html",
+  "discuss": "https://news.ycombinator.com/item?id=50512950",
+  "score": 90,
+  "comments": 78,
+  "age_h": 14.7,
   "text": ""
- },
- {
-  "src": "HN",
-  "title": "Show HN: Agweb – a browser for agents that stays out of your way",
-  "url": "https://github.com/paul-nameless/agweb",
-  "discuss": "https://news.ycombinator.com/item?id=50497147",
-  "score": 104,
-  "comments": 30,
-  "age_h": 24.0,
-  "text": ""
- },
- {
-  "src": "HN",
-  "title": "Ask HN: What are the most useful, concrete AI skills to independently learn?",
-  "url": "https://news.ycombinator.com/item?id=50494696",
-  "discuss": "https://news.ycombinator.com/item?id=50494696",
-  "score": 86,
-  "comments": 51,
-  "age_h": 31.2,
-  "text": "Specifically, what are the most useful, concrete skills to learn as an individual to take economic advantage of the advances in LLMs, agents and associated new technological capabilities?<p>What is accessible to learn just from the internet and experimentation, without a degree program, assuming a preexisting moderately technical background? The clearer and more specific (eg. “Learn how-to x with y”) the better.<p>Thank you!"
  },
  {
   "src": "lobsters",
@@ -125,6 +105,28 @@
   "comments": 0,
   "age_h": 12.0,
   "created": "2026-10-13T10:56:29.994-05:00",
+  "text": ""
+ },
+ {
+  "src": "lobsters",
+  "title": "Building fine-grained version control for agents with Rust and Durable Objects",
+  "url": "https://delta.dev/blog/fine-grained-version-control-for-agents",
+  "discuss": "https://lobste.rs/s/cctbcu/building_fine_grained_version_control",
+  "score": 2,
+  "comments": 0,
+  "age_h": 12.0,
+  "created": "2026-10-30T11:50:44.030-05:00",
+  "text": ""
+ },
+ {
+  "src": "lobsters",
+  "title": "AI: EU Member States approve “digital expropriation” of Europeans for AI companies",
+  "url": "https://noyb.eu/en/ai-eu-member-states-approve-digital-expropriation-europeans-ai-companies",
+  "discuss": "https://lobste.rs/s/zu7jjb/ai_eu_member_states_approve_digital",
+  "score": 2,
+  "comments": 0,
+  "age_h": 12.0,
+  "created": "2026-10-23T08:04:23.838-05:00",
   "text": ""
  }
 ]
