@@ -1,22 +1,52 @@
 [
  {
   "src": "HN",
-  "title": "All AI-generated code should be Open Source",
-  "url": "https://jakub.jankiewicz.org/blog/ai-code-open-source/",
-  "discuss": "https://news.ycombinator.com/item?id=50507303",
-  "score": 1207,
-  "comments": 644,
-  "age_h": 25.4,
+  "title": "Windows 11 is collecting data on which coding agents and developer tools you use",
+  "url": "https://xusheng.dev/posts/windows-coding-agent-telemetry/",
+  "discuss": "https://news.ycombinator.com/item?id=50524736",
+  "score": 681,
+  "comments": 540,
+  "age_h": 17.3,
   "text": ""
  },
  {
   "src": "HN",
-  "title": "\"Who is Hiring?\" postings stuck near 12-year lows as AI reaches half of all jobs",
-  "url": "https://www.hntrends.com/2026/november.html",
-  "discuss": "https://news.ycombinator.com/item?id=50512950",
-  "score": 90,
-  "comments": 78,
-  "age_h": 14.7,
+  "title": "Baidu, Xiaomi CEOs warn of growing gap between AI hype and returns",
+  "url": "https://www.scmp.com/tech/big-tech/article/3374774/baidu-xiaomi-ceos-warn-growing-gap-between-ai-hype-and-returns",
+  "discuss": "https://news.ycombinator.com/item?id=50531751",
+  "score": 125,
+  "comments": 145,
+  "age_h": 2.0,
+  "text": ""
+ },
+ {
+  "src": "HN",
+  "title": "How the Claude Code team thinks about verification",
+  "url": "https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification/",
+  "discuss": "https://news.ycombinator.com/item?id=50529612",
+  "score": 128,
+  "comments": 131,
+  "age_h": 6.0,
+  "text": ""
+ },
+ {
+  "src": "HN",
+  "title": "Regulatory Capture by Anthropic Through METR",
+  "url": "https://nitter.cf/kevinnbass/status/2099621874279817638",
+  "discuss": "https://news.ycombinator.com/item?id=50530450",
+  "score": 130,
+  "comments": 66,
+  "age_h": 3.9,
+  "text": ""
+ },
+ {
+  "src": "HN",
+  "title": "Running coding agents without handing them my credentials",
+  "url": "https://blog.antonio.cx/running-agents-with-lend",
+  "discuss": "https://news.ycombinator.com/item?id=50526152",
+  "score": 124,
+  "comments": 105,
+  "age_h": 15.0,
   "text": ""
  },
  {
@@ -76,17 +106,6 @@
  },
  {
   "src": "lobsters",
-  "title": "Byte Language Models: Scaling, Emergent Abstractions, and Information Allocation",
-  "url": "https://arxiv.org/html/2610.05978v1",
-  "discuss": "https://lobste.rs/s/t2fxpt/byte_language_models_scaling_emergent",
-  "score": 8,
-  "comments": 0,
-  "age_h": 12.0,
-  "created": "2026-10-10T17:25:14.935-05:00",
-  "text": "The paper challenges the assumption that language models need explicit tokenizers to be efficient demonstrating that standard flat Transformers can process raw byte sequences and actually outperform traditional subword models as parameter sizes scale. The prevailing thought in the field has been that processing raw bytes is computationally inefficient because the sequences are substantially longer"
- },
- {
-  "src": "lobsters",
   "title": "Catching prompt injections hidden in PDFs",
   "url": "https://tomclancy.info/joshua-judges-ruth.html",
   "discuss": "https://lobste.rs/s/hreu0b/catching_prompt_injections_hidden_pdfs",
@@ -105,28 +124,6 @@
   "comments": 0,
   "age_h": 12.0,
   "created": "2026-10-13T10:56:29.994-05:00",
-  "text": ""
- },
- {
-  "src": "lobsters",
-  "title": "Building fine-grained version control for agents with Rust and Durable Objects",
-  "url": "https://delta.dev/blog/fine-grained-version-control-for-agents",
-  "discuss": "https://lobste.rs/s/cctbcu/building_fine_grained_version_control",
-  "score": 2,
-  "comments": 0,
-  "age_h": 12.0,
-  "created": "2026-10-30T11:50:44.030-05:00",
-  "text": ""
- },
- {
-  "src": "lobsters",
-  "title": "AI: EU Member States approve “digital expropriation” of Europeans for AI companies",
-  "url": "https://noyb.eu/en/ai-eu-member-states-approve-digital-expropriation-europeans-ai-companies",
-  "discuss": "https://lobste.rs/s/zu7jjb/ai_eu_member_states_approve_digital",
-  "score": 2,
-  "comments": 0,
-  "age_h": 12.0,
-  "created": "2026-10-23T08:04:23.838-05:00",
   "text": ""
  }
 ]
