@@ -1,22 +1,62 @@
 [
  {
   "src": "HN",
-  "title": "Windows 11 is collecting data on which coding agents and developer tools you use",
-  "url": "https://xusheng.dev/posts/windows-coding-agent-telemetry/",
-  "discuss": "https://news.ycombinator.com/item?id=50524736",
-  "score": 681,
-  "comments": 540,
-  "age_h": 17.3,
+  "title": "GPT‑6.2 Astra and Sol",
+  "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
+  "discuss": "https://news.ycombinator.com/item?id=50535230",
+  "score": 1325,
+  "comments": 828,
+  "age_h": 22.1,
   "text": ""
  },
  {
   "src": "HN",
-  "title": "Baidu, Xiaomi CEOs warn of growing gap between AI hype and returns",
-  "url": "https://www.scmp.com/tech/big-tech/article/3374774/baidu-xiaomi-ceos-warn-growing-gap-between-ai-hype-and-returns",
-  "discuss": "https://news.ycombinator.com/item?id=50531751",
-  "score": 125,
-  "comments": 145,
-  "age_h": 2.0,
+  "title": "AI is killing All About Berlin",
+  "url": "https://nicolasbouliane.com/blog/death-by-ai",
+  "discuss": "https://news.ycombinator.com/item?id=50542705",
+  "score": 659,
+  "comments": 597,
+  "age_h": 9.1,
+  "text": ""
+ },
+ {
+  "src": "HN",
+  "title": "Google's AI answers reducing search traffic by 40%",
+  "url": "https://revscope.co/blog/search-seo-geo-2026/",
+  "discuss": "https://news.ycombinator.com/item?id=50540178",
+  "score": 615,
+  "comments": 466,
+  "age_h": 15.6,
+  "text": ""
+ },
+ {
+  "src": "HN",
+  "title": "Harvard researchers find AI coding agents shifted the bottleneck to code review",
+  "url": "https://complexdiscovery.com/harvard-researchers-find-ai-coding-agents-shifted-the-bottleneck-to-code-review/",
+  "discuss": "https://news.ycombinator.com/item?id=50538303",
+  "score": 275,
+  "comments": 364,
+  "age_h": 18.6,
+  "text": ""
+ },
+ {
+  "src": "HN",
+  "title": "Why is Gemini 4 Carbon taking so long?",
+  "url": "https://kernel.dev/blog/why-is-gemini-4-carbon-taking-so-long/",
+  "discuss": "https://news.ycombinator.com/item?id=50541790",
+  "score": 216,
+  "comments": 108,
+  "age_h": 11.6,
+  "text": ""
+ },
+ {
+  "src": "HN",
+  "title": "What is the best harness for each model?",
+  "url": "https://runta.com/blog/introducing-frontierharness-eval-v1-1/",
+  "discuss": "https://news.ycombinator.com/item?id=50532191",
+  "score": 412,
+  "comments": 130,
+  "age_h": 25.0,
   "text": ""
  },
  {
@@ -24,9 +64,39 @@
   "title": "How the Claude Code team thinks about verification",
   "url": "https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification/",
   "discuss": "https://news.ycombinator.com/item?id=50529612",
+  "score": 289,
+  "comments": 229,
+  "age_h": 29.5,
+  "text": ""
+ },
+ {
+  "src": "HN",
+  "title": "Baidu, Xiaomi CEOs warn of growing gap between AI hype and returns",
+  "url": "https://www.scmp.com/tech/big-tech/article/3374774/baidu-xiaomi-ceos-warn-growing-gap-between-ai-hype-and-returns",
+  "discuss": "https://news.ycombinator.com/item?id=50531751",
+  "score": 189,
+  "comments": 250,
+  "age_h": 25.5,
+  "text": ""
+ },
+ {
+  "src": "HN",
+  "title": "Not Everything Needs an LLM",
+  "url": "https://newsletter.posthog.com/p/decision-models",
+  "discuss": "https://news.ycombinator.com/item?id=50535740",
+  "score": 170,
+  "comments": 72,
+  "age_h": 21.6,
+  "text": ""
+ },
+ {
+  "src": "HN",
+  "title": "Claude was trained on protein sequences at scale",
+  "url": "http://xinmingtu.cn/blog/2026/claude-opus-5-5-protein-sequences/",
+  "discuss": "https://news.ycombinator.com/item?id=50541619",
   "score": 128,
-  "comments": 131,
-  "age_h": 6.0,
+  "comments": 57,
+  "age_h": 12.1,
   "text": ""
  },
  {
@@ -34,96 +104,19 @@
   "title": "Regulatory Capture by Anthropic Through METR",
   "url": "https://nitter.cf/kevinnbass/status/2099621874279817638",
   "discuss": "https://news.ycombinator.com/item?id=50530450",
-  "score": 130,
-  "comments": 66,
-  "age_h": 3.9,
+  "score": 140,
+  "comments": 74,
+  "age_h": 27.5,
   "text": ""
  },
  {
   "src": "HN",
-  "title": "Running coding agents without handing them my credentials",
-  "url": "https://blog.antonio.cx/running-agents-with-lend",
-  "discuss": "https://news.ycombinator.com/item?id=50526152",
-  "score": 124,
-  "comments": 105,
-  "age_h": 15.0,
-  "text": ""
- },
- {
-  "src": "lobsters",
-  "title": "Reflections on Rust in the LLM Age",
-  "url": "https://www.youtube.com/watch?v=5D7QPOIZ7gY",
-  "discuss": "https://lobste.rs/s/yomksa/reflections_on_rust_llm_age",
-  "score": 28,
-  "comments": 8,
-  "age_h": 12.0,
-  "created": "2026-11-05T11:32:18.197-06:00",
-  "text": ""
- },
- {
-  "src": "lobsters",
-  "title": "Fuzzers vs. AI: Comparing Fuzzilli and BigSleep on JavaScript Engines",
-  "url": "https://projectzero.google/2026/10/fuzzing-v-AI.html",
-  "discuss": "https://lobste.rs/s/rswyzt/fuzzers_vs_ai_comparing_fuzzilli",
-  "score": 21,
-  "comments": 4,
-  "age_h": 12.0,
-  "created": "2026-10-27T14:08:23.211-05:00",
-  "text": ""
- },
- {
-  "src": "lobsters",
-  "title": "The Little Book of Generative AI Foundations: An Intuitive Mathematical Primer",
-  "url": "https://arxiv.org/abs/2605.29713",
-  "discuss": "https://lobste.rs/s/0aungk/little_book_generative_ai_foundations",
-  "score": 12,
-  "comments": 0,
-  "age_h": 12.0,
-  "created": "2026-11-13T22:51:14.032-06:00",
-  "text": ""
- },
- {
-  "src": "lobsters",
-  "title": "libreagi - save OS models",
-  "url": "https://libreagi.com/",
-  "discuss": "https://lobste.rs/s/7c4iar/libreagi_save_os_models",
-  "score": 10,
-  "comments": 6,
-  "age_h": 12.0,
-  "created": "2026-11-12T09:35:46.353-06:00",
-  "text": ""
- },
- {
-  "src": "lobsters",
-  "title": "Timestral: Mistral's time-series foundation models",
-  "url": "https://mistral.ai/news/timestral/",
-  "discuss": "https://lobste.rs/s/7r9dcc/timestral_mistral_s_time_series",
-  "score": 10,
-  "comments": 1,
-  "age_h": 12.0,
-  "created": "2026-10-19T06:47:04.290-05:00",
-  "text": ""
- },
- {
-  "src": "lobsters",
-  "title": "Catching prompt injections hidden in PDFs",
-  "url": "https://tomclancy.info/joshua-judges-ruth.html",
-  "discuss": "https://lobste.rs/s/hreu0b/catching_prompt_injections_hidden_pdfs",
-  "score": 5,
-  "comments": 2,
-  "age_h": 12.0,
-  "created": "2026-11-07T13:34:01.032-06:00",
-  "text": ""
- },
- {
-  "src": "lobsters",
-  "title": "Running RAG with a (small) language model in the browser",
-  "url": "https://bart.degoe.de/rag-with-a-small-language-model-in-the-browser/",
-  "discuss": "https://lobste.rs/s/nsjjo3/running_rag_with_small_language_model",
-  "score": 3,
-  "comments": 0,
-  "age_h": 12.0,
-  "created": "2026-10-13T10:56:29.994-05:00",
+  "title": "Bank CEOs, NSA Tell Congress That AI-Driven Patches Are Behind Outages",
+  "url": "https://www.washingtonsun.com/technology/bank-ceos-nsa-tell-congress-ai-driven-patches-behind-outages",
+  "discuss": "https://news.ycombinator.com/item?id=50540836",
+  "score": 89,
+  "comments": 43,
+  "age_h": 14.1,
   "text": ""
  }
 ]
