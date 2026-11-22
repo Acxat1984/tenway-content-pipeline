@@ -1,62 +1,22 @@
 [
  {
   "src": "HN",
-  "title": "Frostbite: A new CPU architecture discovered, designed and verified by AI",
-  "url": "https://architectlabs.com/blog/frostbite",
-  "discuss": "https://news.ycombinator.com/item?id=50572503",
-  "score": 654,
-  "comments": 341,
-  "age_h": 28.8,
+  "title": "87% of the Anthropic power will come from gas and 11% from coal in 2028",
+  "url": "https://betterdatacenterproject.com/2026/11/16/how-ai-is-powered-a-breakdown-of-byop-and-grid-power/",
+  "discuss": "https://news.ycombinator.com/item?id=50597612",
+  "score": 317,
+  "comments": 428,
+  "age_h": 5.8,
   "text": ""
  },
  {
   "src": "HN",
-  "title": "Restricting AI agents in mobile operating systems platforms from capturing data",
-  "url": "https://signal.org/blog/protecting-your-privacy/",
-  "discuss": "https://news.ycombinator.com/item?id=50572348",
-  "score": 557,
-  "comments": 328,
-  "age_h": 29.1,
-  "text": ""
- },
- {
-  "src": "HN",
-  "title": "Language Models Can Rewrite Their Own Weights",
-  "url": "https://arxiv.org/abs/2611.21885",
-  "discuss": "https://news.ycombinator.com/item?id=50577265",
-  "score": 443,
-  "comments": 128,
-  "age_h": 22.3,
-  "text": ""
- },
- {
-  "src": "HN",
-  "title": "Nasdaq erases all 2026 gains as AI sell-off dampens Anthropic’s second day",
-  "url": "https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off",
-  "discuss": "https://news.ycombinator.com/item?id=50574383",
-  "score": 398,
-  "comments": 711,
-  "age_h": 25.3,
-  "text": ""
- },
- {
-  "src": "HN",
-  "title": "Google workers tell their employer not to punish schools that don't want AI",
-  "url": "https://www.motherjones.com/politics/2026/11/google-alphabet-union-school-ai-protest-gemini-workers-petition/",
-  "discuss": "https://news.ycombinator.com/item?id=50577901",
-  "score": 277,
-  "comments": 217,
-  "age_h": 21.8,
-  "text": ""
- },
- {
-  "src": "HN",
-  "title": "DreamCoder: Coding harness and IDE from the author of Mastering Emacs",
-  "url": "https://www.masteringemacs.org/article/announcing-dreamcoder",
-  "discuss": "https://news.ycombinator.com/item?id=50581110",
-  "score": 246,
-  "comments": 97,
-  "age_h": 18.8,
+  "title": "The Mythology of Conscious AI",
+  "url": "https://www.noemamag.com/the-mythology-of-conscious-ai/",
+  "discuss": "https://news.ycombinator.com/item?id=50595537",
+  "score": 100,
+  "comments": 253,
+  "age_h": 12.6,
   "text": ""
  },
  {
@@ -64,19 +24,40 @@
   "title": "ClawDOS – An AI coding agent for DOS",
   "url": "http://ricapar.net/ClawDOS/",
   "discuss": "https://news.ycombinator.com/item?id=50586292",
-  "score": 118,
-  "comments": 35,
-  "age_h": 9.2,
+  "score": 166,
+  "comments": 52,
+  "age_h": 33.1,
   "text": ""
  },
  {
   "src": "HN",
-  "title": "AI is giving everyone the same advice",
-  "url": "https://a90.com/experiments/same-advice/",
-  "discuss": "https://news.ycombinator.com/item?id=50577872",
-  "score": 103,
-  "comments": 42,
-  "age_h": 21.8,
+  "title": "AI Supply Chain Security: What Canary Tokens Found",
+  "url": "https://www.dragos.com/blog/ai-supply-chain-security-canary-tokens",
+  "discuss": "https://news.ycombinator.com/item?id=50596511",
+  "score": 89,
+  "comments": 21,
+  "age_h": 9.6,
+  "text": ""
+ },
+ {
+  "src": "HN",
+  "title": "Pandex – Official European Law for AI Agents, over MCP",
+  "url": "https://www.pandex.io",
+  "discuss": "https://news.ycombinator.com/item?id=50593481",
+  "score": 116,
+  "comments": 29,
+  "age_h": 18.0,
+  "text": ""
+ },
+ {
+  "src": "lobsters",
+  "title": "Researcher plants 2m canaries into the AI supply chain. A privacy disaster surfaced",
+  "url": "https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/",
+  "discuss": "https://lobste.rs/s/32rhzb/researcher_plants_2m_canaries_into_ai",
+  "score": 53,
+  "comments": 9,
+  "age_h": 12.0,
+  "created": "2026-11-21T20:03:46.531-06:00",
   "text": ""
  },
  {
@@ -121,6 +102,28 @@
   "comments": 6,
   "age_h": 12.0,
   "created": "2026-11-12T09:35:46.353-06:00",
+  "text": ""
+ },
+ {
+  "src": "lobsters",
+  "title": "Timestral: Mistral's time-series foundation models",
+  "url": "https://mistral.ai/news/timestral/",
+  "discuss": "https://lobste.rs/s/7r9dcc/timestral_mistral_s_time_series",
+  "score": 10,
+  "comments": 1,
+  "age_h": 12.0,
+  "created": "2026-10-19T06:47:04.290-05:00",
+  "text": ""
+ },
+ {
+  "src": "lobsters",
+  "title": "Catching prompt injections hidden in PDFs",
+  "url": "https://tomclancy.info/joshua-judges-ruth.html",
+  "discuss": "https://lobste.rs/s/hreu0b/catching_prompt_injections_hidden_pdfs",
+  "score": 5,
+  "comments": 1,
+  "age_h": 12.0,
+  "created": "2026-11-07T13:34:01.032-06:00",
   "text": ""
  }
 ]
