@@ -1,32 +1,22 @@
 [
  {
   "src": "HN",
-  "title": "The New York Times warns photographers not to update Photoshop over AI features",
-  "url": "https://www.theverge.com/ai-artificial-intelligence/1041227/the-new-york-times-warns-photographers-not-to-update-photoshop-over-ai-features",
-  "discuss": "https://news.ycombinator.com/item?id=50647673",
-  "score": 545,
-  "comments": 461,
-  "age_h": 19.9,
-  "text": "<a href=\"https:&#x2F;&#x2F;archive.ph&#x2F;pcUgy\" rel=\"nofollow\">https:&#x2F;&#x2F;archive.ph&#x2F;pcUgy</a>"
- },
- {
-  "src": "HN",
-  "title": "Much shorter version of GRH Lean verification from Anthropic",
-  "url": "https://github.com/lsernau/grh-lean",
-  "discuss": "https://news.ycombinator.com/item?id=50648050",
-  "score": 517,
-  "comments": 327,
-  "age_h": 19.4,
+  "title": "AI made self-hosting fun again",
+  "url": "https://janlukas.blog/posts/ai-self-hosting",
+  "discuss": "https://news.ycombinator.com/item?id=50660180",
+  "score": 946,
+  "comments": 457,
+  "age_h": 19.1,
   "text": ""
  },
  {
   "src": "HN",
-  "title": "OpenAI cuts GPT-6.2 usage: Astra hits limits 40% faster, Sol 25% faster",
-  "url": "https://twitter.com/thsottiaux/status/2125784147889393806",
-  "discuss": "https://news.ycombinator.com/item?id=50651117",
-  "score": 424,
-  "comments": 237,
-  "age_h": 13.5,
+  "title": "The group chat where your AI talks behind your back",
+  "url": "https://construct22.com/",
+  "discuss": "https://news.ycombinator.com/item?id=50663595",
+  "score": 542,
+  "comments": 239,
+  "age_h": 10.1,
   "text": ""
  },
  {
@@ -34,10 +24,60 @@
   "title": "Google Will Make AI Agents Use Its MCP Servers. The Gmail One Can't Send Email",
   "url": "https://techstackups.com/articles/google-workspace-ai-agents-mcp/",
   "discuss": "https://news.ycombinator.com/item?id=50653477",
-  "score": 93,
-  "comments": 107,
-  "age_h": 7.4,
+  "score": 393,
+  "comments": 321,
+  "age_h": 31.1,
   "text": ""
+ },
+ {
+  "src": "HN",
+  "title": "Claude sabotaging ML research tasks?",
+  "url": "https://twitter.com/RealAstropulse/status/2126119408997466389",
+  "discuss": "https://news.ycombinator.com/item?id=50664325",
+  "score": 244,
+  "comments": 141,
+  "age_h": 8.4,
+  "text": ""
+ },
+ {
+  "src": "HN",
+  "title": "Tracking Diseases Cured by AI",
+  "url": "https://diseasescuredbyai.com/",
+  "discuss": "https://news.ycombinator.com/item?id=50657307",
+  "score": 314,
+  "comments": 190,
+  "age_h": 23.6,
+  "text": ""
+ },
+ {
+  "src": "HN",
+  "title": "OpenAI may be in cost control mode",
+  "url": "https://micjm.com/blog/openai-is-in-cost-control-mode/",
+  "discuss": "https://news.ycombinator.com/item?id=50652527",
+  "score": 351,
+  "comments": 353,
+  "age_h": 33.3,
+  "text": ""
+ },
+ {
+  "src": "HN",
+  "title": "\"What's Claude's Fursona?\" and Other Questions",
+  "url": "https://herecomesthemoon.net/2026/11/whats-claudes-fursona/",
+  "discuss": "https://news.ycombinator.com/item?id=50662933",
+  "score": 104,
+  "comments": 81,
+  "age_h": 11.9,
+  "text": ""
+ },
+ {
+  "src": "HN",
+  "title": "AI on brink of making online security useless, mathematicians fear",
+  "url": "https://www.thetimes.com/uk/technology-uk/article/ai-making-online-security-useless-smr73d3n8",
+  "discuss": "https://news.ycombinator.com/item?id=50665488",
+  "score": 82,
+  "comments": 96,
+  "age_h": 5.7,
+  "text": "<a href=\"https:&#x2F;&#x2F;archive.ph&#x2F;4hRp8\" rel=\"nofollow\">https:&#x2F;&#x2F;archive.ph&#x2F;4hRp8</a>"
  },
  {
   "src": "lobsters",
@@ -81,50 +121,6 @@
   "comments": 6,
   "age_h": 12.0,
   "created": "2026-11-12T09:35:46.353-06:00",
-  "text": ""
- },
- {
-  "src": "lobsters",
-  "title": "Catching prompt injections hidden in PDFs",
-  "url": "https://tomclancy.info/joshua-judges-ruth.html",
-  "discuss": "https://lobste.rs/s/hreu0b/catching_prompt_injections_hidden_pdfs",
-  "score": 5,
-  "comments": 1,
-  "age_h": 12.0,
-  "created": "2026-11-07T13:34:01.032-06:00",
-  "text": ""
- },
- {
-  "src": "lobsters",
-  "title": "Energy-Based Reasoners: Your Recurrent Reasoner Should Be an Energy-Based Model",
-  "url": "https://energy-based-reasoners.github.io/",
-  "discuss": "https://lobste.rs/s/8mbnbd/energy_based_reasoners_your_recurrent",
-  "score": 3,
-  "comments": 0,
-  "age_h": 12.0,
-  "created": "2026-11-18T08:45:20.832-06:00",
-  "text": ""
- },
- {
-  "src": "lobsters",
-  "title": "Building fine-grained version control for agents with Rust and Durable Objects",
-  "url": "https://delta.dev/blog/fine-grained-version-control-for-agents",
-  "discuss": "https://lobste.rs/s/cctbcu/building_fine_grained_version_control",
-  "score": 2,
-  "comments": 0,
-  "age_h": 12.0,
-  "created": "2026-10-30T11:50:44.030-05:00",
-  "text": ""
- },
- {
-  "src": "lobsters",
-  "title": "AI: EU Member States approve “digital expropriation” of Europeans for AI companies",
-  "url": "https://noyb.eu/en/ai-eu-member-states-approve-digital-expropriation-europeans-ai-companies",
-  "discuss": "https://lobste.rs/s/zu7jjb/ai_eu_member_states_approve_digital",
-  "score": 2,
-  "comments": 0,
-  "age_h": 12.0,
-  "created": "2026-10-23T08:04:23.838-05:00",
   "text": ""
  }
 ]
